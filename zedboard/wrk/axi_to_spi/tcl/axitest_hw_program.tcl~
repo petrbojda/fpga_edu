@@ -1,0 +1,56 @@
+# STEP#6: open hw server and upload the design
+#
+open_hw
+connect_hw_server -url 192.168.1.150:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/AAo1BIUq0]
+set_property PARAM.FREQUENCY 40000000 [get_hw_targets */xilinx_tcf/Xilinx/AAo1BIUq0]
+open_hw_target
+#
+# To change JTAG frequency:
+# set_property PARAM.FREQUENCY 10000000 [current_hw_target ]
+#
+# Associate bitstream
+set_property PROGRAM.FILE {../vivado_axitest/_output/axitest.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {../vivado_axitest/_output/axitest.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 1]
+#
+# Programming the HW Device -
+program_hw_devices [lindex [get_hw_devices] 1]
+
+# Reset the JTAG-to-AXI Master core
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 1]
+reset_hw_axi [get_hw_axis hw_axi_1]
+
+# Create a read transaction bursts 128 words starting from address 0
+create_hw_axi_txn read_txn [get_hw_axis hw_axi_1] -type read -address 00000000 -len 1
+
+# Run the read transaction
+run_hw_axi [get_hw_axi_txns read_txn]
+
+# Create a write transaction 1 word  at address 0
+create_hw_axi_txn write_txn [get_hw_axis hw_axi_1] -type write -address 00000000 -len 1 -data {33333333}
+
+# Run the write transaction
+run_hw_axi [get_hw_axi_txns write_txn]
+ 
+# Example of using JTAG-to_AXI master
+## open_hw
+## INFO: [IP_Flow 19-234] Refreshing IP repositories
+## INFO: [IP_Flow 19-1704] No user IP repositories specified
+## INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/media/petr/fld_0/xilinx/Vivado/2018.2/data/ip'.
+## open_hw: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 6164.461 ; gain = 156.125 ; free physical = 1865 ; free virtual = 6214
+## connect_hw_server -url 192.168.1.150:3121
+## INFO: [Labtools 27-2285] Connecting to hw_server url TCP:192.168.1.150:3121
+## current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/AAo1BIUq0]
+## set_property PARAM.FREQUENCY 12000000 [get_hw_targets */xilinx_tcf/Xilinx/AAo1BIUq0]
+## open_hw_target
+## INFO: [Labtoolstcl 44-466] Opening hw_target 192.168.1.150:3121/xilinx_tcf/Xilinx/AAo1BIUq0
+## current_hw_device [get_hw_devices xc7z020_1]
+## refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+## INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 JTAG AXI core(s).
+## reset_hw_axi [get_hw_axis hw_axi_1]
+## create_hw_axi_txn read_txn [get_hw_axis hw_axi_1] -type read -address 00000000 -len 1
+## read_txn
+## run_hw_axi [get_hw_axi_txns read_txn]
+

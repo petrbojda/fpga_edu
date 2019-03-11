@@ -1,0 +1,2 @@
+jtag_axi_0_sim_netlist.vhdl,vhdl,xil_defaultlib,../../../../jtag_axi_0/jtag_axi_0_sim_netlist.vhdl,incdir="../../../../jtag_axi_0/hdl/verilog"
+glbl.v,Verilog,xil_defaultlib,glbl.v

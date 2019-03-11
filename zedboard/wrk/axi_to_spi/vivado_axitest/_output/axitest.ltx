@@ -1,0 +1,537 @@
+{
+    "ltx_root": {
+        "version": 4,
+        "minor": 0,
+        "ltx_data": [
+            {
+                "name": "EDA_PROBESET",
+                "active": true,
+                "debug_cores": [
+                    {
+                        "type": "XSDB_V3",
+                        "name": "dbg_hub",
+                        "spec": "labtools_xsdbm_v3",
+                        "clk_input_freq_hz": "100000000"
+                    },
+                    {
+                        "type": "ILA_V3",
+                        "name": "ila_0_1",
+                        "spec": "labtools_ila_v6",
+                        "ipName": "ila",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 0,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "072396edf1be512ba26196ccd288a186",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 0,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 7,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "LED_OUT_OBUF",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "LED_OUT_OBUF[7]"
+                                            },
+                                            {
+                                                "name": "LED_OUT_OBUF[6]"
+                                            },
+                                            {
+                                                "name": "LED_OUT_OBUF[5]"
+                                            },
+                                            {
+                                                "name": "LED_OUT_OBUF[4]"
+                                            },
+                                            {
+                                                "name": "LED_OUT_OBUF[3]"
+                                            },
+                                            {
+                                                "name": "LED_OUT_OBUF[2]"
+                                            },
+                                            {
+                                                "name": "LED_OUT_OBUF[1]"
+                                            },
+                                            {
+                                                "name": "LED_OUT_OBUF[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 1,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 2,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "spi_ss",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "spi_ss[2]"
+                                            },
+                                            {
+                                                "name": "spi_ss[1]"
+                                            },
+                                            {
+                                                "name": "spi_ss[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 2,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "spi_clk",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 3,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "sreset_n",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe4",
+                                "id": 4,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "spi_ready",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe5",
+                                "id": 5,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 5,
+                                "nets": [
+                                    {
+                                        "name": "spi_valid",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe6",
+                                "id": 6,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 6,
+                                "nets": [
+                                    {
+                                        "name": "spi_mosi",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe7",
+                                "id": 7,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 7,
+                                "nets": [
+                                    {
+                                        "name": "mem_reg_1",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mem_reg_1[31]"
+                                            },
+                                            {
+                                                "name": "mem_reg_1[30]"
+                                            },
+                                            {
+                                                "name": "mem_reg_1[29]"
+                                            },
+                                            {
+                                                "name": "mem_reg_1[28]"
+                                            },
+                                            {
+                                                "name": "mem_reg_1[27]"
+                                            },
+                                            {
+                                                "name": "mem_reg_1[26]"
+                                            },
+                                            {
+                                                "name": "mem_reg_1[25]"
+                                            },
+                                            {
+                                                "name": "mem_reg_1[24]"
+                                            },
+                                            {
+                                                "name": "mem_reg_1[23]"
+                                            },
+                                            {
+                                                "name": "mem_reg_1[22]"
+                                            },
+                                            {
+                                                "name": "mem_reg_1[21]"
+                                            },
+                                            {
+                                                "name": "mem_reg_1[20]"
+                                            },
+                                            {
+                                                "name": "mem_reg_1[19]"
+                                            },
+                                            {
+                                                "name": "mem_reg_1[18]"
+                                            },
+                                            {
+                                                "name": "mem_reg_1[17]"
+                                            },
+                                            {
+                                                "name": "mem_reg_1[16]"
+                                            },
+                                            {
+                                                "name": "mem_reg_1[15]"
+                                            },
+                                            {
+                                                "name": "mem_reg_1[14]"
+                                            },
+                                            {
+                                                "name": "mem_reg_1[13]"
+                                            },
+                                            {
+                                                "name": "mem_reg_1[12]"
+                                            },
+                                            {
+                                                "name": "mem_reg_1[11]"
+                                            },
+                                            {
+                                                "name": "mem_reg_1[10]"
+                                            },
+                                            {
+                                                "name": "mem_reg_1[9]"
+                                            },
+                                            {
+                                                "name": "mem_reg_1[8]"
+                                            },
+                                            {
+                                                "name": "mem_reg_1[7]"
+                                            },
+                                            {
+                                                "name": "mem_reg_1[6]"
+                                            },
+                                            {
+                                                "name": "mem_reg_1[5]"
+                                            },
+                                            {
+                                                "name": "mem_reg_1[4]"
+                                            },
+                                            {
+                                                "name": "mem_reg_1[3]"
+                                            },
+                                            {
+                                                "name": "mem_reg_1[2]"
+                                            },
+                                            {
+                                                "name": "mem_reg_1[1]"
+                                            },
+                                            {
+                                                "name": "mem_reg_1[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe8",
+                                "id": 8,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 8,
+                                "nets": [
+                                    {
+                                        "name": "mem_reg_2",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mem_reg_2[31]"
+                                            },
+                                            {
+                                                "name": "mem_reg_2[30]"
+                                            },
+                                            {
+                                                "name": "mem_reg_2[29]"
+                                            },
+                                            {
+                                                "name": "mem_reg_2[28]"
+                                            },
+                                            {
+                                                "name": "mem_reg_2[27]"
+                                            },
+                                            {
+                                                "name": "mem_reg_2[26]"
+                                            },
+                                            {
+                                                "name": "mem_reg_2[25]"
+                                            },
+                                            {
+                                                "name": "mem_reg_2[24]"
+                                            },
+                                            {
+                                                "name": "mem_reg_2[23]"
+                                            },
+                                            {
+                                                "name": "mem_reg_2[22]"
+                                            },
+                                            {
+                                                "name": "mem_reg_2[21]"
+                                            },
+                                            {
+                                                "name": "mem_reg_2[20]"
+                                            },
+                                            {
+                                                "name": "mem_reg_2[19]"
+                                            },
+                                            {
+                                                "name": "mem_reg_2[18]"
+                                            },
+                                            {
+                                                "name": "mem_reg_2[17]"
+                                            },
+                                            {
+                                                "name": "mem_reg_2[16]"
+                                            },
+                                            {
+                                                "name": "mem_reg_2[15]"
+                                            },
+                                            {
+                                                "name": "mem_reg_2[14]"
+                                            },
+                                            {
+                                                "name": "mem_reg_2[13]"
+                                            },
+                                            {
+                                                "name": "mem_reg_2[12]"
+                                            },
+                                            {
+                                                "name": "mem_reg_2[11]"
+                                            },
+                                            {
+                                                "name": "mem_reg_2[10]"
+                                            },
+                                            {
+                                                "name": "mem_reg_2[9]"
+                                            },
+                                            {
+                                                "name": "mem_reg_2[8]"
+                                            },
+                                            {
+                                                "name": "mem_reg_2[7]"
+                                            },
+                                            {
+                                                "name": "mem_reg_2[6]"
+                                            },
+                                            {
+                                                "name": "mem_reg_2[5]"
+                                            },
+                                            {
+                                                "name": "mem_reg_2[4]"
+                                            },
+                                            {
+                                                "name": "mem_reg_2[3]"
+                                            },
+                                            {
+                                                "name": "mem_reg_2[2]"
+                                            },
+                                            {
+                                                "name": "mem_reg_2[1]"
+                                            },
+                                            {
+                                                "name": "mem_reg_2[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe9",
+                                "id": 9,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 9,
+                                "nets": [
+                                    {
+                                        "name": "mem_reg_3",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mem_reg_3[31]"
+                                            },
+                                            {
+                                                "name": "mem_reg_3[30]"
+                                            },
+                                            {
+                                                "name": "mem_reg_3[29]"
+                                            },
+                                            {
+                                                "name": "mem_reg_3[28]"
+                                            },
+                                            {
+                                                "name": "mem_reg_3[27]"
+                                            },
+                                            {
+                                                "name": "mem_reg_3[26]"
+                                            },
+                                            {
+                                                "name": "mem_reg_3[25]"
+                                            },
+                                            {
+                                                "name": "mem_reg_3[24]"
+                                            },
+                                            {
+                                                "name": "mem_reg_3[23]"
+                                            },
+                                            {
+                                                "name": "mem_reg_3[22]"
+                                            },
+                                            {
+                                                "name": "mem_reg_3[21]"
+                                            },
+                                            {
+                                                "name": "mem_reg_3[20]"
+                                            },
+                                            {
+                                                "name": "mem_reg_3[19]"
+                                            },
+                                            {
+                                                "name": "mem_reg_3[18]"
+                                            },
+                                            {
+                                                "name": "mem_reg_3[17]"
+                                            },
+                                            {
+                                                "name": "mem_reg_3[16]"
+                                            },
+                                            {
+                                                "name": "mem_reg_3[15]"
+                                            },
+                                            {
+                                                "name": "mem_reg_3[14]"
+                                            },
+                                            {
+                                                "name": "mem_reg_3[13]"
+                                            },
+                                            {
+                                                "name": "mem_reg_3[12]"
+                                            },
+                                            {
+                                                "name": "mem_reg_3[11]"
+                                            },
+                                            {
+                                                "name": "mem_reg_3[10]"
+                                            },
+                                            {
+                                                "name": "mem_reg_3[9]"
+                                            },
+                                            {
+                                                "name": "mem_reg_3[8]"
+                                            },
+                                            {
+                                                "name": "mem_reg_3[7]"
+                                            },
+                                            {
+                                                "name": "mem_reg_3[6]"
+                                            },
+                                            {
+                                                "name": "mem_reg_3[5]"
+                                            },
+                                            {
+                                                "name": "mem_reg_3[4]"
+                                            },
+                                            {
+                                                "name": "mem_reg_3[3]"
+                                            },
+                                            {
+                                                "name": "mem_reg_3[2]"
+                                            },
+                                            {
+                                                "name": "mem_reg_3[1]"
+                                            },
+                                            {
+                                                "name": "mem_reg_3[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "XSDBS_V2",
+                        "name": "jtag_to_axil_inst",
+                        "spec": "labtools_xsdbslavelib_v2",
+                        "ipName": "jtag_axi",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 1,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "dcfd6c69436752048661876558b5d274"
+                    }
+                ]
+            }
+        ]
+    }
+}

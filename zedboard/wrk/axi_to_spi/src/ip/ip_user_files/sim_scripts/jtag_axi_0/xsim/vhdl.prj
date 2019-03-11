@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../jtag_axi_0/jtag_axi_0_sim_netlist.vhdl" \
+
+nosort

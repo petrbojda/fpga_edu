@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Feb 17 16:01:48 2019
+# Process ID: 10367
+# Current directory: /home/petr/Projects/zedboard/wrk/axitest_v10/src/ip
+# Command line: vivado
+# Log file: /home/petr/Projects/zedboard/wrk/axitest_v10/src/ip/vivado.log
+# Journal file: /home/petr/Projects/zedboard/wrk/axitest_v10/src/ip/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/petr/Projects/zedboard/wrk/axitest_v10/src/ip/managed_ip_project/managed_ip_project.xpr
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+export_ip_user_files -of_objects  [get_files /home/petr/Projects/zedboard/wrk/axitest/src/ip/axi_four_reg_0/axi_four_reg_0.xci] -no_script -reset -force -quiet
+remove_files  -fileset axi_four_reg_0 /home/petr/Projects/zedboard/wrk/axitest/src/ip/axi_four_reg_0/axi_four_reg_0.xci
+create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ila_0 -dir /home/petr/Projects/zedboard/wrk/axitest_v10/src/ip
+set_property -dict [list CONFIG.C_PROBE9_WIDTH {32} CONFIG.C_PROBE8_WIDTH {32} CONFIG.C_PROBE7_WIDTH {32} CONFIG.C_PROBE1_WIDTH {3} CONFIG.C_PROBE0_WIDTH {8} CONFIG.C_DATA_DEPTH {4096} CONFIG.C_NUM_OF_PROBES {10} CONFIG.C_ENABLE_ILA_AXI_MON {false} CONFIG.C_MONITOR_TYPE {Native}] [get_ips ila_0]
+generate_target {instantiation_template} [get_files /home/petr/Projects/zedboard/wrk/axitest_v10/src/ip/ila_0/ila_0.xci]
+generate_target all [get_files  /home/petr/Projects/zedboard/wrk/axitest_v10/src/ip/ila_0/ila_0.xci]
+catch { config_ip_cache -export [get_ips -all ila_0] }
+export_ip_user_files -of_objects [get_files /home/petr/Projects/zedboard/wrk/axitest_v10/src/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/petr/Projects/zedboard/wrk/axitest_v10/src/ip/ila_0/ila_0.xci]
+launch_runs -jobs 4 ila_0_synth_1
+wait_on_run ila_0_synth_1
+export_simulation -of_objects [get_files /home/petr/Projects/zedboard/wrk/axitest_v10/src/ip/ila_0/ila_0.xci] -directory /home/petr/Projects/zedboard/wrk/axitest_v10/src/ip/ip_user_files/sim_scripts -ip_user_files_dir /home/petr/Projects/zedboard/wrk/axitest_v10/src/ip/ip_user_files -ipstatic_source_dir /home/petr/Projects/zedboard/wrk/axitest_v10/src/ip/ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/petr/Projects/zedboard/wrk/axitest_v10/src/ip/managed_ip_project/managed_ip_project.cache/compile_simlib/modelsim} {questa=/home/petr/Projects/zedboard/wrk/axitest_v10/src/ip/managed_ip_project/managed_ip_project.cache/compile_simlib/questa} {ies=/home/petr/Projects/zedboard/wrk/axitest_v10/src/ip/managed_ip_project/managed_ip_project.cache/compile_simlib/ies} {xcelium=/home/petr/Projects/zedboard/wrk/axitest_v10/src/ip/managed_ip_project/managed_ip_project.cache/compile_simlib/xcelium} {vcs=/home/petr/Projects/zedboard/wrk/axitest_v10/src/ip/managed_ip_project/managed_ip_project.cache/compile_simlib/vcs} {riviera=/home/petr/Projects/zedboard/wrk/axitest_v10/src/ip/managed_ip_project/managed_ip_project.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet

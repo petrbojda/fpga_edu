@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Feb 13 12:53:47 2019
+# Process ID: 7328
+# Current directory: /home/petr/Projects/zedboard/wrk/axitest/src/ip
+# Command line: vivado
+# Log file: /home/petr/Projects/zedboard/wrk/axitest/src/ip/vivado.log
+# Journal file: /home/petr/Projects/zedboard/wrk/axitest/src/ip/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/petr/Projects/zedboard/wrk/axitest/src/ip/managed_ip_project/managed_ip_project.xpr
+export_ip_user_files -of_objects  [get_files /home/petr/Projects/zedboard/wrk/axitest/src/ip/axi_four_reg_0/axi_four_reg_0.xci] -no_script -reset -force -quiet
+remove_files  /home/petr/Projects/zedboard/wrk/axitest/src/ip/axi_four_reg_0/axi_four_reg_0.xci
+create_ip -name axi_four_reg -vendor user.org -library user -version 1.0 -module_name axi_four_reg_0 -dir /home/petr/Projects/zedboard/wrk/axitest/src/ip
+generate_target {instantiation_template} [get_files /home/petr/Projects/zedboard/wrk/axitest/src/ip/axi_four_reg_0/axi_four_reg_0.xci]
+generate_target all [get_files  /home/petr/Projects/zedboard/wrk/axitest/src/ip/axi_four_reg_0/axi_four_reg_0.xci]
+catch { config_ip_cache -export [get_ips -all axi_four_reg_0] }
+export_ip_user_files -of_objects [get_files /home/petr/Projects/zedboard/wrk/axitest/src/ip/axi_four_reg_0/axi_four_reg_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/petr/Projects/zedboard/wrk/axitest/src/ip/axi_four_reg_0/axi_four_reg_0.xci]
+create_ip -name jtag_axi -vendor xilinx.com -library ip -version 1.2 -module_name jtag_axi_0 -dir /home/petr/Projects/zedboard/wrk/axitest/src/ip
+set_property -dict [list CONFIG.M_HAS_BURST {1}] [get_ips jtag_axi_0]
+generate_target {instantiation_template} [get_files /home/petr/Projects/zedboard/wrk/axitest/src/ip/jtag_axi_0/jtag_axi_0.xci]
+generate_target all [get_files  /home/petr/Projects/zedboard/wrk/axitest/src/ip/jtag_axi_0/jtag_axi_0.xci]
+catch { config_ip_cache -export [get_ips -all jtag_axi_0] }
+export_ip_user_files -of_objects [get_files /home/petr/Projects/zedboard/wrk/axitest/src/ip/jtag_axi_0/jtag_axi_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/petr/Projects/zedboard/wrk/axitest/src/ip/jtag_axi_0/jtag_axi_0.xci]
+launch_runs -jobs 4 jtag_axi_0_synth_1
+wait_on_run jtag_axi_0_synth_1
+export_simulation -of_objects [get_files /home/petr/Projects/zedboard/wrk/axitest/src/ip/jtag_axi_0/jtag_axi_0.xci] -directory /home/petr/Projects/zedboard/wrk/axitest/src/ip/ip_user_files/sim_scripts -ip_user_files_dir /home/petr/Projects/zedboard/wrk/axitest/src/ip/ip_user_files -ipstatic_source_dir /home/petr/Projects/zedboard/wrk/axitest/src/ip/ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/petr/Projects/zedboard/wrk/axitest/src/ip/managed_ip_project/managed_ip_project.cache/compile_simlib/modelsim} {questa=/home/petr/Projects/zedboard/wrk/axitest/src/ip/managed_ip_project/managed_ip_project.cache/compile_simlib/questa} {ies=/home/petr/Projects/zedboard/wrk/axitest/src/ip/managed_ip_project/managed_ip_project.cache/compile_simlib/ies} {xcelium=/home/petr/Projects/zedboard/wrk/axitest/src/ip/managed_ip_project/managed_ip_project.cache/compile_simlib/xcelium} {vcs=/home/petr/Projects/zedboard/wrk/axitest/src/ip/managed_ip_project/managed_ip_project.cache/compile_simlib/vcs} {riviera=/home/petr/Projects/zedboard/wrk/axitest/src/ip/managed_ip_project/managed_ip_project.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.PROTOCOL {2}] [get_ips jtag_axi_0]
+generate_target all [get_files  /home/petr/Projects/zedboard/wrk/axitest/src/ip/jtag_axi_0/jtag_axi_0.xci]
+catch { config_ip_cache -export [get_ips -all jtag_axi_0] }
+export_ip_user_files -of_objects [get_files /home/petr/Projects/zedboard/wrk/axitest/src/ip/jtag_axi_0/jtag_axi_0.xci] -no_script -sync -force -quiet
+reset_run jtag_axi_0_synth_1
+launch_runs -jobs 4 jtag_axi_0_synth_1
+wait_on_run jtag_axi_0_synth_1
+export_simulation -of_objects [get_files /home/petr/Projects/zedboard/wrk/axitest/src/ip/jtag_axi_0/jtag_axi_0.xci] -directory /home/petr/Projects/zedboard/wrk/axitest/src/ip/ip_user_files/sim_scripts -ip_user_files_dir /home/petr/Projects/zedboard/wrk/axitest/src/ip/ip_user_files -ipstatic_source_dir /home/petr/Projects/zedboard/wrk/axitest/src/ip/ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/petr/Projects/zedboard/wrk/axitest/src/ip/managed_ip_project/managed_ip_project.cache/compile_simlib/modelsim} {questa=/home/petr/Projects/zedboard/wrk/axitest/src/ip/managed_ip_project/managed_ip_project.cache/compile_simlib/questa} {ies=/home/petr/Projects/zedboard/wrk/axitest/src/ip/managed_ip_project/managed_ip_project.cache/compile_simlib/ies} {xcelium=/home/petr/Projects/zedboard/wrk/axitest/src/ip/managed_ip_project/managed_ip_project.cache/compile_simlib/xcelium} {vcs=/home/petr/Projects/zedboard/wrk/axitest/src/ip/managed_ip_project/managed_ip_project.cache/compile_simlib/vcs} {riviera=/home/petr/Projects/zedboard/wrk/axitest/src/ip/managed_ip_project/managed_ip_project.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet

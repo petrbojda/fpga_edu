@@ -1,0 +1,97 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Feb 26 09:28:32 2019
+# Process ID: 4294
+# Current directory: /home/petr/Projects/zedboard/wrk/axi_to_spi/tcl
+# Command line: vivado -mode tcl
+# Log file: /home/petr/Projects/zedboard/wrk/axi_to_spi/tcl/vivado.log
+# Journal file: /home/petr/Projects/zedboard/wrk/axi_to_spi/tcl/vivado.jou
+#-----------------------------------------------------------
+update_hw_firmware -reset
+ERROR: [Labtoolstcl 44-141] There is no current hw_server and no option value given for 'hw_server'.
+open_hw
+connect_hw_server -url 192.168.1.150:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:192.168.1.150:3121
+ERROR: [Xicom 50-198] Cannot support out-of-date hw_server.  Update to the latest hw_server.
+CRITICAL WARNING: [Labtools 27-3450] The SmartLynq cable needs a Flash update. Call 'update_hw_firmware -flash -reset' TCL command to update.
+This operation may take several minutes.  Avoid disconnecting the cable during this update.  Using the primary power adapter is advised.
+ERROR: [Common 17-39] 'connect_hw_server' failed due to earlier errors.
+update_hw_firmware -flash -reset
+INFO: [Labtoolstcl 44-645] SmartLynq successfully updated. Disconnect from the hw_server and power cycle the SmartLynq before reconnecting.
+INFO: [Labtoolstcl 44-658] Smartlynq cable has reset.  Disconnecting from Smartlynq server.  Reconnect to Smartlynq to continue session.
+update_hw_firmware: Time (s): cpu = 00:00:00.86 ; elapsed = 00:03:29 . Memory (MB): peak = 1392.219 ; gain = 0.000 ; free physical = 4123 ; free virtual = 8486
+disconnect_hw_server
+ERROR: [Labtoolstcl 44-141] There is no current hw_server and no option value given for 'hw_server'.
+source axitest_hw_program.tcl
+# open_hw
+# connect_hw_server -url 192.168.1.150:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:192.168.1.150:3121
+# current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/AAo1BIUq0]
+# set_property PARAM.FREQUENCY 40000000 [get_hw_targets */xilinx_tcf/Xilinx/AAo1BIUq0]
+# open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target 192.168.1.150:3121/xilinx_tcf/Xilinx/AAo1BIUq0
+# set_property PROGRAM.FILE {../vivado_axitest/_output/axitest.bit} [lindex [get_hw_devices] 1]
+# set_property PROBES.FILE {../vivado_axitest/_output/axitest.ltx} [lindex [get_hw_devices] 1]
+# current_hw_device [lindex [get_hw_devices] 1]
+# refresh_hw_device -update_hw_probes true [lindex [get_hw_devices] 1]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'ila_0_1' at location 'uuid_072396EDF1BE512BA26196CCD288A186' from probes file, since it cannot be found on the programmed device.
+# program_hw_devices [lindex [get_hw_devices] 1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+# refresh_hw_device -update_hw_probes true [lindex [get_hw_devices] 1]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 JTAG AXI core(s).
+# reset_hw_axi [get_hw_axis hw_axi_1]
+can't read "outputDir": no such variable
+    while executing
+"write_checkpoint -force $outputDir/device_programmed"
+    (file "axitest_hw_program.tcl" line 24)
+start_gui
+dir
+WARNING: [Common 17-259] Unknown Tcl command 'dir' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+axitest_batch.tcl	       vivado_19704.backup.jou
+axitest_batch.tcl~	       vivado_2744.backup.jou
+axitest_hw_program.tcl	       vivado_2744.backup.log
+axitest_hw_program.tcl~        vivado_2959.backup.jou
+axitest_hw_reprogram.tcl       vivado_31748.backup.jou
+axitest_hw_reprogram.tcl~      vivado_31748.backup.log
+set_data_valid.tcl	       vivado_3462.backup.log
+set_data_valid.tcl~	       vivado.jou
+usage_statistics_webtalk.html  vivado.log
+usage_statistics_webtalk.xml   vivado_pid4294.str
+vivado_19152.backup.jou        write_data_to_send.tcl
+vivado_19152.backup.log        write_data_to_send.tcl~
+vivado_19454.backup.log
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2019-Feb-26 09:36:49
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2019-Feb-26 09:36:49
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/petr/Projects/zedboard/wrk/axi_to_spi/tcl/.Xil/Vivado-4294-petr-dell/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes spi_valid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_1"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2019-Feb-26 09:37:17
+source set_data_valid.tcl
+# create_hw_axi_txn read_txn [get_hw_axis hw_axi_1] -force  -type read -address 00000000 -len 1
+# run_hw_axi [get_hw_axi_txns read_txn]
+INFO: [Labtoolstcl 44-481] READ DATA is: 00000000
+# create_hw_axi_txn write_txn [get_hw_axis hw_axi_1] -force -type write -address 00000000 -len 1 -data {000181f5}
+# run_hw_axi [get_hw_axi_txns write_txn]
+INFO: [Labtoolstcl 44-481] WRITE DATA is: 000181f5
+# create_hw_axi_txn write_txn [get_hw_axis hw_axi_1] -force -type write -address 00000000 -len 1 -data {000081f1}
+# run_hw_axi [get_hw_axi_txns write_txn]
+INFO: [Labtoolstcl 44-481] WRITE DATA is: 000081f1
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2019-Feb-26 09:37:47
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/petr/Projects/zedboard/wrk/axi_to_spi/tcl/.Xil/Vivado-4294-petr-dell/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+stop_gui
+quit
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 26 10:00:26 2019...

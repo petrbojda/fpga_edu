@@ -1,0 +1,87 @@
+-------------------------------------------------------------------------------
+-- Title      : SPI transmit engine
+-- Project    : 
+-------------------------------------------------------------------------------
+-- File       : spi_tx_engine.vhd
+-- Author     : Petr Bojda  <petr.bojda@urc-systems.cz>
+-- Company    : URC Systems, s.r.o.
+-- Created    : 2019-02-17
+-- Last update: 2019-02-17
+-- Platform   : 
+-- Standard   : VHDL'08
+-------------------------------------------------------------------------------
+-- Description: AXI stream based engine which transmits data
+-- via master SPI interface
+-------------------------------------------------------------------------------
+-- Copyright (c) 2019 URC Systems, s.r.o.
+-------------------------------------------------------------------------------
+-- Revisions  :
+-- Date        Version  Author  Description
+-- 2019-02-17  1.0      petr    Created
+-------------------------------------------------------------------------------
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.STD_LOGIC_ARITH.all;
+use IEEE.STD_LOGIC_UNSIGNED.all;
+
+
+entity spi_tx_engine is
+
+  port (
+    rst_n         : in  std_logic;
+    clk_in    : in  std_logic;
+    s_axis_tdata  : in  std_logic_vector(7 downto 0);
+    s_axis_tready : out std_logic;
+    s_axis_tvalid : in  std_logic;
+    spi_mosi      : out std_logic);
+
+end entity spi_tx_engine;
+
+architecture behavi of spi_tx_engine is
+
+  signal spi_register : std_logic_vector(7 downto 0);
+  signal spi_count    : std_logic_vector(3 downto 0);
+
+  type main_fsm_type is (M_SPI_IDLE, M_SPI_DATA_IN, M_SPI_TX, M_SPI_TX_END);
+  signal main_fsm : main_fsm_type;
+
+
+begin  -- architecture behavi
+
+  spi_tx : process (clk_in, rst_n) is
+  begin  -- process spi_inoutregister
+    if rst_n = '0' then                 -- asynchronous reset (active low)
+      spi_register  <= (others => '0');
+      spi_count     <= (others => '0');
+      main_fsm      <= M_SPI_IDLE;
+      s_axis_tready <= '1';
+    elsif clk_in'event and clk_in = '1' then  -- rising clock edge
+
+      case main_fsm is
+        when M_SPI_IDLE =>
+          if s_axis_tvalid then
+            main_fsm <= M_SPI_DATA_IN;
+          end if;
+        when M_SPI_DATA_IN =>
+          spi_register <= s_axis_tdata;
+          s_axis_tready <= '0';
+          main_fsm     <= M_SPI_TX;
+        when M_SPI_TX =>
+          spi_mosi     <= spi_register(spi_register'left);
+          spi_register <= spi_register(spi_register'left - 1 downto 0) & '0';
+          spi_count    <= spi_count + '1';
+          main_fsm     <= M_SPI_TX_END when spi_count (spi_count'left) = '1';
+        when M_SPI_TX_END =>
+          spi_count     <= (others => '0');
+          s_axis_tready <= '1';
+          main_fsm      <= M_SPI_IDLE;
+      end case;
+
+    end if;
+  end process spi_tx;
+
+  spi_mosi <= spi_register (7);
+
+end architecture behavi;
+

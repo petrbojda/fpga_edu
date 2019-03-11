@@ -1,0 +1,317 @@
+
+*** Running vivado
+    with args -log axi_four_reg_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source axi_four_reg_0.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source axi_four_reg_0.tcl -notrace
+Command: synth_design -top axi_four_reg_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6151 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1343.750 ; gain = 80.895 ; free physical = 2895 ; free virtual = 6492
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'axi_four_reg_0' [/home/petr/Projects/zedboard/wrk/axitest/src/ip/axi_four_reg_0/synth/axi_four_reg_0.vhd:82]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'axi_four_reg_v1_0' declared at '/home/petr/Projects/zedboard/wrk/axitest/src/ip/axi_four_reg_0/hdl/axi_four_reg_v1_0.vhd:5' bound to instance 'U0' of component 'axi_four_reg_v1_0' [/home/petr/Projects/zedboard/wrk/axitest/src/ip/axi_four_reg_0/synth/axi_four_reg_0.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'axi_four_reg_v1_0' [/home/petr/Projects/zedboard/wrk/axitest/src/ip/axi_four_reg_0/hdl/axi_four_reg_v1_0.vhd:49]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+WARNING: [Synth 8-5640] Port 'reg_out' is missing in component declaration [/home/petr/Projects/zedboard/wrk/axitest/src/ip/axi_four_reg_0/hdl/axi_four_reg_v1_0.vhd:52]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'axi_four_reg_v1_0_S_AXI' declared at '/home/petr/Projects/zedboard/wrk/axitest/src/ip/axi_four_reg_0/hdl/axi_four_reg_v1_0_S_AXI.vhd:5' bound to instance 'axi_four_reg_v1_0_S_AXI_inst' of component 'axi_four_reg_v1_0_S_AXI' [/home/petr/Projects/zedboard/wrk/axitest/src/ip/axi_four_reg_0/hdl/axi_four_reg_v1_0.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'axi_four_reg_v1_0_S_AXI' [/home/petr/Projects/zedboard/wrk/axitest/src/ip/axi_four_reg_0/hdl/axi_four_reg_v1_0_S_AXI.vhd:86]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/petr/Projects/zedboard/wrk/axitest/src/ip/axi_four_reg_0/hdl/axi_four_reg_v1_0_S_AXI.vhd:223]
+INFO: [Synth 8-226] default block is never used [/home/petr/Projects/zedboard/wrk/axitest/src/ip/axi_four_reg_0/hdl/axi_four_reg_v1_0_S_AXI.vhd:353]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [/home/petr/Projects/zedboard/wrk/axitest/src/ip/axi_four_reg_0/hdl/axi_four_reg_v1_0_S_AXI.vhd:221]
+INFO: [Synth 8-256] done synthesizing module 'axi_four_reg_v1_0_S_AXI' (1#1) [/home/petr/Projects/zedboard/wrk/axitest/src/ip/axi_four_reg_0/hdl/axi_four_reg_v1_0_S_AXI.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'axi_four_reg_v1_0' (2#1) [/home/petr/Projects/zedboard/wrk/axitest/src/ip/axi_four_reg_0/hdl/axi_four_reg_v1_0.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'axi_four_reg_0' (3#1) [/home/petr/Projects/zedboard/wrk/axitest/src/ip/axi_four_reg_0/synth/axi_four_reg_0.vhd:82]
+WARNING: [Synth 8-3331] design axi_four_reg_v1_0_S_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design axi_four_reg_v1_0_S_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design axi_four_reg_v1_0_S_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design axi_four_reg_v1_0_S_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design axi_four_reg_v1_0_S_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design axi_four_reg_v1_0_S_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1387.375 ; gain = 124.520 ; free physical = 2907 ; free virtual = 6504
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1387.375 ; gain = 124.520 ; free physical = 2907 ; free virtual = 6503
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1387.375 ; gain = 124.520 ; free physical = 2907 ; free virtual = 6503
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraint will be written out.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.14 . Memory (MB): peak = 1728.383 ; gain = 2.000 ; free physical = 2588 ; free virtual = 6226
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:31 . Memory (MB): peak = 1728.383 ; gain = 465.527 ; free physical = 2658 ; free virtual = 6297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:31 . Memory (MB): peak = 1728.383 ; gain = 465.527 ; free physical = 2658 ; free virtual = 6297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:31 . Memory (MB): peak = 1728.383 ; gain = 465.527 ; free physical = 2660 ; free virtual = 6298
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:32 . Memory (MB): peak = 1728.383 ; gain = 465.527 ; free physical = 2651 ; free virtual = 6290
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module axi_four_reg_v1_0_S_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design axi_four_reg_0 has unconnected port s_axi_awprot[2]
+WARNING: [Synth 8-3331] design axi_four_reg_0 has unconnected port s_axi_awprot[1]
+WARNING: [Synth 8-3331] design axi_four_reg_0 has unconnected port s_axi_awprot[0]
+WARNING: [Synth 8-3331] design axi_four_reg_0 has unconnected port s_axi_arprot[2]
+WARNING: [Synth 8-3331] design axi_four_reg_0 has unconnected port s_axi_arprot[1]
+WARNING: [Synth 8-3331] design axi_four_reg_0 has unconnected port s_axi_arprot[0]
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U0/axi_four_reg_v1_0_S_AXI_inst/aw_en_reg )
+INFO: [Synth 8-3886] merging instance 'U0/axi_four_reg_v1_0_S_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'U0/axi_four_reg_v1_0_S_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/axi_four_reg_v1_0_S_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'U0/axi_four_reg_v1_0_S_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'U0/axi_four_reg_v1_0_S_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/axi_four_reg_v1_0_S_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3332] Sequential element (U0/axi_four_reg_v1_0_S_AXI_inst/aw_en_reg) is unused and will be removed from module axi_four_reg_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_four_reg_v1_0_S_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module axi_four_reg_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_four_reg_v1_0_S_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module axi_four_reg_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_four_reg_v1_0_S_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module axi_four_reg_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_four_reg_v1_0_S_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module axi_four_reg_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_four_reg_v1_0_S_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module axi_four_reg_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_four_reg_v1_0_S_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module axi_four_reg_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:32 . Memory (MB): peak = 1728.383 ; gain = 465.527 ; free physical = 2639 ; free virtual = 6281
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:43 . Memory (MB): peak = 1728.383 ; gain = 465.527 ; free physical = 2505 ; free virtual = 6154
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:43 . Memory (MB): peak = 1728.383 ; gain = 465.527 ; free physical = 2505 ; free virtual = 6153
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:43 . Memory (MB): peak = 1728.383 ; gain = 465.527 ; free physical = 2503 ; free virtual = 6152
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:44 . Memory (MB): peak = 1728.383 ; gain = 465.527 ; free physical = 2503 ; free virtual = 6152
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:44 . Memory (MB): peak = 1728.383 ; gain = 465.527 ; free physical = 2503 ; free virtual = 6152
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:44 . Memory (MB): peak = 1728.383 ; gain = 465.527 ; free physical = 2503 ; free virtual = 6152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:44 . Memory (MB): peak = 1728.383 ; gain = 465.527 ; free physical = 2503 ; free virtual = 6152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:44 . Memory (MB): peak = 1728.383 ; gain = 465.527 ; free physical = 2503 ; free virtual = 6152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:44 . Memory (MB): peak = 1728.383 ; gain = 465.527 ; free physical = 2503 ; free virtual = 6152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT2 |     1|
+|3     |LUT3 |     3|
+|4     |LUT4 |    20|
+|5     |LUT5 |     2|
+|6     |LUT6 |    33|
+|7     |FDRE |   167|
+|8     |FDSE |     2|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------------------------------+------------------------+------+
+|      |Instance                         |Module                  |Cells |
++------+---------------------------------+------------------------+------+
+|1     |top                              |                        |   229|
+|2     |  U0                             |axi_four_reg_v1_0       |   229|
+|3     |    axi_four_reg_v1_0_S_AXI_inst |axi_four_reg_v1_0_S_AXI |   229|
++------+---------------------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:44 . Memory (MB): peak = 1728.383 ; gain = 465.527 ; free physical = 2503 ; free virtual = 6152
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1728.383 ; gain = 124.520 ; free physical = 2560 ; free virtual = 6209
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:44 . Memory (MB): peak = 1728.391 ; gain = 465.527 ; free physical = 2560 ; free virtual = 6209
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:45 . Memory (MB): peak = 1728.391 ; gain = 477.094 ; free physical = 2550 ; free virtual = 6199
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/petr/Projects/zedboard/wrk/axitest/src/ip/managed_ip_project/managed_ip_project.runs/axi_four_reg_0_synth_1/axi_four_reg_0.dcp' has been generated.

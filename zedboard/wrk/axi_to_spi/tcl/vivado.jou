@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Feb 26 09:28:32 2019
+# Process ID: 4294
+# Current directory: /home/petr/Projects/zedboard/wrk/axi_to_spi/tcl
+# Command line: vivado -mode tcl
+# Log file: /home/petr/Projects/zedboard/wrk/axi_to_spi/tcl/vivado.log
+# Journal file: /home/petr/Projects/zedboard/wrk/axi_to_spi/tcl/vivado.jou
+#-----------------------------------------------------------
+update_hw_firmware -reset
+open_hw
+connect_hw_server -url 192.168.1.150:3121
+update_hw_firmware -flash -reset
+disconnect_hw_server
+source axitest_hw_program.tcl
+start_gui
+dir
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_1"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_1"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes spi_valid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_1"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_1"}]
+source set_data_valid.tcl
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_1"}]]
+stop_gui
+quit

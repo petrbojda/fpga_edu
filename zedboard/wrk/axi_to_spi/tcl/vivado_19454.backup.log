@@ -1,0 +1,56 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Feb 18 01:13:17 2019
+# Process ID: 19454
+# Current directory: /home/petr/Projects/zedboard/wrk/axitest_v10/tcl
+# Command line: vivado -mode tcl
+# Log file: /home/petr/Projects/zedboard/wrk/axitest_v10/tcl/vivado.log
+# Journal file: /home/petr/Projects/zedboard/wrk/axitest_v10/tcl/vivado.jou
+#-----------------------------------------------------------
+source axitest_hw_program.tcl
+# open_hw
+# connect_hw_server -url 192.168.1.150:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:192.168.1.150:3121
+# current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/AAo1BIUq0]
+# set_property PARAM.FREQUENCY 40000000 [get_hw_targets */xilinx_tcf/Xilinx/AAo1BIUq0]
+# open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target 192.168.1.150:3121/xilinx_tcf/Xilinx/AAo1BIUq0
+# set_property PROGRAM.FILE {../vivado_axitest/_output/axitest.bit} [lindex [get_hw_devices] 1]
+# set_property PROBES.FILE {../vivado_axitest/_output/axitest.ltx} [lindex [get_hw_devices] 1]
+# current_hw_device [lindex [get_hw_devices] 1]
+# refresh_hw_device -update_hw_probes true [lindex [get_hw_devices] 1]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 JTAG AXI core(s).
+# program_hw_devices [lindex [get_hw_devices] 1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+# refresh_hw_device -update_hw_probes true [lindex [get_hw_devices] 1]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 JTAG AXI core(s).
+# reset_hw_axi [get_hw_axis hw_axi_1]
+can't read "outputDir": no such variable
+    while executing
+"write_checkpoint -force $outputDir/device_programmed"
+    (file "axitest_hw_program.tcl" line 24)
+start_gui
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes spi_ready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_1"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2019-Feb-18 01:14:48
+source set_data_valid.tcl
+# create_hw_axi_txn read_txn [get_hw_axis hw_axi_1] -force  -type read -address 00000000 -len 1
+# run_hw_axi [get_hw_axi_txns read_txn]
+INFO: [Labtoolstcl 44-481] READ DATA is: 00000000
+# create_hw_axi_txn write_txn [get_hw_axis hw_axi_1] -force -type write -address 00000000 -len 1 -data {000181f5}
+# run_hw_axi [get_hw_axi_txns write_txn]
+INFO: [Labtoolstcl 44-481] WRITE DATA is: 000181f5
+# create_hw_axi_txn write_txn [get_hw_axis hw_axi_1] -force -type write -address 00000000 -len 1 -data {000081f1}
+# run_hw_axi [get_hw_axi_txns write_txn]
+INFO: [Labtoolstcl 44-481] WRITE DATA is: 000081f1
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2019-Feb-18 01:15:09
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/petr/Projects/zedboard/wrk/axitest_v10/tcl/.Xil/Vivado-19454-petr-rugg/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+stop_gui
+quit
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 18 01:23:36 2019...

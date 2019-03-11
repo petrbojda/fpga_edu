@@ -1,0 +1,34 @@
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.STD_LOGIC_ARITH.all;
+use IEEE.STD_LOGIC_UNSIGNED.all;
+
+
+entity dividerXbit is
+  generic (
+    COUNTER_WIDTH : integer := 24
+    );
+  port (
+    clk : in  std_logic;
+    O   : out std_logic);
+end dividerXbit;
+
+architecture Behavioral of dividerXbit is
+
+  signal register_div : std_logic_vector(COUNTER_WIDTH-1 downto 0) := (others => '0');
+
+begin
+
+
+  process(clk)
+  begin
+    if rising_edge(clk) then
+      register_div <= register_div + '1';
+    end if;
+  end process;
+
+  O <= register_div(COUNTER_WIDTH-1);
+
+end Behavioral;

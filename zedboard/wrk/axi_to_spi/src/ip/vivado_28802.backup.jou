@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Feb 14 12:04:06 2019
+# Process ID: 28802
+# Current directory: /home/petr/Projects/zedboard/wrk/axitest/src/ip
+# Command line: vivado
+# Log file: /home/petr/Projects/zedboard/wrk/axitest/src/ip/vivado.log
+# Journal file: /home/petr/Projects/zedboard/wrk/axitest/src/ip/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/petr/Projects/zedboard/wrk/axitest/src/ip/managed_ip_project/managed_ip_project.xpr

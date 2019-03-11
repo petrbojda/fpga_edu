@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Feb 17 18:24:47 2019
+# Process ID: 24224
+# Current directory: /home/petr/Projects/zedboard/wrk/axitest_v10
+# Command line: vivado
+# Log file: /home/petr/Projects/zedboard/wrk/axitest_v10/vivado.log
+# Journal file: /home/petr/Projects/zedboard/wrk/axitest_v10/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_hw
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/media/petr/fld_0/xilinx/Vivado/2018.2/data/ip'.
+open_hw: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 6171.133 ; gain = 182.000 ; free physical = 3006 ; free virtual = 6801
+connect_hw_server -url 192.168.1.150:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:192.168.1.150:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/AAo1BIUq0]
+set_property PARAM.FREQUENCY 12000000 [get_hw_targets */xilinx_tcf/Xilinx/AAo1BIUq0]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target 192.168.1.150:3121/xilinx_tcf/Xilinx/AAo1BIUq0
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 JTAG AXI core(s).
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 17 18:27:44 2019...

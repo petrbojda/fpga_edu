@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Feb 14 10:51:04 2019
+# Process ID: 27568
+# Current directory: /home/petr/Projects/zedboard/wrk/axitest/src/ip
+# Command line: vivado
+# Log file: /home/petr/Projects/zedboard/wrk/axitest/src/ip/vivado.log
+# Journal file: /home/petr/Projects/zedboard/wrk/axitest/src/ip/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/petr/Projects/zedboard/wrk/axitest/src/ip/managed_ip_project/managed_ip_project.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/petr/Projects/ip_cst_repo_xil'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/media/petr/fld_0/xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 6164.105 ; gain = 149.859 ; free physical = 2261 ; free virtual = 6725
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 14 11:16:22 2019...

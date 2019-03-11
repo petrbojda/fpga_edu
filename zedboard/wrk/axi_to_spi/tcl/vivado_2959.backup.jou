@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Feb 18 00:33:39 2019
+# Process ID: 2959
+# Current directory: /home/petr/Projects/zedboard/wrk/axitest_v10/tcl
+# Command line: vivado -mode tcl
+# Log file: /home/petr/Projects/zedboard/wrk/axitest_v10/tcl/vivado.log
+# Journal file: /home/petr/Projects/zedboard/wrk/axitest_v10/tcl/vivado.jou
+#-----------------------------------------------------------
+source axitest_hw_program.tcl
+start_gui
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes spi_ready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_1"}]]
+source set_data_vlid.tcl
+source set_data_valid.tcl
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_1"}]
+source set_data_valid.tcl
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_1"}]]
+stop_gui
+quit

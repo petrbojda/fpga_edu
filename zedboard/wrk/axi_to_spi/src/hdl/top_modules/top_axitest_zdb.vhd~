@@ -1,0 +1,184 @@
+-------------------------------------------------------------------------------
+-- Title      : DAC test, Top Module
+-- Project    : URC Systems, A Custom Firmware Development
+-------------------------------------------------------------------------------
+-- File       : top_dactest_iz27.vhd
+-- Author     : Petr Bojda  <petr.bojda@urc-systems.cz>
+-- Company    : URC Systems, s.r.o.
+-- Created    : 2019-02-09
+-- Last update: 2019-02-14
+-- Platform   : 
+-- Standard   : VHDL'08
+-------------------------------------------------------------------------------
+-- Description: 
+-------------------------------------------------------------------------------
+-- Copyright (c) 2019 URC Systems, s.r.o.
+-------------------------------------------------------------------------------
+-- Revisions  :
+-- Date        Version  Author  Description
+-- 2019-02-09  1.0      petr    Created
+-------------------------------------------------------------------------------
+-- Target Devices:   Zynq7045 xc7z045ffg900-2
+--  Tool Versions:   Vivado 2018.2
+-------------------------------------------------------------------------------
+
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx leaf cells in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity top_axitest_zdb is
+  port (                                --Clock OSC 450MHz
+    GCLK    : in  std_logic;
+    ---------------------------------------------------------
+    --LED
+    LED_OUT : out std_logic_vector(7 downto 0)
+    );
+end top_axitest_zdb;
+
+architecture Behavi of top_axitest_zdb is
+
+  -- component jtag_axi_0 is
+  --   port (
+  --     aclk          : in  std_logic;
+  --     aresetn       : in  std_logic;
+  --     m_axi_awaddr  : out std_logic_vector (31 downto 0);
+  --     m_axi_awprot  : out std_logic_vector (2 downto 0);
+  --     m_axi_awvalid : out std_logic;
+  --     m_axi_awready : in  std_logic;
+  --     m_axi_wdata   : out std_logic_vector (31 downto 0);
+  --     m_axi_wstrb   : out std_logic_vector (3 downto 0);
+  --     m_axi_wvalid  : out std_logic;
+  --     m_axi_wready  : in  std_logic;
+  --     m_axi_bresp   : in  std_logic_vector (1 downto 0);
+  --     m_axi_bvalid  : in  std_logic;
+  --     m_axi_bready  : out std_logic;
+  --     m_axi_araddr  : out std_logic_vector (31 downto 0);
+  --     m_axi_arprot  : out std_logic_vector (2 downto 0);
+  --     m_axi_arvalid : out std_logic;
+  --     m_axi_arready : in  std_logic;
+  --     m_axi_rdata   : in  std_logic_vector (31 downto 0);
+  --     m_axi_rresp   : in  std_logic_vector (1 downto 0);
+  --     m_axi_rvalid  : in  std_logic;
+  --     m_axi_rready  : out std_logic);
+  -- end component jtag_axi_0;
+
+  -- component axi_four_reg_0 is
+  --   port (
+  --     s_axi_awaddr  : in  std_logic_vector (3 downto 0);
+  --     s_axi_awprot  : in  std_logic_vector (2 downto 0);
+  --     s_axi_awvalid : in  std_logic;
+  --     s_axi_awready : out std_logic;
+  --     s_axi_wdata   : in  std_logic_vector (31 downto 0);
+  --     s_axi_wstrb   : in  std_logic_vector (3 downto 0);
+  --     s_axi_wvalid  : in  std_logic;
+  --     s_axi_wready  : out std_logic;
+  --     s_axi_bresp   : out std_logic_vector (1 downto 0);
+  --     s_axi_bvalid  : out std_logic;
+  --     s_axi_bready  : in  std_logic;
+  --     s_axi_araddr  : in  std_logic_vector (3 downto 0);
+  --     s_axi_arprot  : in  std_logic_vector (2 downto 0);
+  --     s_axi_arvalid : in  std_logic;
+  --     s_axi_arready : out std_logic;
+  --     s_axi_rdata   : out std_logic_vector (31 downto 0);
+  --     s_axi_rresp   : out std_logic_vector (1 downto 0);
+  --     s_axi_rvalid  : out std_logic;
+  --     s_axi_rready  : in  std_logic;
+  --     s_axi_aclk    : in  std_logic;
+  --     s_axi_aresetn : in  std_logic);
+  -- end component axi_four_reg_0;
+  
+  signal axi_awaddr  : std_logic_vector (31 downto 0);
+  signal axi_awprot  : std_logic_vector (2 downto 0);
+  signal axi_awvalid : std_logic;
+  signal axi_awready : std_logic;
+  signal axi_wdata   : std_logic_vector (31 downto 0);
+  signal axi_wstrb   : std_logic_vector (3 downto 0);
+  signal axi_wvalid  : std_logic;
+  signal axi_wready  : std_logic;
+  signal axi_bresp   : std_logic_vector (1 downto 0);
+  signal axi_bvalid  : std_logic;
+  signal axi_bready  : std_logic;
+  signal axi_araddr  : std_logic_vector (31 downto 0);
+  signal axi_arprot  : std_logic_vector (2 downto 0);
+  signal axi_arvalid : std_logic;
+  signal axi_arready : std_logic;
+  signal axi_rdata   : std_logic_vector (31 downto 0);
+  signal axi_rresp   : std_logic_vector (1 downto 0);
+  signal axi_rvalid  : std_logic;
+  signal axi_rready  : std_logic;
+  signal axi_aclk    : std_logic;
+  signal axi_aresetn : std_logic;
+
+  signal resetn : std_logic := '1';
+
+
+begin
+
+  axi_four_reg_v1_0_int1 : entity work.axi_four_reg_0
+    -- generic map (
+    --   C_S_AXI_DATA_WIDTH => C_S_AXI_DATA_WIDTH,
+    --   C_S_AXI_ADDR_WIDTH => C_S_AXI_ADDR_WIDTH)
+    port map (
+      paralel_reg_out  => LED_OUT,
+      s_axi_aclk       => GCLK,                    --  1 
+      s_axi_aresetn    => resetn,                  --  2 
+      s_axi_awaddr     => axi_awaddr(3 downto 0),  --  3 
+      s_axi_awprot     => axi_awprot,              --  4 
+      s_axi_awvalid    => axi_awvalid,             --  5 
+      s_axi_awready    => axi_awready,             --  6 
+      s_axi_wdata      => axi_wdata,               --  7 
+      s_axi_wstrb      => axi_wstrb,               --  8 
+      s_axi_wvalid     => axi_wvalid,              --  9 
+      s_axi_wready     => axi_wready,              -- 10 
+      s_axi_bresp      => axi_bresp,               -- 11 
+      s_axi_bvalid     => axi_bvalid,              -- 12 
+      s_axi_bready     => axi_bready,              -- 13 
+      s_axi_araddr     => axi_araddr(3 downto 0),  -- 14 
+      s_axi_arprot     => axi_arprot,              -- 15 
+      s_axi_arvalid    => axi_arvalid,             -- 16 
+      s_axi_arready    => axi_arready,             -- 17 
+      s_axi_rdata      => axi_rdata,               -- 18 
+      s_axi_rresp      => axi_rresp,               -- 19 
+      s_axi_rvalid     => axi_rvalid,              -- 20 
+      s_axi_rready     => axi_rready);             -- 21 
+
+  your_instance_name : entity work.jtag_axi_0
+    port map (
+      aclk          => GCLK,            --  1
+      aresetn       => resetn,          --  2
+      m_axi_awaddr  => axi_awaddr,      --  3
+      m_axi_awprot  => axi_awprot,      --  4
+      m_axi_awvalid => axi_awvalid,     --  5
+      m_axi_awready => axi_awready,     --  6
+      m_axi_wdata   => axi_wdata,       --  7
+      m_axi_wstrb   => axi_wstrb,       --  8
+      m_axi_wvalid  => axi_wvalid,      --  9
+      m_axi_wready  => axi_wready,      -- 10
+      m_axi_bresp   => axi_bresp,       -- 11
+      m_axi_bvalid  => axi_bvalid,      -- 12
+      m_axi_bready  => axi_bready,      -- 13
+      m_axi_araddr  => axi_araddr,      -- 14
+      m_axi_arprot  => axi_arprot,      -- 15
+      m_axi_arvalid => axi_arvalid,     -- 16
+      m_axi_arready => axi_arready,     -- 17
+      m_axi_rdata   => axi_rdata,       -- 18
+      m_axi_rresp   => axi_rresp,       -- 19
+      m_axi_rvalid  => axi_rvalid,      -- 20
+      m_axi_rready  => axi_rready       -- 21
+      );
+
+
+
+end Behavi;
+
+
