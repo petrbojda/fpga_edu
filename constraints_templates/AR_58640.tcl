@@ -12,13 +12,13 @@
 # the same clock, and a new data is captured half a clock
 # cycle after being launched
 #
-# input      _______________________________                                  ________
+# dest       _______________________________                                  ________
 # clock    _|                               |________________________________|     
-#           |                               |
-#           |-> (trco_min+trce_dly_min)     |-> (tfco_min+trce_dly_min)
-#           |-----> (trco_max+trce_dly_max) |-----> (tfco_max+trce_dly_max)
-#          ____    ____________________________    ____________________________    ___
-# data     ____XXXX__________Rise_Data_________XXXX__________Fall_Data_________XXXX___
+#                                           |                                |
+#            (trce_dly_max+tsu_f) <---------| (trce_dly_max+tsu_r) <---------|
+#                   (trce_dly_min-thd_f) <--| (trce_max+trce_dly_max)
+#                                ________                           ___
+# data     XXXXXXXXXXXXXXXXXXXXXX__Data__XXXXXXXXXXXXXXXXXXXXXXXXXX__Data_________XXXX___
 #
 
 set input_clock     <clock_name>;   # Name of input clock
