@@ -1,0 +1,10 @@
+vhdl xil_defaultlib  \
+"/home/petr/Projects/fpga/zedboard/wrk/ps_systems/src/ip/system/ip/system_processing_system7_0_0/system_processing_system7_0_0_sim_netlist.vhdl" \
+"../../../bd/system/ip/system_axi_gpio_0_0/sim/system_axi_gpio_0_0.vhd" \
+"../../../bd/system/ip/system_axi_gpio_1_0/sim/system_axi_gpio_1_0.vhd" \
+"/home/petr/Projects/fpga/zedboard/wrk/ps_systems/src/ip/system/ip/system_xbar_0/system_xbar_0_sim_netlist.vhdl" \
+"/home/petr/Projects/fpga/zedboard/wrk/ps_systems/src/ip/system/ip/system_auto_pc_0/system_auto_pc_0_sim_netlist.vhdl" \
+"../../../bd/system/ip/system_rst_ps7_0_100M_0/sim/system_rst_ps7_0_100M_0.vhd" \
+"../../../bd/system/sim/system.vhd" \
+
+nosort
