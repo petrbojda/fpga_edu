@@ -1,0 +1,8 @@
+05:26:56 **** Auto Build of configuration Debug for project zedboard_first ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+
+05:26:57 Build Finished (took 71ms)
+

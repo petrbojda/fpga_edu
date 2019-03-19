@@ -1,0 +1,351 @@
+
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+
+
+package adc_to_udp_pck is
+
+-----------------------------------------------------------------------------
+-- Data Type definitions
+-----------------------------------------------------------------------------
+
+  type gmii_tx_type is record
+    txd : std_logic_vector(7 downto 0);
+    en  : std_logic;
+    er  : std_logic;
+  end record;
+  type gmii_rx_type is record
+    rxd : std_logic_vector(7 downto 0);
+    dv  : std_logic;
+    er  : std_logic;
+  end record;
+
+  
+  type gmii_tx_array_type is array (natural range <>) of gmii_tx_type;
+  type gmii_rx_array_type is array (natural range <>) of gmii_rx_type;
+
+  subtype pcs_conf_type is std_logic_vector(4 downto 0);
+  subtype pcs_stat_type is std_logic_vector(15 downto 0);
+
+  type pcs_conf_array_type is array (natural range <>) of pcs_conf_type;
+  type pcs_stat_array_type is array (natural range <>) of pcs_stat_type;
+
+  
+  type axis_m2s_type is record
+    tdata    : std_logic_vector(7 downto 0);
+    tvalid   : std_logic;
+    tlast    : std_logic;
+    tuser    : std_logic_vector(0 downto 0);
+    rd_count : std_logic_vector(31 downto 0);
+  end record;
+  type axis_s2m_type is record
+    tready : std_logic;
+  end record;
+
+  type axis_m2s_array_type is array (natural range <>) of axis_m2s_type;
+  type axis_s2m_array_type is array (natural range <>) of axis_s2m_type;
+
+ subtype usr_id_type is std_logic_vector(15 downto 0);
+  type usr_id_array_type is array (natural range <>) of usr_id_type;
+  subtype udp_port_type is std_logic_vector(15 downto 0);
+  type udp_port_array_type is array (natural range <>) of udp_port_type;
+
+  subtype mac_addr_type is std_logic_vector(47 downto 0);
+  subtype ip_addr_type is std_logic_vector(31 downto 0);
+  type mac_addr_array_type is array (natural range <>) of mac_addr_type;
+  type ip_addr_array_type is array (natural range <>) of ip_addr_type;
+
+
+  subtype adc_data_type is std_logic_vector(7 downto 0);
+  type adc_data_array_type is array (natural range <>) of adc_data_type;
+
+  
+  type data_src_fsm_type is (DS_IDLE, DS_DATA);
+  type data_src_fsm_array_type is array (natural range <>) of data_src_fsm_type;
+
+-----------------------------------------------------------------------------
+-- Constants
+-----------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+-- Components
+-------------------------------------------------------------------------------
+  -- Master component containing shared logic
+  component gig_ethernet_pcs_pma_1
+    port (
+      gtrefclk_p             : in  std_logic;
+      gtrefclk_n             : in  std_logic;
+      gtrefclk_out           : out std_logic;
+      gtrefclk_bufg_out      : out std_logic;
+      txn                    : out std_logic;
+      txp                    : out std_logic;
+      rxn                    : in  std_logic;
+      rxp                    : in  std_logic;
+      independent_clock_bufg : in  std_logic;
+      userclk_out            : out std_logic;
+      userclk2_out           : out std_logic;
+      rxuserclk_out          : out std_logic;
+      rxuserclk2_out         : out std_logic;
+      resetdone              : out std_logic;
+      pma_reset_out          : out std_logic;
+      mmcm_locked_out        : out std_logic;
+      gmii_txd               : in  std_logic_vector(7 downto 0);
+      gmii_tx_en             : in  std_logic;
+      gmii_tx_er             : in  std_logic;
+      gmii_rxd               : out std_logic_vector(7 downto 0);
+      gmii_rx_dv             : out std_logic;
+      gmii_rx_er             : out std_logic;
+      gmii_isolate           : out std_logic;
+      configuration_vector   : in  std_logic_vector(4 downto 0);
+      an_interrupt           : out std_logic;
+      an_adv_config_vector   : in  std_logic_vector(15 downto 0);
+      an_restart_config      : in  std_logic;
+      status_vector          : out std_logic_vector(15 downto 0);
+      reset                  : in  std_logic;
+      signal_detect          : in  std_logic;
+      gt0_qplloutclk_out     : out std_logic;
+      gt0_qplloutrefclk_out  : out std_logic;
+
+      -- gt debug ports
+      gt0_rxchariscomma_out    : out std_logic_vector(1 downto 0);
+      gt0_rxcharisk_out        : out std_logic_vector(1 downto 0);
+      gt0_rxbyteisaligned_out  : out std_logic;
+      gt0_rxbyterealign_out    : out std_logic;
+      gt0_rxcommadet_out       : out std_logic;
+      gt0_txpolarity_in        : in  std_logic;
+      gt0_txdiffctrl_in        : in  std_logic_vector(3 downto 0);
+      gt0_txpostcursor_in      : in  std_logic_vector(4 downto 0);
+      gt0_txprecursor_in       : in  std_logic_vector(4 downto 0);
+      gt0_rxpolarity_in        : in  std_logic;
+      gt0_txinhibit_in         : in  std_logic;
+      gt0_txprbssel_in         : in  std_logic_vector(2 downto 0);
+      gt0_txprbsforceerr_in    : in  std_logic;
+      gt0_rxprbscntreset_in    : in  std_logic;
+      gt0_rxprbserr_out        : out std_logic;
+      gt0_rxprbssel_in         : in  std_logic_vector(2 downto 0);
+      gt0_loopback_in          : in  std_logic_vector(2 downto 0);
+      gt0_txresetdone_out      : out std_logic;
+      gt0_rxresetdone_out      : out std_logic;
+      gt0_rxdisperr_out        : out std_logic_vector(1 downto 0);
+      gt0_txbufstatus_out      : out std_logic_vector(1 downto 0);
+      gt0_rxnotintable_out     : out std_logic_vector(1 downto 0);
+      gt0_eyescanreset_in      : in  std_logic;
+      gt0_eyescandataerror_out : out std_logic;
+      gt0_eyescantrigger_in    : in  std_logic;
+      gt0_rxcdrhold_in         : in  std_logic;
+      gt0_rxpmareset_in        : in  std_logic;
+      gt0_txpmareset_in        : in  std_logic;
+      gt0_rxpcsreset_in        : in  std_logic;
+      gt0_txpcsreset_in        : in  std_logic;
+      gt0_rxbufreset_in        : in  std_logic;
+      gt0_rxbufstatus_out      : out std_logic_vector(2 downto 0);
+      gt0_rxdfelpmreset_in     : in  std_logic;
+      gt0_rxdfeagcovrden_in    : in  std_logic;
+      gt0_rxlpmen_in           : in  std_logic;
+      gt0_rxmonitorout_out     : out std_logic_vector(6 downto 0);
+      gt0_rxmonitorsel_in      : in  std_logic_vector(1 downto 0);
+      gt0_drpaddr_in           : in  std_logic_vector(8 downto 0);
+      gt0_drpclk_in            : in  std_logic;
+      gt0_drpdi_in             : in  std_logic_vector(15 downto 0);
+      gt0_drpdo_out            : out std_logic_vector(15 downto 0);
+      gt0_drpen_in             : in  std_logic;
+      gt0_drprdy_out           : out std_logic;
+      gt0_drpwe_in             : in  std_logic;
+      gt0_dmonitorout_out      : out std_logic_vector(7 downto 0)
+      );
+  end component;
+
+  -- Slave component without slave logic
+  component gig_ethernet_pcs_pma_0
+    port (
+      gtrefclk_bufg          : in  std_logic;
+      gtrefclk               : in  std_logic;
+      txn                    : out std_logic;
+      txp                    : out std_logic;
+      rxn                    : in  std_logic;
+      rxp                    : in  std_logic;
+      independent_clock_bufg : in  std_logic;
+      txoutclk               : out std_logic;
+      rxoutclk               : out std_logic;
+      resetdone              : out std_logic;
+      cplllock               : out std_logic;
+      mmcm_reset             : out std_logic;
+      userclk                : in  std_logic;
+      userclk2               : in  std_logic;
+      pma_reset              : in  std_logic;
+      mmcm_locked            : in  std_logic;
+      rxuserclk              : in  std_logic;
+      rxuserclk2             : in  std_logic;
+      gmii_txd               : in  std_logic_vector(7 downto 0);
+      gmii_tx_en             : in  std_logic;
+      gmii_tx_er             : in  std_logic;
+      gmii_rxd               : out std_logic_vector(7 downto 0);
+      gmii_rx_dv             : out std_logic;
+      gmii_rx_er             : out std_logic;
+      gmii_isolate           : out std_logic;
+      configuration_vector   : in  std_logic_vector(4 downto 0);
+      an_interrupt           : out std_logic;
+      an_adv_config_vector   : in  std_logic_vector(15 downto 0);
+      an_restart_config      : in  std_logic;
+      status_vector          : out std_logic_vector(15 downto 0);
+      reset                  : in  std_logic;
+      signal_detect          : in  std_logic;
+      gt0_qplloutclk_in      : in  std_logic;
+      gt0_qplloutrefclk_in   : in  std_logic;
+
+      -- gt debug ports
+      gt0_rxchariscomma_out    : out std_logic_vector(1 downto 0);
+      gt0_rxcharisk_out        : out std_logic_vector(1 downto 0);
+      gt0_rxbyteisaligned_out  : out std_logic;
+      gt0_rxbyterealign_out    : out std_logic;
+      gt0_rxcommadet_out       : out std_logic;
+      gt0_txpolarity_in        : in  std_logic;
+      gt0_txdiffctrl_in        : in  std_logic_vector(3 downto 0);
+      gt0_txpostcursor_in      : in  std_logic_vector(4 downto 0);
+      gt0_txprecursor_in       : in  std_logic_vector(4 downto 0);
+      gt0_rxpolarity_in        : in  std_logic;
+      gt0_txinhibit_in         : in  std_logic;
+      gt0_txprbssel_in         : in  std_logic_vector(2 downto 0);
+      gt0_txprbsforceerr_in    : in  std_logic;
+      gt0_rxprbscntreset_in    : in  std_logic;
+      gt0_rxprbserr_out        : out std_logic;
+      gt0_rxprbssel_in         : in  std_logic_vector(2 downto 0);
+      gt0_loopback_in          : in  std_logic_vector(2 downto 0);
+      gt0_txresetdone_out      : out std_logic;
+      gt0_rxresetdone_out      : out std_logic;
+      gt0_rxdisperr_out        : out std_logic_vector(1 downto 0);
+      gt0_txbufstatus_out      : out std_logic_vector(1 downto 0);
+      gt0_rxnotintable_out     : out std_logic_vector(1 downto 0);
+      gt0_eyescanreset_in      : in  std_logic;
+      gt0_eyescandataerror_out : out std_logic;
+      gt0_eyescantrigger_in    : in  std_logic;
+      gt0_rxcdrhold_in         : in  std_logic;
+      gt0_rxpmareset_in        : in  std_logic;
+      gt0_txpmareset_in        : in  std_logic;
+      gt0_rxpcsreset_in        : in  std_logic;
+      gt0_txpcsreset_in        : in  std_logic;
+      gt0_rxbufreset_in        : in  std_logic;
+      gt0_rxbufstatus_out      : out std_logic_vector(2 downto 0);
+      gt0_rxdfelpmreset_in     : in  std_logic;
+      gt0_rxdfeagcovrden_in    : in  std_logic;
+      gt0_rxlpmen_in           : in  std_logic;
+      gt0_rxmonitorout_out     : out std_logic_vector(6 downto 0);
+      gt0_rxmonitorsel_in      : in  std_logic_vector(1 downto 0);
+      gt0_drpaddr_in           : in  std_logic_vector(8 downto 0);
+      gt0_drpclk_in            : in  std_logic;
+      gt0_drpdi_in             : in  std_logic_vector(15 downto 0);
+      gt0_drpdo_out            : out std_logic_vector(15 downto 0);
+      gt0_drpen_in             : in  std_logic;
+      gt0_drprdy_out           : out std_logic;
+      gt0_drpwe_in             : in  std_logic;
+      gt0_dmonitorout_out      : out std_logic_vector(7 downto 0)
+      );
+  end component;
+
+  component adc_axis_fifo
+    port (
+      s_axis_aresetn     : in  std_logic;
+     -- m_axis_aresetn     : in  std_logic;
+      s_axis_aclk        : in  std_logic;
+      s_axis_tvalid      : in  std_logic;
+      s_axis_tready      : out std_logic;
+      s_axis_tdata       : in  std_logic_vector(7 downto 0);
+      m_axis_aclk        : in  std_logic;
+      m_axis_tvalid      : out std_logic;
+      m_axis_tready      : in  std_logic;
+      m_axis_tdata       : out std_logic_vector(7 downto 0);
+      --axis_data_count    : out std_logic_vector(31 downto 0);
+      axis_wr_data_count : out std_logic_vector(31 downto 0);
+      axis_rd_data_count : out std_logic_vector(31 downto 0)
+      );
+  end component;
+
+
+  component tri_mode_ethernet_mac_0
+    port (
+      gtx_clk                 : in  std_logic;
+      glbl_rstn               : in  std_logic;
+      rx_axi_rstn             : in  std_logic;
+      tx_axi_rstn             : in  std_logic;
+      rx_statistics_vector    : out std_logic_vector(27 downto 0);
+      rx_statistics_valid     : out std_logic;
+      rx_mac_aclk             : out std_logic;
+      rx_reset                : out std_logic;
+      rx_axis_mac_tdata       : out std_logic_vector(7 downto 0);
+      rx_axis_mac_tvalid      : out std_logic;
+      rx_axis_mac_tlast       : out std_logic;
+      rx_axis_mac_tuser       : out std_logic;
+      tx_ifg_delay            : in  std_logic_vector(7 downto 0);
+      tx_statistics_vector    : out std_logic_vector(31 downto 0);
+      tx_statistics_valid     : out std_logic;
+      tx_mac_aclk             : out std_logic;
+      tx_reset                : out std_logic;
+      tx_axis_mac_tdata       : in  std_logic_vector(7 downto 0);
+      tx_axis_mac_tvalid      : in  std_logic;
+      tx_axis_mac_tlast       : in  std_logic;
+      tx_axis_mac_tuser       : in  std_logic_vector(0 downto 0);
+      tx_axis_mac_tready      : out std_logic;
+      pause_req               : in  std_logic;
+      pause_val               : in  std_logic_vector(15 downto 0);
+      speedis100              : out std_logic;
+      speedis10100            : out std_logic;
+      gmii_txd                : out std_logic_vector(7 downto 0);
+      gmii_tx_en              : out std_logic;
+      gmii_tx_er              : out std_logic;
+      gmii_rxd                : in  std_logic_vector(7 downto 0);
+      gmii_rx_dv              : in  std_logic;
+      gmii_rx_er              : in  std_logic;
+      rx_configuration_vector : in  std_logic_vector(79 downto 0);
+      tx_configuration_vector : in  std_logic_vector(79 downto 0)
+      );
+  end component;
+
+  component ila_signal_tester port (
+    clk    : in std_logic;
+    probe0 : in std_logic_vector(11 downto 0);
+    probe1 : in std_logic_vector(11 downto 0);
+    probe2 : in std_logic_vector(11 downto 0);
+    probe3 : in std_logic_vector(11 downto 0)
+    );
+  end component;
+
+  
+end adc_to_udp_pck;
+
+package body adc_to_udp_pck is
+
+-------------------------------------------------------------------------------
+-- Functions
+-------------------------------------------------------------------------------
+  
+  function vec_and(vec : std_logic_vector) return std_logic is
+  begin
+    if unsigned(not vec) = 0 then
+      return '1';
+    else
+      return '0';
+    end if;
+  end function;
+
+  function vec_to_len(vec : std_logic_vector; len : integer)
+    return std_logic_vector is
+    variable res : std_logic_vector(len - 1 downto 0) := (others => '0');
+  begin
+    res(vec'length - 1 downto 0) := vec;
+    return res;
+  end function;
+
+  function vec_xor(vec : std_logic_vector) return std_logic is
+    variable ret : std_logic := '0';
+  begin
+    for i in vec'range loop
+      ret := ret xor vec(i);
+    end loop;
+    return ret;
+  end function;
+
+  
+end adc_to_udp_pck;
