@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../bd/xvc_system/ip/xvc_system_rst_processing_system7_0_100M_0/sim/xvc_system_rst_processing_system7_0_100M_0.vhd" \
+"../../../bd/xvc_system/sim/xvc_system.vhd" \
+
+nosort

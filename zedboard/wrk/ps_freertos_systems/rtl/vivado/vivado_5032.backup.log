@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Mar 20 05:58:09 2019
+# Process ID: 5032
+# Current directory: /home/petr/Projects/fpga/zedboard/wrk/ps_freertos_systems/rtl/vivado
+# Command line: vivado
+# Log file: /home/petr/Projects/fpga/zedboard/wrk/ps_freertos_systems/rtl/vivado/vivado.log
+# Journal file: /home/petr/Projects/fpga/zedboard/wrk/ps_freertos_systems/rtl/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/petr/Projects/fpga/zedboard/wrk/ps_freertos_systems/rtl/vivado/vivado.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 6469.625 ; gain = 153.965 ; free physical = 1780 ; free virtual = 6397
+update_compile_order -fileset sources_1
+open_bd_design {/home/petr/Projects/fpga/zedboard/wrk/ps_freertos_systems/rtl/src/ip/proc_system/proc_system.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_1
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Successfully read diagram <proc_system> from BD file </home/petr/Projects/fpga/zedboard/wrk/ps_freertos_systems/rtl/src/ip/proc_system/proc_system.bd>
+open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 6654.082 ; gain = 0.000 ; free physical = 1536 ; free virtual = 6225
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 21 06:36:01 2019...

@@ -1,0 +1,28 @@
+18:03:51 INFO  : Processing command line option -hwspec C:/xapp/xvc/target_artix_files/project_1/project_1.sdk/mini_system_wrapper.hdf.
+18:03:57 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+18:17:53 INFO  : Processing command line option -hwspec C:/xapp/xvc/target_artix_files/project_1/project_1.sdk/mini_system_wrapper.hdf.
+18:17:54 INFO  : Checking for hwspec changes in the project mini_system_wrapper_hw_platform_0.
+18:17:55 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+18:19:15 INFO  : Inferring section assignments and sizes from elf file: C:\xapp\xvc\target_artix_files\project_1\project_1.sdk\hello_world\Debug\hello_world.elf
+18:19:21 INFO  : Successfully generated C:\xapp\xvc\target_artix_files\project_1\project_1.sdk\hello_world\src\lscript.ld.
+18:19:21 INFO  : Applying linker script to all configurations of project hello_world.
+18:19:21 INFO  : Setting rebuild state to true for all configurations of project hello_world.
+18:31:56 INFO  : Processing command line option -hwspec C:/xapp/xvc/target_artix_files/project_1/project_1.sdk/mini_system_wrapper.hdf.
+18:31:57 INFO  : Checking for hwspec changes in the project mini_system_wrapper_hw_platform_0.
+18:31:57 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1422235741168,  Project:1422229558731
+18:31:57 INFO  : The hardware specification for project 'mini_system_wrapper_hw_platform_0' is different from C:/xapp/xvc/target_artix_files/project_1/project_1.sdk/mini_system_wrapper.hdf.
+18:31:57 INFO  : Copied contents of C:/xapp/xvc/target_artix_files/project_1/project_1.sdk/mini_system_wrapper.hdf into \mini_system_wrapper_hw_platform_0\system.hdf.
+18:31:57 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+18:31:57 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+18:31:58 INFO  : 
+18:32:04 INFO  : Updating hardware inferred compiler options for hello_world.
+18:32:04 INFO  : Clearing existing target manager status.
+18:32:05 INFO  : Closing and re-opening the MSS file of ther project hello_world_bsp
+18:32:05 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+18:39:22 ERROR : FPGA Configuration failed.Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not connected to the host
+
+18:39:43 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

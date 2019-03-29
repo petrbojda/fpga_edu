@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Mar 23 22:44:01 2019
+# Process ID: 26721
+# Current directory: /home/petr/Projects/fpga/xapp1251/hw/project
+# Command line: vivado -mode tcl
+# Log file: /home/petr/Projects/fpga/xapp1251/hw/project/vivado.log
+# Journal file: /home/petr/Projects/fpga/xapp1251/hw/project/vivado.jou
+#-----------------------------------------------------------
+get_board_parts
+alpha-data.com:adm-pcie-7v3:part0:1.0 alpha-data.com:adm-pcie-7v3:part0:1.1 alpha-data.com:adm-pcie3-ku3:part0:1.0 digilentinc.com:zedboard:part0:1.0 em.avnet.com:microzed_7010:part0:1.1 em.avnet.com:microzed_7020:part0:1.1 em.avnet.com:zed:part0:0.9 em.avnet.com:zed:part0:1.0 em.avnet.com:zed:part0:1.1 em.avnet.com:zed:part0:1.2 em.avnet.com:zed:part0:1.3 em.avnet.com:zed:part0:1.4 redpitaya.com:redpitaya:part0:1.1 xilinx.com:ac701:part0:1.0 xilinx.com:ac701:part0:1.1 xilinx.com:ac701:part0:1.2 xilinx.com:ac701:part0:1.3 xilinx.com:ac701:part0:1.4 xilinx.com:au200:part0:1.0 xilinx.com:au250:part0:1.0 xilinx.com:kc705:part0:0.9 xilinx.com:kc705:part0:1.0 xilinx.com:kc705:part0:1.1 xilinx.com:kc705:part0:1.2 xilinx.com:kc705:part0:1.3 xilinx.com:kc705:part0:1.4 xilinx.com:kc705:part0:1.5 xilinx.com:kc705:part0:1.6 xilinx.com:kcu105:part0:1.0 xilinx.com:kcu105:part0:1.1 xilinx.com:kcu105:part0:1.2 xilinx.com:kcu105:part0:1.3 xilinx.com:kcu105:part0:1.4 xilinx.com:kcu105:part0:1.5 xilinx.com:kcu116:part0:1.0 xilinx.com:kcu116:part0:1.1 xilinx.com:kcu116:part0:1.2 xilinx.com:kcu116:part0:1.3 xilinx.com:kcu1500:part0:1.0 xilinx.com:kcu1500:part0:1.1 xilinx.com:pico_m505:part0:1.0 xilinx.com:vc707:part0:1.0 xilinx.com:vc707:part0:1.1 xilinx.com:vc707:part0:1.2 xilinx.com:vc707:part0:1.3 xilinx.com:vc707:part0:1.4 xilinx.com:vc709:part0:1.0 xilinx.com:vc709:part0:1.1 xilinx.com:vc709:part0:1.2 xilinx.com:vc709:part0:1.3 xilinx.com:vc709:part0:1.4 xilinx.com:vc709:part0:1.5 xilinx.com:vc709:part0:1.6 xilinx.com:vc709:part0:1.7 xilinx.com:vc709:part0:1.8 xilinx.com:vcu108:part0:1.1 xilinx.com:vcu108:part0:1.2 xilinx.com:vcu108:part0:1.3 xilinx.com:vcu108:part0:1.4 xilinx.com:vcu108:part0:1.5 xilinx.com:vcu110:part0:1.1 xilinx.com:vcu110:part0:1.2 xilinx.com:vcu110:part0:1.3 xilinx.com:vcu110:part0:1.4 xilinx.com:vcu118:part0:2.0 xilinx.com:vcu1525:part0:1.0 xilinx.com:vcu1525:part0:1.1 xilinx.com:vcu1525:part0:1.2 xilinx.com:zc702:part0:1.0 xilinx.com:zc702:part0:1.1 xilinx.com:zc702:part0:1.2 xilinx.com:zc702:part0:1.3 xilinx.com:zc702:part0:1.4 xilinx.com:zc706:part0:1.0 xilinx.com:zc706:part0:1.1 xilinx.com:zc706:part0:1.2 xilinx.com:zc706:part0:1.3 xilinx.com:zc706:part0:1.4 xilinx.com:zcu102:part0:3.1 xilinx.com:zcu102:part0:3.2 xilinx.com:zcu104:part0:1.0 xilinx.com:zcu104:part0:1.1 xilinx.com:zcu106:part0:2.0 xilinx.com:zcu106:part0:2.1 xilinx.com:zcu106:part0:2.2 xilinx.com:zcu106:part0:2.3 xilinx.com:zcu111:part0:1.1
+quit
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 23 22:45:45 2019...

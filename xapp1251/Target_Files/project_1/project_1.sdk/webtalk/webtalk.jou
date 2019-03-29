@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Webtalk v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 17:18:21 MST 2014
+# 
+# Start of session at: Sun Jan 25 18:05:49 2015
+# Process ID: 11704
+# Log file: C:/xapp/xvc/target_artix_files/project_1/project_1.sdk/webtalk/webtalk.log
+# Journal file: C:/xapp/xvc/target_artix_files/project_1/project_1.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

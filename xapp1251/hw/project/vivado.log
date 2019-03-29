@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Mar 29 14:55:25 2019
+# Process ID: 3969
+# Current directory: /home/petr/Projects/fpga/xapp1251/hw/project
+# Command line: vivado
+# Log file: /home/petr/Projects/fpga/xapp1251/hw/project/vivado.log
+# Journal file: /home/petr/Projects/fpga/xapp1251/hw/project/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/petr/Projects/fpga/xapp1251/hw/project/xvc_mz/xvc_mz.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/petr/Projects/fpga/xapp1251/hw/source/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.3/data/ip'.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 29 14:56:51 2019...

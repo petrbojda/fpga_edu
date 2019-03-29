@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2014.4 (64-bit)              -->
+<!--                                                         -->
+<!-- Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.   -->
+
+<Project Version="7" Minor="2" Path="C:/xapp/xvc/target_artix_files/project_1/project_1.xpr">
+  <DefaultLaunch Dir="$PRUNDIR"/>
+  <Configuration>
+    <Option Name="Id" Val="fd8541e44366444f9cd3253d5d54f377"/>
+    <Option Name="Part" Val="xc7a200tfbg676-2"/>
+    <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
+    <Option Name="BoardPart" Val="xilinx.com:ac701:part0:1.1"/>
+    <Option Name="ActiveSimSet" Val="sim_1"/>
+    <Option Name="DefaultLib" Val="xil_defaultlib"/>
+  </Configuration>
+  <FileSets Version="1" Minor="31">
+    <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+      <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sources_1/bd/mini_system/mini_system.bd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+        <CompFileExtendedInfo CompFileName="mini_system.bd" FileRelPathName="mini_system_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="mini_system.bd" FileRelPathName="mini_system.bmm"/>
+        <CompFileExtendedInfo CompFileName="mini_system.bd" FileRelPathName="hdl/mini_system.v"/>
+        <CompFileExtendedInfo CompFileName="mini_system.bd" FileRelPathName="ip/mini_system_axi_uartlite_0_0/mini_system_axi_uartlite_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="mini_system.bd" FileRelPathName="ip/mini_system_rst_clk_wiz_1_100M_0/mini_system_rst_clk_wiz_1_100M_0.xci"/>
+        <CompFileExtendedInfo CompFileName="mini_system.bd" FileRelPathName="ip/mini_system_clk_wiz_1_0/mini_system_clk_wiz_1_0.xci"/>
+        <CompFileExtendedInfo CompFileName="mini_system.bd" FileRelPathName="ip/mini_system_microblaze_0_axi_periph_0/mini_system_microblaze_0_axi_periph_0.xci"/>
+        <CompFileExtendedInfo CompFileName="mini_system.bd" FileRelPathName="ip/mini_system_mdm_1_0/mini_system_mdm_1_0.xci"/>
+        <CompFileExtendedInfo CompFileName="mini_system.bd" FileRelPathName="ip/mini_system_lmb_bram_0/mini_system_lmb_bram_0.xci"/>
+        <CompFileExtendedInfo CompFileName="mini_system.bd" FileRelPathName="ip/mini_system_ilmb_bram_if_cntlr_0/mini_system_ilmb_bram_if_cntlr_0.xci"/>
+        <CompFileExtendedInfo CompFileName="mini_system.bd" FileRelPathName="ip/mini_system_ilmb_v10_0/mini_system_ilmb_v10_0.xci"/>
+        <CompFileExtendedInfo CompFileName="mini_system.bd" FileRelPathName="ip/mini_system_dlmb_v10_0/mini_system_dlmb_v10_0.xci"/>
+        <CompFileExtendedInfo CompFileName="mini_system.bd" FileRelPathName="ip/mini_system_microblaze_0_0/mini_system_microblaze_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="mini_system.bd" FileRelPathName="ip/mini_system_dlmb_bram_if_cntlr_0/mini_system_dlmb_bram_if_cntlr_0.xci"/>
+        <CompFileExtendedInfo CompFileName="mini_system.bd" FileRelPathName="hw_handoff/mini_system_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="mini_system.bd" FileRelPathName="hw_handoff/mini_system.hwh"/>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/mini_system/hdl/mini_system_wrapper.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="mini_system_wrapper"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+      <Filter Type="Constrs"/>
+      <File Path="$PSRCDIR/constrs_1/new/mini_system_wrapper.xdc">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/mini_system_wrapper.xdc"/>
+        <Option Name="ConstrsType" Val="XDC"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
+      <Filter Type="Srcs"/>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="mini_system_wrapper"/>
+        <Option Name="TopLib" Val="xil_defaultlib"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+      </Config>
+    </FileSet>
+  </FileSets>
+  <Simulators>
+    <Simulator Name="XSim">
+      <Option Name="Description" Val="Vivado Simulator"/>
+      <Option Name="CompiledLib" Val="0"/>
+    </Simulator>
+    <Simulator Name="ModelSim">
+      <Option Name="Description" Val="QuestaSim/ModelSim Simulator"/>
+    </Simulator>
+    <Simulator Name="IES">
+      <Option Name="Description" Val="Incisive Enterprise Simulator (IES)"/>
+    </Simulator>
+    <Simulator Name="VCS">
+      <Option Name="Description" Val="Verilog Compiler Simulator (VCS)"/>
+    </Simulator>
+  </Simulators>
+  <Runs Version="1" Minor="9">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a200tfbg676-2" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" State="current">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+    </Run>
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a200tfbg676-2" ConstrsSet="constrs_1" Description="Vivado Implementation Defaults" State="current" SynthRun="synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+    </Run>
+  </Runs>
+  <HWSession Dir="hw_1" File="hw.xml"/>
+</Project>

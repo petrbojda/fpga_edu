@@ -1,0 +1,8 @@
+14:30:44 **** Auto Build of configuration Debug for project freertos_lwip_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+
+14:30:44 Build Finished (took 165ms)
+

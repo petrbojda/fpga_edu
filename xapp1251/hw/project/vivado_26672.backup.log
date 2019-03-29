@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Mar 23 22:42:38 2019
+# Process ID: 26672
+# Current directory: /home/petr/Projects/fpga/xapp1251/hw/project
+# Command line: vivado -mode batch -source xvc_build_project_20144.tcl
+# Log file: /home/petr/Projects/fpga/xapp1251/hw/project/vivado.log
+# Journal file: /home/petr/Projects/fpga/xapp1251/hw/project/vivado.jou
+#-----------------------------------------------------------
+source xvc_build_project_20144.tcl
+# create_project xvc_mz ./xvc_mz -part xc7z010clg400-1 -force
+# set proj_dir [get_property directory [current_project]]
+# set_property board_part em.avnet.com:microzed:part0:1.0 [current_project]
+ERROR: [Board 49-71] The board_part definition was not found for em.avnet.com:microzed:part0:1.0. The project's board_part property was not set, but the project's part property was set to xc7z010clg400-1. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command. Check if board.repoPaths parameter is set and the board_part is installed from the tcl app store.
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 23 22:42:45 2019...

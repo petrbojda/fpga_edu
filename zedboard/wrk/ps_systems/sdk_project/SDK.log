@@ -53,3 +53,11 @@ con
 
 05:06:03 INFO  : Launch script is exported to file '/home/petr/Projects/fpga/zedboard/wrk/ps_systems/sdk_project/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_zedbrd_frst.elf_on_local.tcl'
 06:42:35 INFO  : Disconnected from the channel tcfchan#1.
+14:59:00 INFO  : Registering command handlers for SDK TCF services
+14:59:01 INFO  : Launching XSCT server: xsct -n -interactive /home/petr/Projects/fpga/zedboard/wrk/ps_systems/sdk_project/temp_xsdb_launch_script.tcl
+14:59:04 INFO  : XSCT server has started successfully.
+14:59:04 INFO  : Successfully done setting XSCT server connection channel  
+14:59:04 INFO  : Successfully done setting SDK workspace  
+14:59:29 INFO  : Invoking Bootgen: bootgen -image zedbrd_frst.bif -arch zynq -o /home/petr/Projects/fpga/zedboard/wrk/ps_systems/sdk_project/zedbrd_frst/bootimage/BOOT.bin
+14:59:29 INFO  : Creating new bif file /home/petr/Projects/fpga/zedboard/wrk/ps_systems/sdk_project/zedbrd_frst/bootimage/zedbrd_frst.bif
+14:59:31 INFO  : Bootgen command execution is done.

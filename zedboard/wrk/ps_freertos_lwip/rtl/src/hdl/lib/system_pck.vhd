@@ -1,0 +1,89 @@
+
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+
+
+package system_pck is
+
+
+-------------------------------------------------------------------------------
+-- Data Type definitions
+-------------------------------------------------------------------------------
+
+  
+-------------------------------------------------------------------------------
+-- Constants
+-------------------------------------------------------------------------------
+
+
+  
+-------------------------------------------------------------------------------
+-- Components
+-------------------------------------------------------------------------------
+  component ps_system_wrapper is
+    port (
+      DDR_addr          : inout STD_LOGIC_VECTOR (14 downto 0);
+      DDR_ba            : inout STD_LOGIC_VECTOR (2 downto 0);
+      DDR_cas_n         : inout STD_LOGIC;
+      DDR_ck_n          : inout STD_LOGIC;
+      DDR_ck_p          : inout STD_LOGIC;
+      DDR_cke           : inout STD_LOGIC;
+      DDR_cs_n          : inout STD_LOGIC;
+      DDR_dm            : inout STD_LOGIC_VECTOR (3 downto 0);
+      DDR_dq            : inout STD_LOGIC_VECTOR (31 downto 0);
+      DDR_dqs_n         : inout STD_LOGIC_VECTOR (3 downto 0);
+      DDR_dqs_p         : inout STD_LOGIC_VECTOR (3 downto 0);
+      DDR_odt           : inout STD_LOGIC;
+      DDR_ras_n         : inout STD_LOGIC;
+      DDR_reset_n       : inout STD_LOGIC;
+      DDR_we_n          : inout STD_LOGIC;
+      FIXED_IO_ddr_vrn  : inout STD_LOGIC;
+      FIXED_IO_ddr_vrp  : inout STD_LOGIC;
+      FIXED_IO_mio      : inout STD_LOGIC_VECTOR (53 downto 0);
+      FIXED_IO_ps_clk   : inout STD_LOGIC;
+      FIXED_IO_ps_porb  : inout STD_LOGIC;
+      FIXED_IO_ps_srstb : inout STD_LOGIC;
+      btns_5bits_tri_i  : in    STD_LOGIC_VECTOR (4 downto 0);
+      leds_8bits_tri_io : inout STD_LOGIC_VECTOR (7 downto 0);
+      sws_8bits_tri_i   : in    STD_LOGIC_VECTOR (7 downto 0));
+  end component ps_system_wrapper;
+  
+end system_pck;
+
+package body system_pck is
+
+-------------------------------------------------------------------------------
+-- Functions
+-------------------------------------------------------------------------------
+  
+  function vec_and(vec : std_logic_vector) return std_logic is
+  begin
+    if unsigned(not vec) = 0 then
+      return '1';
+    else
+      return '0';
+    end if;
+  end function;
+
+  function vec_to_len(vec : std_logic_vector; len : integer)
+    return std_logic_vector is
+    variable res : std_logic_vector(len - 1 downto 0) := (others => '0');
+  begin
+    res(vec'length - 1 downto 0) := vec;
+    return res;
+  end function;
+
+  function vec_xor(vec : std_logic_vector) return std_logic is
+    variable ret : std_logic := '0';
+  begin
+    for i in vec'range loop
+      ret := ret xor vec(i);
+    end loop;
+    return ret;
+  end function;
+
+  
+end system_pck;

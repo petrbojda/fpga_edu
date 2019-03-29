@@ -1,0 +1,113 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Mar 29 14:45:25 2019
+# Process ID: 3182
+# Current directory: /home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/vivado
+# Command line: vivado
+# Log file: /home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/vivado.log
+# Journal file: /home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project smart_jtag_cable . -part xc7z020clg484-1
+set_property board_part digilentinc.com:zedboard:part0:1.0 [current_project]
+set_property target_language VHDL [current_project]
+set_property simulator_language VHDL [current_project]
+add_files -norecurse {/home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/hdl/top_module.vhd /home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/hdl/spi_engine.vhd /home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/hdl/axi_to_jtag_engine.vhd /home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/hdl/jtag_engine.vhd /home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/hdl/lib/smart_jtag_cable_pck.vhd /home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/hdl/jtag_cable_comm.vhd}
+add_files -fileset constrs_1 -norecurse /home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/const/top_pins.xdc
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+create_bd_design -dir {/home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip} "p_system"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+create_bd_cell -type module -reference jtag_cable_comm jtag_cable_comm_0
+set_property location {1.5 634 -10} [get_bd_cells jtag_cable_comm_0]
+set_property location {2 632 81} [get_bd_cells jtag_cable_comm_0]
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/jtag_cable_comm_0/s_axi} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins jtag_cable_comm_0/s_axi]
+regenerate_bd_layout -routing
+regenerate_bd_layout
+regenerate_bd_layout -routing
+delete_bd_objs [get_bd_nets rst_ps7_0_100M_peripheral_aresetn]
+connect_bd_net [get_bd_pins rst_ps7_0_100M/interconnect_aresetn] [get_bd_pins ps7_0_axi_periph/ARESETN]
+connect_bd_net [get_bd_pins rst_ps7_0_100M/peripheral_aresetn] [get_bd_pins ps7_0_axi_periph/S00_ARESETN]
+connect_bd_net [get_bd_pins rst_ps7_0_100M/peripheral_aresetn] [get_bd_pins ps7_0_axi_periph/M00_ARESETN]
+connect_bd_net [get_bd_pins rst_ps7_0_100M/peripheral_aresetn] [get_bd_pins jtag_cable_comm_0/s_axi_aresetn]
+regenerate_bd_layout
+regenerate_bd_layout -routing
+regenerate_bd_layout
+create_bd_port -dir I jtag_tdo
+connect_bd_net [get_bd_ports jtag_tdo] [get_bd_pins jtag_cable_comm_0/jtag_tdo]
+create_bd_port -dir O jtag_tck
+connect_bd_net [get_bd_ports jtag_tck] [get_bd_pins jtag_cable_comm_0/jtag_tck]
+create_bd_port -dir O jtag_tms
+startgroup
+connect_bd_net [get_bd_ports jtag_tms] [get_bd_pins jtag_cable_comm_0/jtag_tms]
+endgroup
+set_property location {1105 170} [get_bd_ports jtag_tck]
+create_bd_port -dir O jtag_tdi
+set_property location {1096 214} [get_bd_ports jtag_tdi]
+startgroup
+connect_bd_net [get_bd_ports jtag_tdi] [get_bd_pins jtag_cable_comm_0/jtag_tdi]
+endgroup
+save_bd_design
+regenerate_bd_layout
+regenerate_bd_layout -routing
+startgroup
+set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1}] [get_bd_cells processing_system7_0]
+endgroup
+validate_bd_design
+save_bd_design
+generate_target all [get_files  /home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/p_system.bd]
+catch { config_ip_cache -export [get_ips -all p_system_processing_system7_0_0] }
+catch { config_ip_cache -export [get_ips -all p_system_rst_ps7_0_100M_0] }
+catch { config_ip_cache -export [get_ips -all p_system_auto_pc_0] }
+export_ip_user_files -of_objects [get_files /home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/p_system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/p_system.bd]
+launch_runs -jobs 4 {p_system_processing_system7_0_0_synth_1 p_system_jtag_cable_comm_0_0_synth_1 p_system_rst_ps7_0_100M_0_synth_1 p_system_auto_pc_0_synth_1}
+export_simulation -of_objects [get_files /home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/p_system.bd] -directory /home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.ip_user_files/sim_scripts -ip_user_files_dir /home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.ip_user_files -ipstatic_source_dir /home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.cache/compile_simlib/modelsim} {questa=/home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.cache/compile_simlib/questa} {ies=/home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.cache/compile_simlib/ies} {xcelium=/home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.cache/compile_simlib/xcelium} {vcs=/home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.cache/compile_simlib/vcs} {riviera=/home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files /home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/p_system.bd] -top
+add_files -norecurse /home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/hdl/p_system_wrapper.vhd
+update_compile_order -fileset sources_1
+set_property file_type {VHDL 2008} [get_files  /home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/hdl/jtag_cable_comm.vhd]
+set_property file_type {VHDL 2008} [get_files  /home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/hdl/axi_to_jtag_engine.vhd]
+set_property file_type {VHDL 2008} [get_files  /home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/hdl/jtag_engine.vhd]
+update_compile_order -fileset sources_1
+update_module_reference p_system_jtag_cable_comm_0_0
+validate_bd_design -force
+update_compile_order -fileset sources_1
+reset_target all [get_files  /home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/p_system.bd]
+export_ip_user_files -of_objects  [get_files  /home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/p_system.bd] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset sources_1] /home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/p_system.bd]
+set_property file_type VHDL [get_files  /home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/hdl/jtag_cable_comm.vhd]
+generate_target all [get_files  /home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/p_system.bd]
+catch { config_ip_cache -export [get_ips -all p_system_processing_system7_0_0] }
+catch { config_ip_cache -export [get_ips -all p_system_rst_ps7_0_100M_0] }
+catch { config_ip_cache -export [get_ips -all p_system_auto_pc_0] }
+export_ip_user_files -of_objects [get_files /home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/p_system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/p_system.bd]
+launch_runs -jobs 4 p_system_jtag_cable_comm_0_0_synth_1
+export_simulation -of_objects [get_files /home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/p_system.bd] -directory /home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.ip_user_files/sim_scripts -ip_user_files_dir /home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.ip_user_files -ipstatic_source_dir /home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.cache/compile_simlib/modelsim} {questa=/home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.cache/compile_simlib/questa} {ies=/home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.cache/compile_simlib/ies} {xcelium=/home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.cache/compile_simlib/xcelium} {vcs=/home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.cache/compile_simlib/vcs} {riviera=/home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run impl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top_module [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
