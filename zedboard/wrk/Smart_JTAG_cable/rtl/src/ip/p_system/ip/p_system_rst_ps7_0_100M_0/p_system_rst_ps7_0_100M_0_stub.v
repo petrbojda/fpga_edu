@@ -1,8 +1,8 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-// Date        : Fri Mar 29 15:06:41 2019
-// Host        : petr-dell running 64-bit Ubuntu 18.04.2 LTS
+// Date        : Sun Mar 31 15:09:40 2019
+// Host        : petr-dell running 64-bit Red Hat Enterprise Linux Server release 7.5 (Maipo)
 // Command     : write_verilog -force -mode synth_stub -rename_top p_system_rst_ps7_0_100M_0 -prefix
 //               p_system_rst_ps7_0_100M_0_ p_system_rst_ps7_0_100M_0_stub.v
 // Design      : p_system_rst_ps7_0_100M_0

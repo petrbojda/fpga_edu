@@ -1,0 +1,78 @@
+/include/ "system-conf.dtsi"
+/ {
+};
+
+/* QSPI PHY */
+&qspi {
+    #address-cells = <1>;
+    #size-cells = <0>;
+    status = "okay";
+    flash0: flash@0 {
+        compatible = "jedec,spi-nor";
+        reg = <0x0>;
+        #address-cells = <1>;
+        #size-cells = <1>;
+    };
+};
+
+/* USB PHY */
+
+/{
+    usb_phy0: usb_phy@0 {
+        compatible = "ulpi-phy";
+        #phy-cells = <0>;
+        reg = <0xe0002000 0x1000>;
+        view-port = <0x0170>;
+        drv-vbus;
+    };
+};
+
+&usb0 {
+    dr_mode = "host";
+    //dr_mode = "peripheral";
+    usb-phy = <&usb_phy0>;
+};
+
+/* I2C1 */
+
+&i2c1 {
+    #address-cells = <1>;
+    #size-cells = <0>;
+
+    i2cmux0: i2cmux@70  {
+        compatible = "nxp,pca9544";
+        #address-cells = <1>;
+        #size-cells = <0>;
+        reg = <0x70>;
+
+
+        i2c1@0 {
+            #address-cells = <1>;
+            #size-cells = <0>;
+            reg = <0>;
+
+            id_eeprom@50 {
+                compatible = "atmel,24c32";
+                reg = <0x50>;
+            };
+
+        };
+        i2c1@1 {    // Display Interface Connector
+            #address-cells = <1>;
+            #size-cells = <0>;
+            reg = <1>;
+        };
+        i2c1@2 {    // HDMI Interface Connector
+            #address-cells = <1>;
+            #size-cells = <0>;
+            reg = <2>;
+        };
+        i2c1@3 {    // Camera Interface Connector
+            #address-cells = <1>;
+            #size-cells = <0>;
+            reg = <3>;
+        };
+    };
+
+};
+

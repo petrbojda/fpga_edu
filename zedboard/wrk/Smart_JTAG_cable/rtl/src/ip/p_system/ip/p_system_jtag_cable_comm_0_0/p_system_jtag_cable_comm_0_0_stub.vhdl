@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
--- Date        : Fri Mar 29 17:46:18 2019
--- Host        : petr-dell running 64-bit Ubuntu 18.04.2 LTS
+-- Date        : Sun Mar 31 16:03:51 2019
+-- Host        : petr-dell running 64-bit Red Hat Enterprise Linux Server release 7.5 (Maipo)
 -- Command     : write_vhdl -force -mode synth_stub
---               /home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/ip/p_system_jtag_cable_comm_0_0/p_system_jtag_cable_comm_0_0_stub.vhdl
+--               /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/ip/p_system_jtag_cable_comm_0_0/p_system_jtag_cable_comm_0_0_stub.vhdl
 -- Design      : p_system_jtag_cable_comm_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg484-1

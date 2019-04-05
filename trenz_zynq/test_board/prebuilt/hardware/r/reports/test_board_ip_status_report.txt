@@ -1,0 +1,28 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Wed Jul 11 11:14:00 2018
+| Host         : PC02615 running 64-bit major release  (build 9200)
+| Command      : report_ip_status
+------------------------------------------------------------------------------------
+
+IP Status Summary
+
+1. Project IP Status
+--------------------
+Your project uses 1 IP. Some of these IP may have undergone changes in this release of the software. Please review the recommended actions.
+
+More information on the Xilinx versioning policy is available at www.xilinx.com.
+
+Project IP Instances
++-----------------------------+------------+---------------------+-----------+--------------------+---------+--------------+------------+----------------------+
+| Instance Name               | Status     | Recommendation      | Change    | IP Name            | IP      | New Version  | New        | Original Part        |
+|                             |            |                     | Log       |                    | Version |              | License    |                      |
++-----------------------------+------------+---------------------+-----------+--------------------+---------+--------------+------------+----------------------+
+| zsys_processing_system7_0_0 | Up-to-date | No changes required |  *(1)     | ZYNQ7 Processing   | 5.5     | 5.5 (Rev. 6) | Included   | xc7z010clg225-1      |
+|                             |            |                     |           | System             | (Rev.   |              |            |                      |
+|                             |            |                     |           |                    | 6)      |              |            |                      |
++-----------------------------+------------+---------------------+-----------+--------------------+---------+--------------+------------+----------------------+
+*(1) c:/Xilinx/Vivado/2018.2/data/ip/xilinx/processing_system7_v5_5/doc/processing_system7_v5_5_changelog.txt
+
+

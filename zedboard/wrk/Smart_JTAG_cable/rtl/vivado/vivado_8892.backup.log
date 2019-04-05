@@ -1,0 +1,266 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Mar 31 15:05:34 2019
+# Process ID: 8892
+# Current directory: /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/vivado
+# Command line: vivado
+# Log file: /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/vivado.log
+# Journal file: /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.xpr
+INFO: [Project 1-313] Project file moved from '/home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/vivado' since last save.
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for digilentinc.com:zedboard:part0:1.0. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/xilinx/Vivado/2018.3/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'p_system.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+p_system_rst_ps7_0_100M_0
+p_system_processing_system7_0_0
+
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 6563.465 ; gain = 162.453 ; free physical = 2177 ; free virtual = 12324
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
+reset_property board_connections [get_projects smart_jtag_cable]
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
+reset_property board_connections [get_projects smart_jtag_cable]
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+open_bd_design {/home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/p_system.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:module_ref:jtag_cable_comm:1.0 - jtag_cable_comm_0
+Successfully read diagram <p_system> from BD file </home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/p_system.bd>
+open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 6723.961 ; gain = 66.461 ; free physical = 1839 ; free virtual = 12083
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {p_system_processing_system7_0_0 p_system_rst_ps7_0_100M_0}] -log ip_upgrade.log
+Upgrading '/home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/p_system.bd'
+INFO: [PS7-6] Configuring Board Preset part0. Please wait ......
+INFO: [IP_Flow 19-3420] Updated p_system_processing_system7_0_0 to use current project options
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [IP_Flow 19-3420] Updated p_system_rst_ps7_0_100M_0 to use current project options
+Wrote  : </home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/p_system.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 6756.574 ; gain = 29.973 ; free physical = 1811 ; free virtual = 12071
+export_ip_user_files -of_objects [get_ips {p_system_processing_system7_0_0 p_system_rst_ps7_0_100M_0}] -no_script -sync -force -quiet
+generate_target all [get_files  /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/p_system.bd]
+WARNING: [BD 41-927] Following properties on pin /jtag_cable_comm_0/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=p_system_processing_system7_0_0_FCLK_CLK0 
+Wrote  : </home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/p_system.bd> 
+VHDL Output written to : /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/synth/p_system.vhd
+VHDL Output written to : /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/sim/p_system.vhd
+VHDL Output written to : /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/hdl/p_system_wrapper.vhd
+WARNING: [IP_Flow 19-5160] IP 'p_system_processing_system7_0_0' detected simulation language mismatch. Simulation type 'rtl' does not support 'VHDL' outputs (see project's "simulator_language" property), delivering 'Any Language' outputs instead.
+WARNING: [IP_Flow 19-5160] IP 'p_system_processing_system7_0_0' detected simulation language mismatch. Simulation type 'tlm_dpi' does not support 'VHDL' outputs (see project's "simulator_language" property), delivering 'Any Language' outputs instead.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_cable_comm_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/ip/p_system_auto_pc_0/p_system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/hw_handoff/p_system.hwh
+Generated Block Design Tcl file /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/hw_handoff/p_system_bd.tcl
+Generated Hardware Definition File /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/synth/p_system.hwdef
+generate_target: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 6900.102 ; gain = 84.637 ; free physical = 1663 ; free virtual = 11969
+catch { config_ip_cache -export [get_ips -all p_system_processing_system7_0_0] }
+catch { config_ip_cache -export [get_ips -all p_system_rst_ps7_0_100M_0] }
+catch { config_ip_cache -export [get_ips -all p_system_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP p_system_auto_pc_0, cache-ID = 60c523c682fd8ebf; cache size = 1.900 MB.
+export_ip_user_files -of_objects [get_files /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/p_system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/p_system.bd]
+launch_runs -jobs 2 {p_system_processing_system7_0_0_synth_1 p_system_rst_ps7_0_100M_0_synth_1}
+[Sun Mar 31 15:09:06 2019] Launched p_system_processing_system7_0_0_synth_1, p_system_rst_ps7_0_100M_0_synth_1...
+Run output will be captured here:
+p_system_processing_system7_0_0_synth_1: /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.runs/p_system_processing_system7_0_0_synth_1/runme.log
+p_system_rst_ps7_0_100M_0_synth_1: /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.runs/p_system_rst_ps7_0_100M_0_synth_1/runme.log
+export_simulation -of_objects [get_files /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/p_system.bd] -directory /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.ip_user_files/sim_scripts -ip_user_files_dir /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.ip_user_files -ipstatic_source_dir /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.cache/compile_simlib/modelsim} {questa=/home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.cache/compile_simlib/questa} {ies=/home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.cache/compile_simlib/ies} {xcelium=/home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.cache/compile_simlib/xcelium} {vcs=/home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.cache/compile_simlib/vcs} {riviera=/home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_USB0_PERIPHERAL_ENABLE {0}] [get_bd_cells processing_system7_0]
+endgroup
+regenerate_bd_layout
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+validate_bd_design
+WARNING: [BD 41-927] Following properties on pin /jtag_cable_comm_0/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=p_system_processing_system7_0_0_FCLK_CLK0 
+reset_target all [get_files  /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/p_system.bd]
+export_ip_user_files -of_objects  [get_files  /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/p_system.bd] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset sources_1] /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/p_system.bd]
+generate_target all [get_files  /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/p_system.bd]
+INFO: [BD 41-1662] The design 'p_system.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : </home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/p_system.bd> 
+Wrote  : </home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/ui/bd_b5d6ce7e.ui> 
+VHDL Output written to : /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/synth/p_system.vhd
+VHDL Output written to : /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/sim/p_system.vhd
+VHDL Output written to : /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/hdl/p_system_wrapper.vhd
+WARNING: [IP_Flow 19-5160] IP 'p_system_processing_system7_0_0' detected simulation language mismatch. Simulation type 'rtl' does not support 'VHDL' outputs (see project's "simulator_language" property), delivering 'Any Language' outputs instead.
+WARNING: [IP_Flow 19-5160] IP 'p_system_processing_system7_0_0' detected simulation language mismatch. Simulation type 'tlm_dpi' does not support 'VHDL' outputs (see project's "simulator_language" property), delivering 'Any Language' outputs instead.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_cable_comm_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/ip/p_system_auto_pc_0/p_system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/hw_handoff/p_system.hwh
+Generated Block Design Tcl file /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/hw_handoff/p_system_bd.tcl
+Generated Hardware Definition File /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/synth/p_system.hwdef
+generate_target: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 7185.344 ; gain = 0.000 ; free physical = 520 ; free virtual = 10950
+catch { config_ip_cache -export [get_ips -all p_system_processing_system7_0_0] }
+catch { config_ip_cache -export [get_ips -all p_system_rst_ps7_0_100M_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP p_system_rst_ps7_0_100M_0, cache-ID = a3ef2f0e2406c06e; cache size = 2.689 MB.
+catch { config_ip_cache -export [get_ips -all p_system_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP p_system_auto_pc_0, cache-ID = 60c523c682fd8ebf; cache size = 2.689 MB.
+export_ip_user_files -of_objects [get_files /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/p_system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/p_system.bd]
+launch_runs -jobs 2 {p_system_processing_system7_0_0_synth_1 p_system_jtag_cable_comm_0_0_synth_1}
+[Sun Mar 31 16:03:14 2019] Launched p_system_processing_system7_0_0_synth_1, p_system_jtag_cable_comm_0_0_synth_1...
+Run output will be captured here:
+p_system_processing_system7_0_0_synth_1: /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.runs/p_system_processing_system7_0_0_synth_1/runme.log
+p_system_jtag_cable_comm_0_0_synth_1: /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.runs/p_system_jtag_cable_comm_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/p_system.bd] -directory /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.ip_user_files/sim_scripts -ip_user_files_dir /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.ip_user_files -ipstatic_source_dir /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.cache/compile_simlib/modelsim} {questa=/home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.cache/compile_simlib/questa} {ies=/home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.cache/compile_simlib/ies} {xcelium=/home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.cache/compile_simlib/xcelium} {vcs=/home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.cache/compile_simlib/vcs} {riviera=/home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+[Sun Mar 31 16:04:13 2019] Launched synth_1...
+Run output will be captured here: /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.runs/synth_1/runme.log
+[Sun Mar 31 16:04:13 2019] Launched impl_1...
+Run output will be captured here: /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sun Mar 31 16:06:52 2019] Launched impl_1...
+Run output will be captured here: /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.23 . Memory (MB): peak = 7854.062 ; gain = 0.000 ; free physical = 879 ; free virtual = 10153
+Restored from archive | CPU: 0.230000 secs | Memory: 1.739189 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.23 . Memory (MB): peak = 7854.062 ; gain = 0.000 ; free physical = 879 ; free virtual = 10153
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7854.062 ; gain = 0.000 ; free physical = 881 ; free virtual = 10155
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Common 17-14] Message 'Designutils 20-3303' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+open_run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 8035.344 ; gain = 767.922 ; free physical = 777 ; free virtual = 10070
+write_xdc -force /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/constrs_1_exp.xdc
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8035.344 ; gain = 0.000 ; free physical = 795 ; free virtual = 10090
+file mkdir /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.sdk
+file copy -force /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.runs/impl_1/top_module.sysdef /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/sdk/project/top_module.hdf
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 31 16:22:09 2019...

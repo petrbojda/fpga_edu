@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Apr  2 04:22:29 2019
+# Process ID: 24070
+# Current directory: /home/petr/Projects/fpga_edu/zedboard/wrk
+# Command line: vivado -mode tcl
+# Log file: /home/petr/Projects/fpga_edu/zedboard/wrk/vivado.log
+# Journal file: /home/petr/Projects/fpga_edu/zedboard/wrk/vivado.jou
+#-----------------------------------------------------------
+connect_hw_server
+open_hw
+connect_hw_server
+open_hw_target -xvc_url 192.168.1.157:2542
+open_hw_target -xvc_url 192.168.1.157:3121
+quit

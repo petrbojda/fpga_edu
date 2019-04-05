@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
--- Date        : Fri Mar 29 17:46:18 2019
--- Host        : petr-dell running 64-bit Ubuntu 18.04.2 LTS
+-- Date        : Sun Mar 31 16:03:52 2019
+-- Host        : petr-dell running 64-bit Red Hat Enterprise Linux Server release 7.5 (Maipo)
 -- Command     : write_vhdl -force -mode funcsim
---               /home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/ip/p_system_jtag_cable_comm_0_0/p_system_jtag_cable_comm_0_0_sim_netlist.vhdl
+--               /home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/ip/p_system_jtag_cable_comm_0_0/p_system_jtag_cable_comm_0_0_sim_netlist.vhdl
 -- Design      : p_system_jtag_cable_comm_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.

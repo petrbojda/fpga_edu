@@ -6,7 +6,7 @@
 -- Author     : Petr Bojda  <petr.bojda@urc-systems.cz>
 -- Company    : URC Systems, s.r.o.
 -- Created    : 2019-02-17
--- Last update: 2019-03-26
+-- Last update: 2019-04-01
 -- Platform   : 
 -- Standard   : VHDL'08
 -------------------------------------------------------------------------------
@@ -291,4 +291,4 @@ begin  -- architecture behavi
   spi_ss          <= spi_ss_select_buff;
 
 end architecture behavi;
-
+ 

@@ -2,14 +2,25 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun Mar 24 20:16:04 2019
-# Process ID: 29878
-# Current directory: /home/petr/Projects/fpga/zedboard/wrk/ps_systems/zedbrd_frst
+# Start of session at: Sat Mar 30 09:28:26 2019
+# Process ID: 6451
+# Current directory: /home/petr/Projects/fpga_edu/zedboard/wrk/ps_systems/zedbrd_frst
 # Command line: vivado
-# Log file: /home/petr/Projects/fpga/zedboard/wrk/ps_systems/zedbrd_frst/vivado.log
-# Journal file: /home/petr/Projects/fpga/zedboard/wrk/ps_systems/zedbrd_frst/vivado.jou
+# Log file: /home/petr/Projects/fpga_edu/zedboard/wrk/ps_systems/zedbrd_frst/vivado.log
+# Journal file: /home/petr/Projects/fpga_edu/zedboard/wrk/ps_systems/zedbrd_frst/vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project /home/petr/Projects/fpga/zedboard/wrk/ps_systems/zedbrd_frst/zedbrd_frst.xpr
+open_project /home/petr/Projects/fpga_edu/zedboard/wrk/ps_systems/zedbrd_frst/zedbrd_frst.xpr
 update_compile_order -fileset sources_1
-open_bd_design {/home/petr/Projects/fpga/zedboard/wrk/ps_systems/src/ip/system/system.bd}
+create_run impl_2 -parent_run synth_1 -flow {Vivado Implementation 2018} -strategy {Vivado Implementation Defaults} -report_strategy {Vivado Implementation Default Reports}
+current_run [get_runs impl_2]
+set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
+reset_property board_connections [get_projects zedbrd_frst]
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+wait_on_run impl_2
+open_bd_design {/home/petr/Projects/fpga_edu/zedboard/wrk/ps_systems/src/ip/system/system.bd}
+open_hw
+connect_hw_server
+open_hw_target
+close_hw

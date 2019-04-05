@@ -14,31 +14,31 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 3764 
+INFO: Helper process launched with PID 21539 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1461.184 ; gain = 61.910 ; free physical = 3199 ; free virtual = 6864
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1538.719 ; gain = 69.902 ; free physical = 143 ; free virtual = 10106
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'p_system_jtag_cable_comm_0_0' [/home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/ip/p_system_jtag_cable_comm_0_0/synth/p_system_jtag_cable_comm_0_0.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'p_system_jtag_cable_comm_0_0' [/home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/ip/p_system_jtag_cable_comm_0_0/synth/p_system_jtag_cable_comm_0_0.vhd:86]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-3491] module 'jtag_cable_comm' declared at '/home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/hdl/jtag_cable_comm.vhd:5' bound to instance 'U0' of component 'jtag_cable_comm' [/home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/ip/p_system_jtag_cable_comm_0_0/synth/p_system_jtag_cable_comm_0_0.vhd:158]
-INFO: [Synth 8-638] synthesizing module 'jtag_cable_comm' [/home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/hdl/jtag_cable_comm.vhd:42]
+INFO: [Synth 8-3491] module 'jtag_cable_comm' declared at '/home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/hdl/jtag_cable_comm.vhd:5' bound to instance 'U0' of component 'jtag_cable_comm' [/home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/ip/p_system_jtag_cable_comm_0_0/synth/p_system_jtag_cable_comm_0_0.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'jtag_cable_comm' [/home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/hdl/jtag_cable_comm.vhd:42]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'axi_to_jtag_engine' [/home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/hdl/axi_to_jtag_engine.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'axi_to_jtag_engine' [/home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/hdl/axi_to_jtag_engine.vhd:45]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
-WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [/home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/hdl/axi_to_jtag_engine.vhd:192]
-INFO: [Synth 8-256] done synthesizing module 'axi_to_jtag_engine' (1#1) [/home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/hdl/axi_to_jtag_engine.vhd:45]
-INFO: [Synth 8-6157] synthesizing module 'jtag_engine' [/home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/hdl/jtag_engine.v:15]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [/home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/hdl/axi_to_jtag_engine.vhd:192]
+INFO: [Synth 8-256] done synthesizing module 'axi_to_jtag_engine' (1#1) [/home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/hdl/axi_to_jtag_engine.vhd:45]
+INFO: [Synth 8-6157] synthesizing module 'jtag_engine' [/home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/hdl/jtag_engine.v:15]
 	Parameter C_TCK_CLOCK_RATIO bound to: 8 - type: integer 
 	Parameter IDLE bound to: 3'b001 
 	Parameter TCKL bound to: 3'b010 
 	Parameter TCKH bound to: 3'b100 
-WARNING: [Synth 8-6014] Unused sequential element tdo_capture_reg was removed.  [/home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/hdl/jtag_engine.v:141]
-INFO: [Synth 8-6155] done synthesizing module 'jtag_engine' (2#1) [/home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/hdl/jtag_engine.v:15]
-INFO: [Synth 8-256] done synthesizing module 'jtag_cable_comm' (3#1) [/home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/hdl/jtag_cable_comm.vhd:42]
-INFO: [Synth 8-256] done synthesizing module 'p_system_jtag_cable_comm_0_0' (4#1) [/home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/ip/p_system_jtag_cable_comm_0_0/synth/p_system_jtag_cable_comm_0_0.vhd:86]
+WARNING: [Synth 8-6014] Unused sequential element tdo_capture_reg was removed.  [/home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/hdl/jtag_engine.v:141]
+INFO: [Synth 8-6155] done synthesizing module 'jtag_engine' (2#1) [/home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/hdl/jtag_engine.v:15]
+INFO: [Synth 8-256] done synthesizing module 'jtag_cable_comm' (3#1) [/home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/hdl/jtag_cable_comm.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'p_system_jtag_cable_comm_0_0' (4#1) [/home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/ip/p_system_jtag_cable_comm_0_0/synth/p_system_jtag_cable_comm_0_0.vhd:86]
 WARNING: [Synth 8-3331] design axi_to_jtag_engine has unconnected port S_AXI_AWPROT[2]
 WARNING: [Synth 8-3331] design axi_to_jtag_engine has unconnected port S_AXI_AWPROT[1]
 WARNING: [Synth 8-3331] design axi_to_jtag_engine has unconnected port S_AXI_AWPROT[0]
@@ -46,7 +46,7 @@ WARNING: [Synth 8-3331] design axi_to_jtag_engine has unconnected port S_AXI_ARP
 WARNING: [Synth 8-3331] design axi_to_jtag_engine has unconnected port S_AXI_ARPROT[1]
 WARNING: [Synth 8-3331] design axi_to_jtag_engine has unconnected port S_AXI_ARPROT[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1508.934 ; gain = 109.660 ; free physical = 3187 ; free virtual = 6855
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1585.477 ; gain = 116.660 ; free physical = 176 ; free virtual = 10069
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -59,10 +59,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1508.934 ; gain = 109.660 ; free physical = 3188 ; free virtual = 6855
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1585.477 ; gain = 116.660 ; free physical = 155 ; free virtual = 10049
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1508.934 ; gain = 109.660 ; free physical = 3188 ; free virtual = 6855
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1585.477 ; gain = 116.660 ; free physical = 155 ; free virtual = 10049
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -71,31 +71,31 @@ Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1836.938 ; gain = 0.000 ; free physical = 2939 ; free virtual = 6607
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1915.484 ; gain = 0.000 ; free physical = 139 ; free virtual = 9457
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1836.938 ; gain = 0.000 ; free physical = 2939 ; free virtual = 6607
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1915.484 ; gain = 0.000 ; free physical = 139 ; free virtual = 9457
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.13 . Memory (MB): peak = 1838.938 ; gain = 2.000 ; free physical = 2937 ; free virtual = 6605
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.18 . Memory (MB): peak = 1917.484 ; gain = 2.000 ; free physical = 138 ; free virtual = 9456
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1838.938 ; gain = 439.664 ; free physical = 3030 ; free virtual = 6697
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1917.484 ; gain = 448.668 ; free physical = 258 ; free virtual = 9597
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1838.938 ; gain = 439.664 ; free physical = 3030 ; free virtual = 6697
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1917.484 ; gain = 448.668 ; free physical = 258 ; free virtual = 9597
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1838.938 ; gain = 439.664 ; free physical = 3031 ; free virtual = 6699
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1917.484 ; gain = 448.668 ; free physical = 259 ; free virtual = 9599
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/src/hdl/jtag_engine.v:115]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/hdl/jtag_engine.v:115]
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'jtag_engine'
 INFO: [Synth 8-5546] ROM "tdo_buffer_reg[31]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "tck_pulse" won't be mapped to RAM because it is too sparse
@@ -144,7 +144,7 @@ INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address siz
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'jtag_engine'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1838.938 ; gain = 439.664 ; free physical = 3022 ; free virtual = 6690
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1917.488 ; gain = 448.672 ; free physical = 251 ; free virtual = 9591
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -241,7 +241,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/axi_t
 INFO: [Synth 8-3886] merging instance 'U0/axi_to_jtag_engine_1/axi_bresp_reg[0]' (FDRE) to 'U0/axi_to_jtag_engine_1/axi_bresp_reg[1]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/axi_to_jtag_engine_1/axi_bresp_reg[1] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1838.938 ; gain = 439.664 ; free physical = 3002 ; free virtual = 6674
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1917.488 ; gain = 448.672 ; free physical = 224 ; free virtual = 9574
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -253,13 +253,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1838.938 ; gain = 439.664 ; free physical = 2846 ; free virtual = 6519
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1917.488 ; gain = 448.672 ; free physical = 140 ; free virtual = 9377
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1838.938 ; gain = 439.664 ; free physical = 2846 ; free virtual = 6518
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1917.488 ; gain = 448.672 ; free physical = 140 ; free virtual = 9372
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -271,7 +271,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1846.945 ; gain = 447.672 ; free physical = 2873 ; free virtual = 6545
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1925.488 ; gain = 456.672 ; free physical = 142 ; free virtual = 9367
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -295,7 +295,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1846.945 ; gain = 447.672 ; free physical = 2872 ; free virtual = 6544
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1925.492 ; gain = 456.676 ; free physical = 137 ; free virtual = 9308
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -308,7 +308,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1846.945 ; gain = 447.672 ; free physical = 2872 ; free virtual = 6544
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1925.492 ; gain = 456.676 ; free physical = 136 ; free virtual = 9308
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -320,25 +320,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1846.945 ; gain = 447.672 ; free physical = 2872 ; free virtual = 6544
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1925.492 ; gain = 456.676 ; free physical = 139 ; free virtual = 9304
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1846.945 ; gain = 447.672 ; free physical = 2872 ; free virtual = 6544
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1925.492 ; gain = 456.676 ; free physical = 139 ; free virtual = 9304
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1846.945 ; gain = 447.672 ; free physical = 2871 ; free virtual = 6543
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1925.492 ; gain = 456.676 ; free physical = 136 ; free virtual = 9301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1846.945 ; gain = 447.672 ; free physical = 2871 ; free virtual = 6543
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1925.492 ; gain = 456.676 ; free physical = 136 ; free virtual = 9300
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -375,32 +375,32 @@ Report Instance Areas:
 |4     |    jtag_engine_i        |jtag_engine        |   323|
 +------+-------------------------+-------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1846.945 ; gain = 447.672 ; free physical = 2871 ; free virtual = 6543
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1925.492 ; gain = 456.676 ; free physical = 136 ; free virtual = 9300
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1846.945 ; gain = 117.668 ; free physical = 2928 ; free virtual = 6601
-Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1846.953 ; gain = 447.672 ; free physical = 2928 ; free virtual = 6601
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1925.492 ; gain = 124.668 ; free physical = 193 ; free virtual = 9358
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1925.496 ; gain = 456.676 ; free physical = 193 ; free virtual = 9358
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1846.953 ; gain = 0.000 ; free physical = 2867 ; free virtual = 6539
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1925.496 ; gain = 0.000 ; free physical = 138 ; free virtual = 9111
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 66 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1846.953 ; gain = 447.770 ; free physical = 2923 ; free virtual = 6595
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1846.953 ; gain = 0.000 ; free physical = 2923 ; free virtual = 6595
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1925.496 ; gain = 456.777 ; free physical = 192 ; free virtual = 9166
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1925.496 ; gain = 0.000 ; free physical = 192 ; free virtual = 9166
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint '/home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.runs/p_system_jtag_cable_comm_0_0_synth_1/p_system_jtag_cable_comm_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.runs/p_system_jtag_cable_comm_0_0_synth_1/p_system_jtag_cable_comm_0_0.dcp' has been generated.
 INFO: [Coretcl 2-1174] Renamed 3 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1870.957 ; gain = 0.000 ; free physical = 2913 ; free virtual = 6586
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1949.508 ; gain = 0.000 ; free physical = 186 ; free virtual = 9164
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint '/home/petr/Projects/fpga/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.runs/p_system_jtag_cable_comm_0_0_synth_1/p_system_jtag_cable_comm_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/vivado/smart_jtag_cable.runs/p_system_jtag_cable_comm_0_0_synth_1/p_system_jtag_cable_comm_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file p_system_jtag_cable_comm_0_0_utilization_synth.rpt -pb p_system_jtag_cable_comm_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Mar 29 17:46:18 2019...
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 31 16:03:52 2019...

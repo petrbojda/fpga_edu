@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date             : Fri Mar 29 17:48:08 2019
-| Host             : petr-dell running 64-bit Ubuntu 18.04.2 LTS
+| Date             : Sun Mar 31 16:06:08 2019
+| Host             : petr-dell running 64-bit Red Hat Enterprise Linux Server release 7.5 (Maipo)
 | Command          : report_power -file top_module_power_routed.rpt -pb top_module_power_summary_routed.pb -rpx top_module_power_routed.rpx
 | Design           : top_module
 | Device           : xc7z020clg484-1
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.683        |
+| Total On-Chip Power (W)  | 1.682        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 1.538        |
@@ -53,17 +53,17 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.004 |        3 |       --- |             --- |
-| Slice Logic             |     0.001 |     1795 |       --- |             --- |
+| Slice Logic             |     0.001 |     1794 |       --- |             --- |
 |   LUT as Logic          |     0.001 |      605 |     53200 |            1.14 |
 |   Register              |    <0.001 |      812 |    106400 |            0.76 |
 |   CARRY4                |    <0.001 |       20 |     13300 |            0.15 |
 |   LUT as Shift Register |    <0.001 |       60 |     17400 |            0.34 |
-|   Others                |     0.000 |      186 |       --- |             --- |
+|   Others                |     0.000 |      185 |       --- |             --- |
 | Signals                 |     0.002 |     1241 |       --- |             --- |
 | I/O                     |     0.001 |        4 |       200 |            2.00 |
 | PS7                     |     1.529 |        1 |       --- |             --- |
 | Static Power            |     0.144 |          |           |                 |
-| Total                   |     1.683 |          |           |                 |
+| Total                   |     1.682 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -150,10 +150,10 @@ Table of Contents
 | Name                       | Power (W) |
 +----------------------------+-----------+
 | top_module                 |     1.538 |
-|   p_system_wrapper_1       |     1.537 |
-|     p_system_i             |     1.537 |
+|   p_system_wrapper_1       |     1.536 |
+|     p_system_i             |     1.536 |
 |       jtag_cable_comm_0    |     0.003 |
-|       processing_system7_0 |     1.530 |
+|       processing_system7_0 |     1.529 |
 |       ps7_0_axi_periph     |     0.004 |
 +----------------------------+-----------+
 

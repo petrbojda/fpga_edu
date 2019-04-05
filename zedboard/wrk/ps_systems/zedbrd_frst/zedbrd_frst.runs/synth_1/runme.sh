@@ -7,20 +7,20 @@
 # 
 
 if [ -z "$PATH" ]; then
-  PATH=/opt/Xilinx/SDK/2018.3/bin:/opt/Xilinx/Vivado/2018.3/ids_lite/ISE/bin/lin64:/opt/Xilinx/Vivado/2018.3/bin
+  PATH=/opt/xilinx/SDK/2018.3/bin:/opt/xilinx/Vivado/2018.3/ids_lite/ISE/bin/lin64:/opt/xilinx/Vivado/2018.3/bin
 else
-  PATH=/opt/Xilinx/SDK/2018.3/bin:/opt/Xilinx/Vivado/2018.3/ids_lite/ISE/bin/lin64:/opt/Xilinx/Vivado/2018.3/bin:$PATH
+  PATH=/opt/xilinx/SDK/2018.3/bin:/opt/xilinx/Vivado/2018.3/ids_lite/ISE/bin/lin64:/opt/xilinx/Vivado/2018.3/bin:$PATH
 fi
 export PATH
 
 if [ -z "$LD_LIBRARY_PATH" ]; then
-  LD_LIBRARY_PATH=/opt/Xilinx/Vivado/2018.3/ids_lite/ISE/lib/lin64
+  LD_LIBRARY_PATH=/opt/xilinx/Vivado/2018.3/ids_lite/ISE/lib/lin64
 else
-  LD_LIBRARY_PATH=/opt/Xilinx/Vivado/2018.3/ids_lite/ISE/lib/lin64:$LD_LIBRARY_PATH
+  LD_LIBRARY_PATH=/opt/xilinx/Vivado/2018.3/ids_lite/ISE/lib/lin64:$LD_LIBRARY_PATH
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/petr/Projects/fpga/zedboard/wrk/ps_systems/zedbrd_frst/zedbrd_frst.runs/synth_1'
+HD_PWD='/home/petr/Projects/fpga_edu/zedboard/wrk/ps_systems/zedbrd_frst/zedbrd_frst.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

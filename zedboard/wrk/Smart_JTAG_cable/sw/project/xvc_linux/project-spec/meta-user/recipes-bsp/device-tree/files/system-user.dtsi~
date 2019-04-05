@@ -1,0 +1,10 @@
+/include/ "system-conf.dtsi"
+/ {
+    chosen {
+        bootargs = uio_pdrv_genirq.of_id=generic-uio";
+    };
+};
+  
+jtag_cable_comm_0 {
+    compatible = "generic-uio";
+};

@@ -1,0 +1,6 @@
+the_ROM_image:
+{
+    [bootloader]../../../software/m/zynq_fsbl.elf
+    ../../../hardware/m/test_board.bit
+    ../../../os/petalinux/default/u-boot.elf
+}

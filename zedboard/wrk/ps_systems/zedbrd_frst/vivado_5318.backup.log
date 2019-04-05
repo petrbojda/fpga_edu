@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Mar 30 09:20:42 2019
+# Process ID: 5318
+# Current directory: /home/petr/Projects/fpga_edu/zedboard/wrk/ps_systems/zedbrd_frst
+# Command line: vivado
+# Log file: /home/petr/Projects/fpga_edu/zedboard/wrk/ps_systems/zedbrd_frst/vivado.log
+# Journal file: /home/petr/Projects/fpga_edu/zedboard/wrk/ps_systems/zedbrd_frst/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/petr/Projects/fpga_edu/zedboard/wrk/ps_systems/zedbrd_frst/zedbrd_frst.xpr
+INFO: [Project 1-313] Project file moved from '/home/petr/Projects/fpga/zedboard/wrk/ps_systems/zedbrd_frst' since last save.
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for digilentinc.com:zedboard:part0:1.0. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/xilinx/Vivado/2018.3/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'system.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+system_rst_ps7_0_100M_0
+system_processing_system7_0_0
+system_axi_gpio_1_0
+system_axi_gpio_0_0
+
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 6588.605 ; gain = 209.801 ; free physical = 1573 ; free virtual = 12859
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 30 09:22:15 2019...

@@ -1,0 +1,6 @@
+the_ROM_image:
+{
+    [bootloader]../../../software/01/zynq_fsbl.elf
+    ../../../hardware/01/test_board.bit
+    ../../../software/01/hello_te0726.elf
+}

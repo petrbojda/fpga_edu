@@ -1,5 +1,5 @@
 vhdl xil_defaultlib  \
-"../../../bd/p_system/ip/p_system_processing_system7_0_0/p_system_processing_system7_0_0_sim_netlist.vhdl" \
+"/home/petr/Projects/fpga_edu/zedboard/wrk/Smart_JTAG_cable/rtl/src/ip/p_system/ip/p_system_processing_system7_0_0/p_system_processing_system7_0_0_sim_netlist.vhdl" \
 "../../../bd/p_system/ip/p_system_jtag_cable_comm_0_0/sim/p_system_jtag_cable_comm_0_0.vhd" \
 "../../../bd/p_system/ip/p_system_rst_ps7_0_100M_0/sim/p_system_rst_ps7_0_100M_0.vhd" \
 "../../../bd/p_system/ip/p_system_auto_pc_0/p_system_auto_pc_0_sim_netlist.vhdl" \
