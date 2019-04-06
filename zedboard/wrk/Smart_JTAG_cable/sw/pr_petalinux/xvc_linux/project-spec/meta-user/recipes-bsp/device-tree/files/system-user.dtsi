@@ -4,5 +4,4 @@
 
 &jtag_cable_comm_0 {
     compatible = "generic-uio";
-    reg = <0x43c00000 0x10000>;
 };

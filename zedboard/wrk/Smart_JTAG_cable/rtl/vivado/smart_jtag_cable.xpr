@@ -87,11 +87,11 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="p_system.bd" FileRelPathName="ip/p_system_jtag_cable_comm_0_0/p_system_jtag_cable_comm_0_0.xci">
-          <Proxy FileSetName="p_system_jtag_cable_comm_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="p_system.bd" FileRelPathName="ip/p_system_processing_system7_0_0/p_system_processing_system7_0_0.xci">
           <Proxy FileSetName="p_system_processing_system7_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="p_system.bd" FileRelPathName="ip/p_system_jtag_cable_comm_0_0/p_system_jtag_cable_comm_0_0.xci">
+          <Proxy FileSetName="p_system_jtag_cable_comm_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PPRDIR/../src/ip/p_system/hdl/p_system_wrapper.vhd">

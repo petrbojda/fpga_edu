@@ -37,3 +37,7 @@ sudo cp BOOT.BIN /run/media/petr/boot
 sudo cp image.ub /run/media/petr/boot
 sudo tar xvf rootfs.tar.gz -C /run/media/petr/root
 
+kernel boot arguments
+console=ttyPS0, 115200 earlyprintk uio_pdrv_genirq.of_id=generic-uio root=/dev/mmcblk0p2 rw rootwait
+
+
