@@ -1,0 +1,7 @@
+//org.eclipse.ui.commands/state/org.eclipse.ui.navigator.resources.nested.changeProjectPresentation/org.eclipse.ui.commands.radioState=false
+ColorsAndFontsPreferencePage.expandedCategories=Torg.eclipse.ui.workbenchMisc\tTorg.eclipse.cdt.ui.presentation\tTorg.eclipse.cdt.ui.CEditor.presentation\tTorg.eclipse.debug.ui.presentation\tTorg.eclipse.egit.ui.GitTheme\tTorg.eclipse.rse.ui.presentation\tTorg.eclipse.rse.ui.messages.presentation\tTorg.eclipse.rse.ui.remotecommandsview.presentation\tTorg.eclipse.compare.contentmergeviewer.TextMergeViewer\tTorg.eclipse.tracecompass.tmf.ui.theme.category\tTorg.eclipse.ui.presentation.default
+ColorsAndFontsPreferencePage.selectedElement=Fterminal.views.view.font.definition
+MESSAGE_ERROR_COLOR=255,177,177
+MESSAGE_INFORMATION_COLOR=148,206,231
+MESSAGE_WARNING_COLOR=252,163,123
+eclipse.preferences.version=1

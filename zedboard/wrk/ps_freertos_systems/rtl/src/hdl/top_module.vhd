@@ -43,13 +43,14 @@ entity top_module is
     FIXED_IO_ps_srstb : inout std_logic;
     ---------------------------------------------------------------------------
     -- Clock osc 100mhz, zedboard
-    gclk_in  : in  std_logic;
+    -- gclk_in           : in    std_logic;
+    -- Reset button
+    -- reset             : in    std_logic;
     ---------------------------------------------------------------------------
     --led
-    led   : inout std_logic_vector (7 downto 0);
-    sw    : in  std_logic_vector (7 downto 0);
-    btn   : in  std_logic_vector (4 downto 0);
-    reset : in  std_logic
+    led               : inout std_logic_vector (7 downto 0);
+    sw                : in    std_logic_vector (7 downto 0);
+    btn               : in    std_logic_vector (4 downto 0)
     );
 
 end entity top_module;
@@ -61,7 +62,7 @@ begin
   -----------------------------------------------------------------------------
   -- Processor core  instance
   -----------------------------------------------------------------------------
-  proc_system_0 : proc_system_wrapper
+  p_system_inst : p_system_wrapper
     port map (
       DDR_addr          => DDR_addr,
       DDR_ba            => DDR_ba,
@@ -84,9 +85,9 @@ begin
       FIXED_IO_ps_clk   => FIXED_IO_ps_clk,
       FIXED_IO_ps_porb  => FIXED_IO_ps_porb,
       FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
-      btns_5bits_tri_i  => btn,
-      leds_8bits_tri_io => led,
-      sws_8bits_tri_i   => sw);
+      btn               => btn,
+      led               => led,
+      sw                => sw);
 
 
 end rtl;

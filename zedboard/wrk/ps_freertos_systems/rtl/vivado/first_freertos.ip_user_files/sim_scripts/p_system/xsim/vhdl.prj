@@ -1,0 +1,7 @@
+vhdl xil_defaultlib  \
+"../../../bd/p_system/ip/p_system_axi_gpio_0_0/sim/p_system_axi_gpio_0_0.vhd" \
+"../../../bd/p_system/ip/p_system_axi_gpio_1_0/sim/p_system_axi_gpio_1_0.vhd" \
+"../../../bd/p_system/ip/p_system_rst_ps7_0_100M_0/sim/p_system_rst_ps7_0_100M_0.vhd" \
+"../../../bd/p_system/sim/p_system.vhd" \
+
+nosort

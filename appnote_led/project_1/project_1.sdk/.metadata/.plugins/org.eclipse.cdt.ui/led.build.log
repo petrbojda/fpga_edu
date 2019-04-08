@@ -1,0 +1,10 @@
+10:41:41 **** Auto Build of configuration Debug for project led ****
+make all 
+Building file: ../src/helloworld.c
+/bin/sh: arm-xilinx-eabi-gcc: command not found
+make: *** [src/helloworld.o] Error 127
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+
+10:41:41 Build Finished (took 78ms)
+

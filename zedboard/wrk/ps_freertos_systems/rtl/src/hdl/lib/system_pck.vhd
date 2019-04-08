@@ -13,44 +13,44 @@ package system_pck is
 -- Data Type definitions
 -------------------------------------------------------------------------------
 
-  
+
 -------------------------------------------------------------------------------
 -- Constants
 -------------------------------------------------------------------------------
 
 
-  
+
 -------------------------------------------------------------------------------
 -- Components
 -------------------------------------------------------------------------------
-  component proc_system_wrapper is
+  component p_system_wrapper is
     port (
-      DDR_addr          : inout STD_LOGIC_VECTOR (14 downto 0);
-      DDR_ba            : inout STD_LOGIC_VECTOR (2 downto 0);
-      DDR_cas_n         : inout STD_LOGIC;
-      DDR_ck_n          : inout STD_LOGIC;
-      DDR_ck_p          : inout STD_LOGIC;
-      DDR_cke           : inout STD_LOGIC;
-      DDR_cs_n          : inout STD_LOGIC;
-      DDR_dm            : inout STD_LOGIC_VECTOR (3 downto 0);
-      DDR_dq            : inout STD_LOGIC_VECTOR (31 downto 0);
-      DDR_dqs_n         : inout STD_LOGIC_VECTOR (3 downto 0);
-      DDR_dqs_p         : inout STD_LOGIC_VECTOR (3 downto 0);
-      DDR_odt           : inout STD_LOGIC;
-      DDR_ras_n         : inout STD_LOGIC;
-      DDR_reset_n       : inout STD_LOGIC;
-      DDR_we_n          : inout STD_LOGIC;
-      FIXED_IO_ddr_vrn  : inout STD_LOGIC;
-      FIXED_IO_ddr_vrp  : inout STD_LOGIC;
-      FIXED_IO_mio      : inout STD_LOGIC_VECTOR (53 downto 0);
-      FIXED_IO_ps_clk   : inout STD_LOGIC;
-      FIXED_IO_ps_porb  : inout STD_LOGIC;
-      FIXED_IO_ps_srstb : inout STD_LOGIC;
-      btns_5bits_tri_i  : in    STD_LOGIC_VECTOR (4 downto 0);
-      leds_8bits_tri_io : inout STD_LOGIC_VECTOR (7 downto 0);
-      sws_8bits_tri_i   : in    STD_LOGIC_VECTOR (7 downto 0));
+      DDR_addr          : inout std_logic_vector (14 downto 0);
+      DDR_ba            : inout std_logic_vector (2 downto 0);
+      DDR_cas_n         : inout std_logic;
+      DDR_ck_n          : inout std_logic;
+      DDR_ck_p          : inout std_logic;
+      DDR_cke           : inout std_logic;
+      DDR_cs_n          : inout std_logic;
+      DDR_dm            : inout std_logic_vector (3 downto 0);
+      DDR_dq            : inout std_logic_vector (31 downto 0);
+      DDR_dqs_n         : inout std_logic_vector (3 downto 0);
+      DDR_dqs_p         : inout std_logic_vector (3 downto 0);
+      DDR_odt           : inout std_logic;
+      DDR_ras_n         : inout std_logic;
+      DDR_reset_n       : inout std_logic;
+      DDR_we_n          : inout std_logic;
+      FIXED_IO_ddr_vrn  : inout std_logic;
+      FIXED_IO_ddr_vrp  : inout std_logic;
+      FIXED_IO_mio      : inout std_logic_vector (53 downto 0);
+      FIXED_IO_ps_clk   : inout std_logic;
+      FIXED_IO_ps_porb  : inout std_logic;
+      FIXED_IO_ps_srstb : inout std_logic;
+      btn               : in    std_logic_vector (4 downto 0);
+      led               : inout std_logic_vector (7 downto 0);
+      sw                : in    std_logic_vector (7 downto 0));
   end component proc_system_wrapper;
-  
+
 end system_pck;
 
 package body system_pck is
@@ -58,7 +58,7 @@ package body system_pck is
 -------------------------------------------------------------------------------
 -- Functions
 -------------------------------------------------------------------------------
-  
+
   function vec_and(vec : std_logic_vector) return std_logic is
   begin
     if unsigned(not vec) = 0 then
@@ -85,5 +85,5 @@ package body system_pck is
     return ret;
   end function;
 
-  
+
 end system_pck;

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Webtalk v2015.1 (64-bit)
+# SW Build 1215546 on Mon Apr 27 19:37:43 MDT 2015
+# 
+# Start of session at: Wed May 06 10:46:38 2015
+# Process ID: 880
+# Log file: C:/cases/ZC702/2015_1/AR51786/2015_1/project_1/project_1.sdk/webtalk/webtalk.log
+# Journal file: C:/cases/ZC702/2015_1/AR51786/2015_1/project_1/project_1.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
