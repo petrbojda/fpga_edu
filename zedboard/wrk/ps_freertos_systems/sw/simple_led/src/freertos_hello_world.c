@@ -114,6 +114,7 @@
 static void prvTxTask( void *pvParameters );
 static void prvRxTask( void *pvParameters );
 static void prvLEDBlinkTask( void *pvParameters );
+static void prvUARTTask( void *pvParameters );
 static void vTimerCallback( TimerHandle_t pxTimer );
 /*-----------------------------------------------------------*/
 
@@ -151,12 +152,18 @@ int main( void )
 	       tskIDLE_PRIORITY + 1,
 	       &xRxTask );
 
+  xTaskCreate( prvUARTTask,
+	       ( const char * ) "LB",
+	       1000,
+	       NULL,
+	       tskIDLE_PRIORITY + 1,
+	       NULL );
   
   xTaskCreate( prvLEDBlinkTask,
 	       ( const char * ) "LB",
 	       1000,
 	       NULL,
-	       tskIDLE_PRIORITY + 2,
+	       tskIDLE_PRIORITY + 1,
 	       NULL );
   
   /* Create the queue used by the tasks.  The Rx task has a higher priority
@@ -240,50 +247,58 @@ char Recdstring[15] = "";
 /*-----------------------------------------------------------*/
 static void prvLEDBlinkTask( void *pvParameters )
 {
-  /*------------------------------------------------------------*/
-  /* From simple demo SW -> LED                                 */
-  XGpio gpio_ledsw, gpio_btns;
-  int button_data = 0;
+  XGpio gpio_ledsw;
   int switch_data = 0;
 
   XGpio_Initialize(&gpio_ledsw, XPAR_AXI_GPIO_0_DEVICE_ID);	//initialize first XGpio variable
-  XGpio_Initialize(&gpio_btns,  XPAR_AXI_GPIO_1_DEVICE_ID);	//initialize second XGpio variable
 
   XGpio_SetDataDirection(&gpio_ledsw, 1, 0xFF);		//set first channel tristate buffer to input
   XGpio_SetDataDirection(&gpio_ledsw, 2, 0x00);		//set second channel tristate buffer to output
+ 
+  
+ for( ;; )
+   {
+     switch_data = XGpio_DiscreteRead(&gpio_ledsw, 1);	//get switch data
+     XGpio_DiscreteWrite(&gpio_ledsw, 2, switch_data);	//write switch data to the LEDs
+   }
+}
+
+
+/*-----------------------------------------------------------*/
+static void prvUARTTask( void *pvParameters )
+{
+  XGpio gpio_btns;
+  int button_data = 0;
+  
+  XGpio_Initialize(&gpio_btns,  XPAR_AXI_GPIO_1_DEVICE_ID);	//initialize second XGpio variable
 
   XGpio_SetDataDirection(&gpio_btns, 1, 0xFF);		//set first channel tristate buffer to input
  
   
  for( ;; )
    {
-    switch_data = XGpio_DiscreteRead(&gpio_ledsw, 1);	//get switch data
-
-      XGpio_DiscreteWrite(&gpio_ledsw, 2, switch_data);	//write switch data to the LEDs
-
       button_data = XGpio_DiscreteRead(&gpio_btns, 1);	//get button data
 
       //print message dependent on whether one or more buttons are pressed
       if(button_data == 0b00000){} //do nothing
 
       else if(button_data == 0b00001)
-         xil_printf("button 0 pressed\n\r");
+         xil_printf("button 00 pressed\n\r");
 
       else if(button_data == 0b00010)
-         xil_printf("button 1 pressed\n\r");
+         xil_printf("button 01 pressed\n\r");
 
       else if(button_data == 0b00100)
-         xil_printf("button 2 pressed\n\r");
+         xil_printf("button 02 pressed\n\r");
 
       else if(button_data == 0b01000)
-         xil_printf("button 3 pressed\n\r");
+         xil_printf("button 03 pressed\n\r");
 
       else if(button_data == 0b10000)
-              xil_printf("button 4 pressed\n\r");
+              xil_printf("button 04 pressed\n\r");
 
       else
          xil_printf("multiple buttons pressed\n\r");
-      
    }
 }
 
