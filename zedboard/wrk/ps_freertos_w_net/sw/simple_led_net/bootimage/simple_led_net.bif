@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/fsbl_zedboard/Debug/fsbl_zedboard.elf
+	/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/zedboard_hw_platform/top_module.bit
+	/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/simple_led_net.elf
+}

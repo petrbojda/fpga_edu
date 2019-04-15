@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdtprojectproperties>
+<section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.IncludePaths">
+<language name="s">
+
+</language>
+<language name="c,S">
+<includepath>../simple_led_bsp/ps7_cortexa9_0/include</includepath>
+<includepath>FreeRTOS/include</includepath>
+<includepath>FreeRTOSPlus/FreeRTOS_CLI</includepath>
+<includepath>include</includepath>
+<includepath>FreeRTOS/portable/GCC</includepath>
+<includepath>FreeRTOSPlus/FreeRTOS_TCP/include</includepath>
+<includepath>FreeRTOSPlus/TraceMacros</includepath>
+<includepath>FreeRTOSPlus/FreeRTOS_FAT/portable/common</includepath>
+<includepath>FreeRTOSPlus/FreeRTOS_FAT/portable/Zynq</includepath>
+<includepath>FreeRTOSPlus/FreeRTOS_FAT/include</includepath>
+<includepath>FreeRTOSPlus/FreeRTOS_TCP/portable/NetworkInterface</includepath>
+<includepath>FreeRTOSPlus/FreeRTOS_TCP/portable/Compiler/GCC</includepath>
+
+</language>
+<language name="ld">
+
+</language>
+<language name="Object File">
+
+</language>
+</section>
+<section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.Macros">
+<language name="s">
+
+</language>
+<language name="c,S">
+
+</language>
+<language name="ld">
+
+</language>
+<language name="Object File">
+
+</language>
+</section>
+</cdtprojectproperties>

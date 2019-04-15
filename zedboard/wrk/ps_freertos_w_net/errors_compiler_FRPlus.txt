@@ -1,0 +1,105 @@
+./FreeRTOSPlus/FreeRTOS_TCP/portable/BufferManagement/BufferAllocation_2.o:(.rodata+0x0): multiple definition of `xBufferAllocFixedSize'
+./FreeRTOSPlus/FreeRTOS_TCP/portable/BufferManagement/BufferAllocation_1.o:(.rodata+0x0): first defined here
+./FreeRTOSPlus/FreeRTOS_TCP/portable/BufferManagement/BufferAllocation_2.o: In function `xNetworkBuffersInitialise':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/portable/BufferManagement/BufferAllocation_2.c:97: multiple definition of `xNetworkBuffersInitialise'
+./FreeRTOSPlus/FreeRTOS_TCP/portable/BufferManagement/BufferAllocation_1.o:/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/portable/BufferManagement/BufferAllocation_1.c:163: first defined here
+./FreeRTOSPlus/FreeRTOS_TCP/portable/BufferManagement/BufferAllocation_2.o: In function `pxGetNetworkBufferWithDescriptor':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/portable/BufferManagement/BufferAllocation_2.c:209: multiple definition of `pxGetNetworkBufferWithDescriptor'
+./FreeRTOSPlus/FreeRTOS_TCP/portable/BufferManagement/BufferAllocation_1.o:/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/portable/BufferManagement/BufferAllocation_1.c:213: first defined here
+./FreeRTOSPlus/FreeRTOS_TCP/portable/BufferManagement/BufferAllocation_2.o: In function `vReleaseNetworkBufferAndDescriptor':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/portable/BufferManagement/BufferAllocation_2.c:305: multiple definition of `vReleaseNetworkBufferAndDescriptor'
+./FreeRTOSPlus/FreeRTOS_TCP/portable/BufferManagement/BufferAllocation_1.o:/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/portable/BufferManagement/BufferAllocation_1.c:361: first defined here
+./FreeRTOSPlus/FreeRTOS_TCP/portable/BufferManagement/BufferAllocation_2.o: In function `uxGetNumberOfFreeNetworkBuffers':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/portable/BufferManagement/BufferAllocation_2.c:349: multiple definition of `uxGetNumberOfFreeNetworkBuffers'
+./FreeRTOSPlus/FreeRTOS_TCP/portable/BufferManagement/BufferAllocation_1.o:/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/portable/BufferManagement/BufferAllocation_1.c:410: first defined here
+./FreeRTOSPlus/FreeRTOS_TCP/portable/BufferManagement/BufferAllocation_2.o: In function `uxGetMinimumFreeNetworkBuffers':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/portable/BufferManagement/BufferAllocation_2.c:355: multiple definition of `uxGetMinimumFreeNetworkBuffers'
+./FreeRTOSPlus/FreeRTOS_TCP/portable/BufferManagement/BufferAllocation_1.o:/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/portable/BufferManagement/BufferAllocation_1.c:404: first defined here
+./FreeRTOSPlus/FreeRTOS_TCP/portable/BufferManagement/BufferAllocation_2.o: In function `pxResizeNetworkBufferWithDescriptor':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/portable/BufferManagement/BufferAllocation_2.c:361: multiple definition of `pxResizeNetworkBufferWithDescriptor'
+./FreeRTOSPlus/FreeRTOS_TCP/portable/BufferManagement/BufferAllocation_1.o:/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/portable/BufferManagement/BufferAllocation_1.c:415: first defined here
+../../simple_led_net_bsp/ps7_cortexa9_0/lib/libfreertos.a(port_asm_vectors.o): In function `_vector_table':
+(.vectors+0x0): multiple definition of `_freertos_vector_table'
+./include/FreeRTOS_asm_vectors.o:(.freertos_vectors+0x0): first defined here
+../../simple_led_net_bsp/ps7_cortexa9_0/lib/libfreertos.a(port_asm_vectors.o): In function `vPortInstallFreeRTOSVectorTable':
+(.vectors+0x90): multiple definition of `vPortInstallFreeRTOSVectorTable'
+./include/FreeRTOS_asm_vectors.o:(.freertos_vectors+0x90): first defined here
+../../simple_led_net_bsp/ps7_cortexa9_0/lib/libfreertos.a(portZynq7000.o): In function `vApplicationIRQHandler':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net_bsp/ps7_cortexa9_0/libsrc/freertos10_xilinx_v1_2/src/portZynq7000.c:131: multiple definition of `vApplicationIRQHandler'
+./include/FreeRTOS_tick_config.o:/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../include/FreeRTOS_tick_config.c:151: first defined here
+./FreeRTOSPlus/FreeRTOS_TCP/portable/NetworkInterface/Zynq/NetworkInterface.o: In function `xNetworkInterfaceInitialise':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/portable/NetworkInterface/Zynq/NetworkInterface.c:186: undefined reference to `lUDPLoggingPrintf'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/portable/NetworkInterface/Zynq/NetworkInterface.c:190: undefined reference to `ucMACAddress'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/portable/NetworkInterface/Zynq/NetworkInterface.c:190: undefined reference to `ucMACAddress'
+./FreeRTOSPlus/FreeRTOS_TCP/portable/NetworkInterface/Zynq/NetworkInterface.o: In function `prvEMACHandlerTask':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/portable/NetworkInterface/Zynq/NetworkInterface.c:357: undefined reference to `lUDPLoggingPrintf'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/portable/NetworkInterface/Zynq/NetworkInterface.c:415: undefined reference to `lUDPLoggingPrintf'
+./FreeRTOSPlus/FreeRTOS_TCP/portable/NetworkInterface/Zynq/x_emacpsif_dma.o: In function `emacps_send_message':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/portable/NetworkInterface/Zynq/x_emacpsif_dma.c:312: undefined reference to `lUDPLoggingPrintf'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/portable/NetworkInterface/Zynq/x_emacpsif_dma.c:318: undefined reference to `lUDPLoggingPrintf'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/portable/NetworkInterface/Zynq/x_emacpsif_dma.c:333: undefined reference to `lUDPLoggingPrintf'
+./FreeRTOSPlus/FreeRTOS_TCP/portable/NetworkInterface/Zynq/x_emacpsif_dma.o:/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/portable/NetworkInterface/Zynq/x_emacpsif_dma.c:405: more undefined references to `lUDPLoggingPrintf' follow
+./FreeRTOSPlus/FreeRTOS_TCP/FreeRTOS_DHCP.o: In function `vDHCPProcess':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/FreeRTOS_DHCP.c:362: undefined reference to `uxRand'
+./FreeRTOSPlus/FreeRTOS_TCP/FreeRTOS_DHCP.o: In function `prvInitialiseDHCP':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/FreeRTOS_DHCP.c:597: undefined reference to `uxRand'
+./FreeRTOSPlus/FreeRTOS_TCP/FreeRTOS_DHCP.o: In function `prvProcessDHCPReplies':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/FreeRTOS_DHCP.c:813: undefined reference to `lUDPLoggingPrintf'
+./FreeRTOSPlus/FreeRTOS_TCP/FreeRTOS_DHCP.o: In function `prvCreatePartDHCPMessage':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/FreeRTOS_DHCP.c:833: undefined reference to `pcApplicationHostnameHook'
+./FreeRTOSPlus/FreeRTOS_TCP/FreeRTOS_DNS.o: In function `FreeRTOS_gethostbyname_a':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/FreeRTOS_DNS.c:449: undefined reference to `uxRand'
+./FreeRTOSPlus/FreeRTOS_TCP/FreeRTOS_DNS.o: In function `prvParseDNSReply':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/FreeRTOS_DNS.c:1049: undefined reference to `xApplicationDNSQueryHook'
+./FreeRTOSPlus/FreeRTOS_TCP/FreeRTOS_DNS.o: In function `prvTreatNBNS':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/FreeRTOS_DNS.c:1195: undefined reference to `xApplicationDNSQueryHook'
+./FreeRTOSPlus/FreeRTOS_TCP/FreeRTOS_IP.o: In function `prvProcessNetworkDownEvent':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/FreeRTOS_IP.c:1285: undefined reference to `vApplicationIPNetworkEventHook'
+./FreeRTOSPlus/FreeRTOS_TCP/FreeRTOS_IP.o: In function `vIPNetworkUpCalls':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/FreeRTOS_IP.c:1332: undefined reference to `vApplicationIPNetworkEventHook'
+./FreeRTOSPlus/FreeRTOS_TCP/FreeRTOS_IP.o: In function `prvProcessICMPEchoReply':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/FreeRTOS_IP.c:1708: undefined reference to `vApplicationPingReplyHook'
+./FreeRTOSPlus/FreeRTOS_TCP/FreeRTOS_Sockets.o: In function `prvGetPrivatePortNumber':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/FreeRTOS_Sockets.c:1640: undefined reference to `uxRand'
+./FreeRTOSPlus/FreeRTOS_TCP/FreeRTOS_Sockets.o: In function `vTCPNetStat':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/FreeRTOS_Sockets.c:3338: undefined reference to `lUDPLoggingPrintf'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/FreeRTOS_Sockets.c:3342: undefined reference to `lUDPLoggingPrintf'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/FreeRTOS_Sockets.c:3368: undefined reference to `lUDPLoggingPrintf'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/FreeRTOS_Sockets.c:3388: undefined reference to `lUDPLoggingPrintf'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/FreeRTOS_Sockets.c:3393: undefined reference to `lUDPLoggingPrintf'
+./FreeRTOSPlus/FreeRTOS_TCP/FreeRTOS_TCP_IP.o: In function `prvTCPPrepareConnect':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/FreeRTOS_TCP_IP.c:1028: undefined reference to `ulApplicationGetNextSequenceNumber'
+./FreeRTOSPlus/FreeRTOS_TCP/FreeRTOS_TCP_IP.o: In function `prvHandleListen':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/FreeRTOS_TCP_IP.c:3086: undefined reference to `ulApplicationGetNextSequenceNumber'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_TCP/FreeRTOS_TCP_IP.c:3111: undefined reference to `lUDPLoggingPrintf'
+./FreeRTOSPlus/FreeRTOS_FAT/portable/common/ff_ramdisk.o: In function `FF_RAMDiskInit':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_FAT/portable/common/ff_ramdisk.c:185: undefined reference to `lUDPLoggingPrintf'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_FAT/portable/common/ff_ramdisk.c:198: undefined reference to `lUDPLoggingPrintf'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_FAT/portable/common/ff_ramdisk.c:208: undefined reference to `lUDPLoggingPrintf'
+./FreeRTOSPlus/FreeRTOS_FAT/portable/common/ff_ramdisk.o: In function `prvPartitionAndFormatDisk':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_FAT/portable/common/ff_ramdisk.c:355: undefined reference to `lUDPLoggingPrintf'
+./FreeRTOSPlus/FreeRTOS_FAT/portable/common/ff_ramdisk.o:/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_FAT/portable/common/ff_ramdisk.c:361: more undefined references to `lUDPLoggingPrintf' follow
+./FreeRTOSPlus/FreeRTOS_FAT/ff_stdio.o: In function `stdioSET_ERRNO':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_FAT/include/ff_stdio.h:154: undefined reference to `vTaskSetThreadLocalStoragePointer'
+./FreeRTOSPlus/FreeRTOS_FAT/ff_stdio.o: In function `stdioGET_ERRNO':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_FAT/include/ff_stdio.h:161: undefined reference to `pvTaskGetThreadLocalStoragePointer'
+./FreeRTOSPlus/FreeRTOS_FAT/ff_stdio.o: In function `stdioSET_FF_ERROR':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_FAT/include/ff_stdio.h:174: undefined reference to `vTaskSetThreadLocalStoragePointer'
+./FreeRTOSPlus/FreeRTOS_FAT/ff_stdio.o: In function `ff_findnext':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_FAT/ff_stdio.c:1344: undefined reference to `lUDPLoggingPrintf'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_FAT/ff_stdio.c:1473: undefined reference to `FreeRTOS_time'
+./FreeRTOSPlus/FreeRTOS_FAT/ff_stdio.o: In function `ff_deltree':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_FAT/ff_stdio.c:1635: undefined reference to `lUDPLoggingPrintf'
+./FreeRTOSPlus/FreeRTOS_FAT/ff_stdio.o: In function `ff_deltree_recurse':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_FAT/ff_stdio.c:1712: undefined reference to `lUDPLoggingPrintf'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_FAT/ff_stdio.c:1737: undefined reference to `lUDPLoggingPrintf'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_FAT/ff_stdio.c:1757: undefined reference to `lUDPLoggingPrintf'
+./FreeRTOSPlus/FreeRTOS_FAT/ff_stdio.o: In function `pxFindCWD':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_FAT/ff_stdio.c:1862: undefined reference to `pvTaskGetThreadLocalStoragePointer'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_FAT/ff_stdio.c:1873: undefined reference to `vTaskSetThreadLocalStoragePointer'
+./FreeRTOSPlus/FreeRTOS_FAT/ff_sys.o: In function `FF_FS_Add':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_FAT/ff_sys.c:106: undefined reference to `lUDPLoggingPrintf'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_FAT/ff_sys.c:171: undefined reference to `lUDPLoggingPrintf'
+./FreeRTOSPlus/FreeRTOS_FAT/ff_time.o: In function `FF_GetSystemTime':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/Debug/../FreeRTOSPlus/FreeRTOS_FAT/ff_time.c:88: undefined reference to `FreeRTOS_time'
+collect2: error: ld returned 1 exit status

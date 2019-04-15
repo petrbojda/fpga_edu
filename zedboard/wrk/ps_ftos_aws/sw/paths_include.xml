@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdtprojectproperties>
+<section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.IncludePaths">
+<language name="s">
+
+</language>
+<language name="c,S">
+<includepath>../../lib/include/</includepath>
+<includepath>../../lib/FreeRTOS/</includepath>
+<includepath>../sample_led_bsp/ps7_cortexa9_0/include</includepath>
+<includepath>../../lib/FreeRTOS-Plus-TCP/source/portable/NetworkInterface/</includepath>
+<includepath>../../lib/FreeRTOS-Plus-TCP/include/</includepath>
+<includepath>../../lib/FreeRTOS-Plus-TCP/source/portable/Compiler/GCC/</includepath>
+<includepath>../../lib/FreeRTOS/portable/GCC/</includepath>
+<includepath>../../lib/include/private/</includepath>
+<includepath>../../lib/third_party/mbedtls/include</includepath>
+<includepath>src/xilinx_code/</includepath>
+<includepath>config_files/</includepath>
+<includepath>../common/include</includepath>
+<includepath>../../lib/third_party/jsmn</includepath>
+<includepath>../../lib/third_party/pkcs11</includepath>
+
+</language>
+<language name="Object File">
+
+</language>
+<language name="ld">
+
+</language>
+</section>
+<section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.Macros">
+<language name="s">
+
+</language>
+<language name="c,S">
+
+</language>
+<language name="Object File">
+
+</language>
+<language name="ld">
+
+</language>
+</section>
+</cdtprojectproperties>

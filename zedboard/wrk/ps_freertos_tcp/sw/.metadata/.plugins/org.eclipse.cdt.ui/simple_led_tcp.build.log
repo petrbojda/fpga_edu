@@ -1,0 +1,34 @@
+15:12:11 **** Auto Build of configuration Debug for project simple_led_tcp ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_yaml.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_yaml.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_yaml.d" -MT"third_party/unity/test/expectdata/testsample_yaml.o" -o "third_party/unity/test/expectdata/testsample_yaml.o" "../third_party/unity/test/expectdata/testsample_yaml.c"
+../third_party/unity/test/expectdata/testsample_yaml.c: In function 'suite_setup':
+../third_party/unity/test/expectdata/testsample_yaml.c:48:1: warning: implicit declaration of function 'a_yaml_setup'; did you mean 'suite_setup'? [-Wimplicit-function-declaration]
+ a_yaml_setup();
+ ^~~~~~~~~~~~
+ suite_setup
+../third_party/unity/test/expectdata/testsample_yaml.c:49:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../third_party/unity/test/expectdata/testsample_yaml.c
+ 
+Building file: ../third_party/unity/src/unity.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/src/unity.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/src/unity.d" -MT"third_party/unity/src/unity.o" -o "third_party/unity/src/unity.o" "../third_party/unity/src/unity.c"
+Finished building: ../third_party/unity/src/unity.c
+ 
+Building file: ../third_party/unity/extras/fixture/test/main/AllTests.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/extras/fixture/test/main/AllTests.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/extras/fixture/test/main/AllTests.d" -MT"third_party/unity/extras/fixture/test/main/AllTests.o" -o "third_party/unity/extras/fixture/test/main/AllTests.o" "../third_party/unity/extras/fixture/test/main/AllTests.c"
+../third_party/unity/extras/fixture/test/main/AllTests.c:8:10: fatal error: unity_fixture.h: No such file or directory
+ #include "unity_fixture.h"
+          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [third_party/unity/extras/fixture/test/main/AllTests.o] Error 1
+third_party/unity/extras/fixture/test/main/subdir.mk:18: recipe for target 'third_party/unity/extras/fixture/test/main/AllTests.o' failed
+
+15:12:12 Build Finished (took 362ms)
+

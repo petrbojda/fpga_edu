@@ -1,0 +1,706 @@
+15:04:50 **** Clean-only build of configuration Debug for project simple_led_tcp ****
+make clean 
+rm -rf  ./third_party/unity/test/tests/testparameterized.o ./third_party/unity/test/tests/testunity.o  ./third_party/unity/test/testdata/testRunnerGenerator.o ./third_party/unity/test/testdata/testRunnerGeneratorSmall.o ./third_party/unity/test/testdata/testRunnerGeneratorWithMocks.o  ./third_party/unity/test/expectdata/testsample_cmd.o ./third_party/unity/test/expectdata/testsample_def.o ./third_party/unity/test/expectdata/testsample_head1.o ./third_party/unity/test/expectdata/testsample_mock_cmd.o ./third_party/unity/test/expectdata/testsample_mock_def.o ./third_party/unity/test/expectdata/testsample_mock_head1.o ./third_party/unity/test/expectdata/testsample_mock_new1.o ./third_party/unity/test/expectdata/testsample_mock_new2.o ./third_party/unity/test/expectdata/testsample_mock_param.o ./third_party/unity/test/expectdata/testsample_mock_run1.o ./third_party/unity/test/expectdata/testsample_mock_run2.o ./third_party/unity/test/expectdata/testsample_mock_yaml.o ./third_party/unity/test/expectdata/testsample_new1.o ./third_party/unity/test/expectdata/testsample_new2.o ./third_party/unity/test/expectdata/testsample_param.o ./third_party/unity/test/expectdata/testsample_run1.o ./third_party/unity/test/expectdata/testsample_run2.o ./third_party/unity/test/expectdata/testsample_yaml.o  ./third_party/unity/src/unity.o  ./third_party/unity/extras/fixture/test/main/AllTests.o  ./third_party/unity/extras/fixture/test/template_fixture_tests.o ./third_party/unity/extras/fixture/test/unity_fixture_Test.o ./third_party/unity/extras/fixture/test/unity_fixture_TestRunner.o ./third_party/unity/extras/fixture/test/unity_output_Spy.o  ./third_party/unity/extras/fixture/src/unity_fixture.o  ./third_party/unity/examples/example_3/test/TestProductionCode.o ./third_party/unity/examples/example_3/test/TestProductionCode2.o  ./third_party/unity/examples/example_3/src/ProductionCode.o ./third_party/unity/examples/example_3/src/ProductionCode2.o  ./third_party/unity/examples/example_3/helper/UnityHelper.o  ./third_party/unity/examples/example_2/test/test_runners/TestProductionCode2_Runner.o ./third_party/unity/examples/example_2/test/test_runners/TestProductionCode_Runner.o ./third_party/unity/examples/example_2/test/test_runners/all_tests.o  ./third_party/unity/examples/example_2/test/TestProductionCode.o ./third_party/unity/examples/example_2/test/TestProductionCode2.o  ./third_party/unity/examples/example_2/src/ProductionCode.o ./third_party/unity/examples/example_2/src/ProductionCode2.o  ./third_party/unity/examples/example_1/test/test_runners/TestProductionCode2_Runner.o ./third_party/unity/examples/example_1/test/test_runners/TestProductionCode_Runner.o  ./third_party/unity/examples/example_1/test/TestProductionCode.o ./third_party/unity/examples/example_1/test/TestProductionCode2.o  ./third_party/unity/examples/example_1/src/ProductionCode.o ./third_party/unity/examples/example_1/src/ProductionCode2.o  ./src/xilinx_code/FreeRTOS_asm_vectors.o ./src/xilinx_code/FreeRTOS_tick_config.o ./src/xilinx_code/hr_gettime.o ./src/xilinx_code/memcpy.o ./src/xilinx_code/uncached_memory.o  ./src/aws_code/framework/aws_test_framework.o  ./src/aws_main.o ./src/helloworld.o ./src/platform.o  ./FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/NetworkInterface.o ./FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_dma.o ./FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_hw.o ./FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_physpeed.o  ./FreeRTOSPlus/FreeRTOS_TCP/source/portable/BufferManagement/BufferAllocation_2.o  ./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_ARP.o ./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DHCP.o ./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DNS.o ./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_IP.o ./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Sockets.o ./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Stream_Buffer.o ./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_TCP_IP.o ./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_TCP_WIN.o ./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_UDP_IP.o  ./FreeRTOS/portable/GCC/ARM_CA9/port.o ./FreeRTOS/portable/GCC/ARM_CA9/portASM.o  ./FreeRTOS/event_groups.o ./FreeRTOS/list.o ./FreeRTOS/queue.o ./FreeRTOS/stream_buffer.o ./FreeRTOS/tasks.o ./FreeRTOS/timers.o  ./src/xilinx_code/FreeRTOS_asm_vectors.d  ./FreeRTOS/portable/GCC/ARM_CA9/portASM.d  ./third_party/unity/test/tests/testparameterized.d ./third_party/unity/test/tests/testunity.d  ./third_party/unity/test/testdata/testRunnerGenerator.d ./third_party/unity/test/testdata/testRunnerGeneratorSmall.d ./third_party/unity/test/testdata/testRunnerGeneratorWithMocks.d  ./third_party/unity/test/expectdata/testsample_cmd.d ./third_party/unity/test/expectdata/testsample_def.d ./third_party/unity/test/expectdata/testsample_head1.d ./third_party/unity/test/expectdata/testsample_mock_cmd.d ./third_party/unity/test/expectdata/testsample_mock_def.d ./third_party/unity/test/expectdata/testsample_mock_head1.d ./third_party/unity/test/expectdata/testsample_mock_new1.d ./third_party/unity/test/expectdata/testsample_mock_new2.d ./third_party/unity/test/expectdata/testsample_mock_param.d ./third_party/unity/test/expectdata/testsample_mock_run1.d ./third_party/unity/test/expectdata/testsample_mock_run2.d ./third_party/unity/test/expectdata/testsample_mock_yaml.d ./third_party/unity/test/expectdata/testsample_new1.d ./third_party/unity/test/expectdata/testsample_new2.d ./third_party/unity/test/expectdata/testsample_param.d ./third_party/unity/test/expectdata/testsample_run1.d ./third_party/unity/test/expectdata/testsample_run2.d ./third_party/unity/test/expectdata/testsample_yaml.d  ./third_party/unity/src/unity.d  ./third_party/unity/extras/fixture/test/main/AllTests.d  ./third_party/unity/extras/fixture/test/template_fixture_tests.d ./third_party/unity/extras/fixture/test/unity_fixture_Test.d ./third_party/unity/extras/fixture/test/unity_fixture_TestRunner.d ./third_party/unity/extras/fixture/test/unity_output_Spy.d  ./third_party/unity/extras/fixture/src/unity_fixture.d  ./third_party/unity/examples/example_3/test/TestProductionCode.d ./third_party/unity/examples/example_3/test/TestProductionCode2.d  ./third_party/unity/examples/example_3/src/ProductionCode.d ./third_party/unity/examples/example_3/src/ProductionCode2.d  ./third_party/unity/examples/example_3/helper/UnityHelper.d  ./third_party/unity/examples/example_2/test/test_runners/TestProductionCode2_Runner.d ./third_party/unity/examples/example_2/test/test_runners/TestProductionCode_Runner.d ./third_party/unity/examples/example_2/test/test_runners/all_tests.d  ./third_party/unity/examples/example_2/test/TestProductionCode.d ./third_party/unity/examples/example_2/test/TestProductionCode2.d  ./third_party/unity/examples/example_2/src/ProductionCode.d ./third_party/unity/examples/example_2/src/ProductionCode2.d  ./third_party/unity/examples/example_1/test/test_runners/TestProductionCode2_Runner.d ./third_party/unity/examples/example_1/test/test_runners/TestProductionCode_Runner.d  ./third_party/unity/examples/example_1/test/TestProductionCode.d ./third_party/unity/examples/example_1/test/TestProductionCode2.d  ./third_party/unity/examples/example_1/src/ProductionCode.d ./third_party/unity/examples/example_1/src/ProductionCode2.d  ./src/xilinx_code/FreeRTOS_tick_config.d ./src/xilinx_code/hr_gettime.d ./src/xilinx_code/memcpy.d ./src/xilinx_code/uncached_memory.d  ./src/aws_code/framework/aws_test_framework.d  ./src/aws_main.d ./src/helloworld.d ./src/platform.d  ./FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/NetworkInterface.d ./FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_dma.d ./FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_hw.d ./FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_physpeed.d  ./FreeRTOSPlus/FreeRTOS_TCP/source/portable/BufferManagement/BufferAllocation_2.d  ./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_ARP.d ./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DHCP.d ./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DNS.d ./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_IP.d ./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Sockets.d ./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Stream_Buffer.d ./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_TCP_IP.d ./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_TCP_WIN.d ./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_UDP_IP.d  ./FreeRTOS/portable/GCC/ARM_CA9/port.d  ./FreeRTOS/event_groups.d ./FreeRTOS/list.d ./FreeRTOS/queue.d ./FreeRTOS/stream_buffer.d ./FreeRTOS/tasks.d ./FreeRTOS/timers.d  simple_led_tcp.elf.size  simple_led_tcp.elf
+ 
+15:04:51 **** Clean-only build of project simple_led_tcp_bsp ****
+make -k clean 
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s clean 
+make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s clean 
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s clean 
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s clean 
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s clean 
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s clean 
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s clean 
+rm -f ps7_cortexa9_0/lib/libxil.a
+15:04:51 **** Build of project simple_led_tcp_bsp ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_6/src
+make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_8/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_8/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_4/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_5/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_10/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_3/src
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling ddrps
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_6/src
+make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling sdps
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_8/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling standalone
+In file included from sleep.c:53:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:49:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from usleep.c:56:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_8/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling emacps
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_4/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_5/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_10/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling xadcps
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_3/src
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling gpio
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling usbps
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling coresightps_dcc
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scutimer
+Finished building libraries
+15:05:00 **** Build of configuration Debug for project simple_led_tcp ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../third_party/unity/test/tests/testparameterized.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/tests/testparameterized.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/tests/testparameterized.d" -MT"third_party/unity/test/tests/testparameterized.o" -o "third_party/unity/test/tests/testparameterized.o" "../third_party/unity/test/tests/testparameterized.c"
+Finished building: ../third_party/unity/test/tests/testparameterized.c
+ 
+Building file: ../third_party/unity/test/tests/testunity.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/tests/testunity.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/tests/testunity.d" -MT"third_party/unity/test/tests/testunity.o" -o "third_party/unity/test/tests/testunity.o" "../third_party/unity/test/tests/testunity.c"
+Finished building: ../third_party/unity/test/tests/testunity.c
+ 
+Building file: ../third_party/unity/test/testdata/testRunnerGenerator.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/testdata/testRunnerGenerator.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/testdata/testRunnerGenerator.d" -MT"third_party/unity/test/testdata/testRunnerGenerator.o" -o "third_party/unity/test/testdata/testRunnerGenerator.o" "../third_party/unity/test/testdata/testRunnerGenerator.c"
+Finished building: ../third_party/unity/test/testdata/testRunnerGenerator.c
+ 
+Building file: ../third_party/unity/test/testdata/testRunnerGeneratorSmall.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/testdata/testRunnerGeneratorSmall.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/testdata/testRunnerGeneratorSmall.d" -MT"third_party/unity/test/testdata/testRunnerGeneratorSmall.o" -o "third_party/unity/test/testdata/testRunnerGeneratorSmall.o" "../third_party/unity/test/testdata/testRunnerGeneratorSmall.c"
+Finished building: ../third_party/unity/test/testdata/testRunnerGeneratorSmall.c
+ 
+Building file: ../third_party/unity/test/testdata/testRunnerGeneratorWithMocks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/testdata/testRunnerGeneratorWithMocks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/testdata/testRunnerGeneratorWithMocks.d" -MT"third_party/unity/test/testdata/testRunnerGeneratorWithMocks.o" -o "third_party/unity/test/testdata/testRunnerGeneratorWithMocks.o" "../third_party/unity/test/testdata/testRunnerGeneratorWithMocks.c"
+Finished building: ../third_party/unity/test/testdata/testRunnerGeneratorWithMocks.c
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_cmd.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_cmd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_cmd.d" -MT"third_party/unity/test/expectdata/testsample_cmd.o" -o "third_party/unity/test/expectdata/testsample_cmd.o" "../third_party/unity/test/expectdata/testsample_cmd.c"
+Finished building: ../third_party/unity/test/expectdata/testsample_cmd.c
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_def.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_def.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_def.d" -MT"third_party/unity/test/expectdata/testsample_def.o" -o "third_party/unity/test/expectdata/testsample_def.o" "../third_party/unity/test/expectdata/testsample_def.c"
+Finished building: ../third_party/unity/test/expectdata/testsample_def.c
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_head1.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_head1.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_head1.d" -MT"third_party/unity/test/expectdata/testsample_head1.o" -o "third_party/unity/test/expectdata/testsample_head1.o" "../third_party/unity/test/expectdata/testsample_head1.c"
+In file included from ../third_party/unity/test/expectdata/testsample_head1.c:25:0:
+../third_party/unity/test/expectdata/testsample_head1.h:6:10: fatal error: funky.h: No such file or directory
+ #include "funky.h"
+          ^~~~~~~~~
+compilation terminated.
+make: *** [third_party/unity/test/expectdata/testsample_head1.o] Error 1
+third_party/unity/test/expectdata/subdir.mk:69: recipe for target 'third_party/unity/test/expectdata/testsample_head1.o' failed
+15:06:12 **** Auto Build of configuration Debug for project simple_led_tcp ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_head1.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_head1.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_head1.d" -MT"third_party/unity/test/expectdata/testsample_head1.o" -o "third_party/unity/test/expectdata/testsample_head1.o" "../third_party/unity/test/expectdata/testsample_head1.c"
+Finished building: ../third_party/unity/test/expectdata/testsample_head1.c
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_mock_cmd.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_mock_cmd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_mock_cmd.d" -MT"third_party/unity/test/expectdata/testsample_mock_cmd.o" -o "third_party/unity/test/expectdata/testsample_mock_cmd.o" "../third_party/unity/test/expectdata/testsample_mock_cmd.c"
+../third_party/unity/test/expectdata/testsample_mock_cmd.c:34:10: fatal error: funky.h: No such file or directory
+ #include "funky.h"
+          ^~~~~~~~~
+compilation terminated.
+make: *** [third_party/unity/test/expectdata/testsample_mock_cmd.o] Error 1
+third_party/unity/test/expectdata/subdir.mk:69: recipe for target 'third_party/unity/test/expectdata/testsample_mock_cmd.o' failed
+15:06:57 **** Auto Build of configuration Debug for project simple_led_tcp ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_mock_cmd.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_mock_cmd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_mock_cmd.d" -MT"third_party/unity/test/expectdata/testsample_mock_cmd.o" -o "third_party/unity/test/expectdata/testsample_mock_cmd.o" "../third_party/unity/test/expectdata/testsample_mock_cmd.c"
+../third_party/unity/test/expectdata/testsample_mock_cmd.c: In function 'CMock_Init':
+../third_party/unity/test/expectdata/testsample_mock_cmd.c:48:3: warning: implicit declaration of function 'Mockstanky_Init'; did you mean 'mockMock_Init'? [-Wimplicit-function-declaration]
+   Mockstanky_Init();
+   ^~~~~~~~~~~~~~~
+   mockMock_Init
+../third_party/unity/test/expectdata/testsample_mock_cmd.c: In function 'CMock_Verify':
+../third_party/unity/test/expectdata/testsample_mock_cmd.c:52:3: warning: implicit declaration of function 'Mockstanky_Verify'; did you mean 'mockMock_Verify'? [-Wimplicit-function-declaration]
+   Mockstanky_Verify();
+   ^~~~~~~~~~~~~~~~~
+   mockMock_Verify
+../third_party/unity/test/expectdata/testsample_mock_cmd.c: In function 'CMock_Destroy':
+../third_party/unity/test/expectdata/testsample_mock_cmd.c:56:3: warning: implicit declaration of function 'Mockstanky_Destroy'; did you mean 'mockMock_Destroy'? [-Wimplicit-function-declaration]
+   Mockstanky_Destroy();
+   ^~~~~~~~~~~~~~~~~~
+   mockMock_Destroy
+Finished building: ../third_party/unity/test/expectdata/testsample_mock_cmd.c
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_mock_def.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_mock_def.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_mock_def.d" -MT"third_party/unity/test/expectdata/testsample_mock_def.o" -o "third_party/unity/test/expectdata/testsample_mock_def.o" "../third_party/unity/test/expectdata/testsample_mock_def.c"
+../third_party/unity/test/expectdata/testsample_mock_def.c:30:10: fatal error: funky.h: No such file or directory
+ #include "funky.h"
+          ^~~~~~~~~
+compilation terminated.
+make: *** [third_party/unity/test/expectdata/testsample_mock_def.o] Error 1
+third_party/unity/test/expectdata/subdir.mk:69: recipe for target 'third_party/unity/test/expectdata/testsample_mock_def.o' failed
+15:07:13 **** Auto Build of configuration Debug for project simple_led_tcp ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_mock_def.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_mock_def.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_mock_def.d" -MT"third_party/unity/test/expectdata/testsample_mock_def.o" -o "third_party/unity/test/expectdata/testsample_mock_def.o" "../third_party/unity/test/expectdata/testsample_mock_def.c"
+../third_party/unity/test/expectdata/testsample_mock_def.c: In function 'CMock_Init':
+../third_party/unity/test/expectdata/testsample_mock_def.c:44:3: warning: implicit declaration of function 'Mockstanky_Init'; did you mean 'mockMock_Init'? [-Wimplicit-function-declaration]
+   Mockstanky_Init();
+   ^~~~~~~~~~~~~~~
+   mockMock_Init
+../third_party/unity/test/expectdata/testsample_mock_def.c: In function 'CMock_Verify':
+../third_party/unity/test/expectdata/testsample_mock_def.c:48:3: warning: implicit declaration of function 'Mockstanky_Verify'; did you mean 'mockMock_Verify'? [-Wimplicit-function-declaration]
+   Mockstanky_Verify();
+   ^~~~~~~~~~~~~~~~~
+   mockMock_Verify
+../third_party/unity/test/expectdata/testsample_mock_def.c: In function 'CMock_Destroy':
+../third_party/unity/test/expectdata/testsample_mock_def.c:52:3: warning: implicit declaration of function 'Mockstanky_Destroy'; did you mean 'mockMock_Destroy'? [-Wimplicit-function-declaration]
+   Mockstanky_Destroy();
+   ^~~~~~~~~~~~~~~~~~
+   mockMock_Destroy
+Finished building: ../third_party/unity/test/expectdata/testsample_mock_def.c
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_mock_head1.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_mock_head1.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_mock_head1.d" -MT"third_party/unity/test/expectdata/testsample_mock_head1.o" -o "third_party/unity/test/expectdata/testsample_mock_head1.o" "../third_party/unity/test/expectdata/testsample_mock_head1.c"
+In file included from ../third_party/unity/test/expectdata/testsample_mock_head1.c:30:0:
+../third_party/unity/test/expectdata/testsample_mock_head1.h:7:10: fatal error: funky.h: No such file or directory
+ #include "funky.h"
+          ^~~~~~~~~
+compilation terminated.
+third_party/unity/test/expectdata/subdir.mk:69: recipe for target 'third_party/unity/test/expectdata/testsample_mock_head1.o' failed
+make: *** [third_party/unity/test/expectdata/testsample_mock_head1.o] Error 1
+15:07:28 **** Auto Build of configuration Debug for project simple_led_tcp ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_mock_head1.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_mock_head1.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_mock_head1.d" -MT"third_party/unity/test/expectdata/testsample_mock_head1.o" -o "third_party/unity/test/expectdata/testsample_mock_head1.o" "../third_party/unity/test/expectdata/testsample_mock_head1.c"
+../third_party/unity/test/expectdata/testsample_mock_head1.c:31:10: fatal error: Mockstanky.h: No such file or directory
+ #include "Mockstanky.h"
+          ^~~~~~~~~~~~~~
+compilation terminated.
+make: *** [third_party/unity/test/expectdata/testsample_mock_head1.o] Error 1
+third_party/unity/test/expectdata/subdir.mk:69: recipe for target 'third_party/unity/test/expectdata/testsample_mock_head1.o' failed
+15:07:41 **** Auto Build of configuration Debug for project simple_led_tcp ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_mock_head1.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_mock_head1.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_mock_head1.d" -MT"third_party/unity/test/expectdata/testsample_mock_head1.o" -o "third_party/unity/test/expectdata/testsample_mock_head1.o" "../third_party/unity/test/expectdata/testsample_mock_head1.c"
+../third_party/unity/test/expectdata/testsample_mock_head1.c: In function 'CMock_Init':
+../third_party/unity/test/expectdata/testsample_mock_head1.c:43:3: warning: implicit declaration of function 'Mockstanky_Init'; did you mean 'mockMock_Init'? [-Wimplicit-function-declaration]
+   Mockstanky_Init();
+   ^~~~~~~~~~~~~~~
+   mockMock_Init
+../third_party/unity/test/expectdata/testsample_mock_head1.c: In function 'CMock_Verify':
+../third_party/unity/test/expectdata/testsample_mock_head1.c:47:3: warning: implicit declaration of function 'Mockstanky_Verify'; did you mean 'mockMock_Verify'? [-Wimplicit-function-declaration]
+   Mockstanky_Verify();
+   ^~~~~~~~~~~~~~~~~
+   mockMock_Verify
+../third_party/unity/test/expectdata/testsample_mock_head1.c: In function 'CMock_Destroy':
+../third_party/unity/test/expectdata/testsample_mock_head1.c:51:3: warning: implicit declaration of function 'Mockstanky_Destroy'; did you mean 'mockMock_Destroy'? [-Wimplicit-function-declaration]
+   Mockstanky_Destroy();
+   ^~~~~~~~~~~~~~~~~~
+   mockMock_Destroy
+Finished building: ../third_party/unity/test/expectdata/testsample_mock_head1.c
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_mock_new1.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_mock_new1.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_mock_new1.d" -MT"third_party/unity/test/expectdata/testsample_mock_new1.o" -o "third_party/unity/test/expectdata/testsample_mock_new1.o" "../third_party/unity/test/expectdata/testsample_mock_new1.c"
+../third_party/unity/test/expectdata/testsample_mock_new1.c:34:10: fatal error: one.h: No such file or directory
+ #include "one.h"
+          ^~~~~~~
+compilation terminated.
+make: *** [third_party/unity/test/expectdata/testsample_mock_new1.o] Error 1
+third_party/unity/test/expectdata/subdir.mk:69: recipe for target 'third_party/unity/test/expectdata/testsample_mock_new1.o' failed
+15:08:31 **** Auto Build of configuration Debug for project simple_led_tcp ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_mock_new1.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_mock_new1.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_mock_new1.d" -MT"third_party/unity/test/expectdata/testsample_mock_new1.o" -o "third_party/unity/test/expectdata/testsample_mock_new1.o" "../third_party/unity/test/expectdata/testsample_mock_new1.c"
+../third_party/unity/test/expectdata/testsample_mock_new1.c: In function 'CMock_Init':
+../third_party/unity/test/expectdata/testsample_mock_new1.c:57:3: warning: implicit declaration of function 'Mockstanky_Init'; did you mean 'mockMock_Init'? [-Wimplicit-function-declaration]
+   Mockstanky_Init();
+   ^~~~~~~~~~~~~~~
+   mockMock_Init
+../third_party/unity/test/expectdata/testsample_mock_new1.c: In function 'CMock_Verify':
+../third_party/unity/test/expectdata/testsample_mock_new1.c:61:3: warning: implicit declaration of function 'Mockstanky_Verify'; did you mean 'mockMock_Verify'? [-Wimplicit-function-declaration]
+   Mockstanky_Verify();
+   ^~~~~~~~~~~~~~~~~
+   mockMock_Verify
+../third_party/unity/test/expectdata/testsample_mock_new1.c: In function 'CMock_Destroy':
+../third_party/unity/test/expectdata/testsample_mock_new1.c:65:3: warning: implicit declaration of function 'Mockstanky_Destroy'; did you mean 'mockMock_Destroy'? [-Wimplicit-function-declaration]
+   Mockstanky_Destroy();
+   ^~~~~~~~~~~~~~~~~~
+   mockMock_Destroy
+Finished building: ../third_party/unity/test/expectdata/testsample_mock_new1.c
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_mock_new2.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_mock_new2.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_mock_new2.d" -MT"third_party/unity/test/expectdata/testsample_mock_new2.o" -o "third_party/unity/test/expectdata/testsample_mock_new2.o" "../third_party/unity/test/expectdata/testsample_mock_new2.c"
+../third_party/unity/test/expectdata/testsample_mock_new2.c:30:10: fatal error: funky.h: No such file or directory
+ #include "funky.h"
+          ^~~~~~~~~
+compilation terminated.
+third_party/unity/test/expectdata/subdir.mk:69: recipe for target 'third_party/unity/test/expectdata/testsample_mock_new2.o' failed
+make: *** [third_party/unity/test/expectdata/testsample_mock_new2.o] Error 1
+15:08:44 **** Auto Build of configuration Debug for project simple_led_tcp ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_mock_new2.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_mock_new2.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_mock_new2.d" -MT"third_party/unity/test/expectdata/testsample_mock_new2.o" -o "third_party/unity/test/expectdata/testsample_mock_new2.o" "../third_party/unity/test/expectdata/testsample_mock_new2.c"
+../third_party/unity/test/expectdata/testsample_mock_new2.c: In function 'CMock_Init':
+../third_party/unity/test/expectdata/testsample_mock_new2.c:44:3: warning: implicit declaration of function 'Mockstanky_Init'; did you mean 'mockMock_Init'? [-Wimplicit-function-declaration]
+   Mockstanky_Init();
+   ^~~~~~~~~~~~~~~
+   mockMock_Init
+../third_party/unity/test/expectdata/testsample_mock_new2.c: In function 'CMock_Verify':
+../third_party/unity/test/expectdata/testsample_mock_new2.c:48:3: warning: implicit declaration of function 'Mockstanky_Verify'; did you mean 'mockMock_Verify'? [-Wimplicit-function-declaration]
+   Mockstanky_Verify();
+   ^~~~~~~~~~~~~~~~~
+   mockMock_Verify
+../third_party/unity/test/expectdata/testsample_mock_new2.c: In function 'CMock_Destroy':
+../third_party/unity/test/expectdata/testsample_mock_new2.c:52:3: warning: implicit declaration of function 'Mockstanky_Destroy'; did you mean 'mockMock_Destroy'? [-Wimplicit-function-declaration]
+   Mockstanky_Destroy();
+   ^~~~~~~~~~~~~~~~~~
+   mockMock_Destroy
+../third_party/unity/test/expectdata/testsample_mock_new2.c: In function 'suite_setup':
+../third_party/unity/test/expectdata/testsample_mock_new2.c:58:1: warning: implicit declaration of function 'a_custom_setup'; did you mean 'suite_setup'? [-Wimplicit-function-declaration]
+ a_custom_setup();
+ ^~~~~~~~~~~~~~
+ suite_setup
+../third_party/unity/test/expectdata/testsample_mock_new2.c:59:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../third_party/unity/test/expectdata/testsample_mock_new2.c: In function 'suite_teardown':
+../third_party/unity/test/expectdata/testsample_mock_new2.c:64:1: warning: implicit declaration of function 'a_custom_teardown'; did you mean 'suite_teardown'? [-Wimplicit-function-declaration]
+ a_custom_teardown();
+ ^~~~~~~~~~~~~~~~~
+ suite_teardown
+../third_party/unity/test/expectdata/testsample_mock_new2.c:65:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../third_party/unity/test/expectdata/testsample_mock_new2.c
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_mock_param.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_mock_param.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_mock_param.d" -MT"third_party/unity/test/expectdata/testsample_mock_param.o" -o "third_party/unity/test/expectdata/testsample_mock_param.o" "../third_party/unity/test/expectdata/testsample_mock_param.c"
+../third_party/unity/test/expectdata/testsample_mock_param.c:31:10: fatal error: funky.h: No such file or directory
+ #include "funky.h"
+          ^~~~~~~~~
+compilation terminated.
+make: *** [third_party/unity/test/expectdata/testsample_mock_param.o] Error 1
+third_party/unity/test/expectdata/subdir.mk:69: recipe for target 'third_party/unity/test/expectdata/testsample_mock_param.o' failed
+15:09:24 **** Auto Build of configuration Debug for project simple_led_tcp ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_mock_param.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_mock_param.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_mock_param.d" -MT"third_party/unity/test/expectdata/testsample_mock_param.o" -o "third_party/unity/test/expectdata/testsample_mock_param.o" "../third_party/unity/test/expectdata/testsample_mock_param.c"
+../third_party/unity/test/expectdata/testsample_mock_param.c: In function 'CMock_Init':
+../third_party/unity/test/expectdata/testsample_mock_param.c:45:3: warning: implicit declaration of function 'Mockstanky_Init'; did you mean 'mockMock_Init'? [-Wimplicit-function-declaration]
+   Mockstanky_Init();
+   ^~~~~~~~~~~~~~~
+   mockMock_Init
+../third_party/unity/test/expectdata/testsample_mock_param.c: In function 'CMock_Verify':
+../third_party/unity/test/expectdata/testsample_mock_param.c:49:3: warning: implicit declaration of function 'Mockstanky_Verify'; did you mean 'mockMock_Verify'? [-Wimplicit-function-declaration]
+   Mockstanky_Verify();
+   ^~~~~~~~~~~~~~~~~
+   mockMock_Verify
+../third_party/unity/test/expectdata/testsample_mock_param.c: In function 'CMock_Destroy':
+../third_party/unity/test/expectdata/testsample_mock_param.c:53:3: warning: implicit declaration of function 'Mockstanky_Destroy'; did you mean 'mockMock_Destroy'? [-Wimplicit-function-declaration]
+   Mockstanky_Destroy();
+   ^~~~~~~~~~~~~~~~~~
+   mockMock_Destroy
+Finished building: ../third_party/unity/test/expectdata/testsample_mock_param.c
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_mock_run1.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_mock_run1.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_mock_run1.d" -MT"third_party/unity/test/expectdata/testsample_mock_run1.o" -o "third_party/unity/test/expectdata/testsample_mock_run1.o" "../third_party/unity/test/expectdata/testsample_mock_run1.c"
+../third_party/unity/test/expectdata/testsample_mock_run1.c:34:10: fatal error: one.h: No such file or directory
+ #include "one.h"
+          ^~~~~~~
+compilation terminated.
+third_party/unity/test/expectdata/subdir.mk:69: recipe for target 'third_party/unity/test/expectdata/testsample_mock_run1.o' failed
+make: *** [third_party/unity/test/expectdata/testsample_mock_run1.o] Error 1
+15:09:40 **** Auto Build of configuration Debug for project simple_led_tcp ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_mock_run1.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_mock_run1.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_mock_run1.d" -MT"third_party/unity/test/expectdata/testsample_mock_run1.o" -o "third_party/unity/test/expectdata/testsample_mock_run1.o" "../third_party/unity/test/expectdata/testsample_mock_run1.c"
+../third_party/unity/test/expectdata/testsample_mock_run1.c: In function 'CMock_Init':
+../third_party/unity/test/expectdata/testsample_mock_run1.c:57:3: warning: implicit declaration of function 'Mockstanky_Init'; did you mean 'mockMock_Init'? [-Wimplicit-function-declaration]
+   Mockstanky_Init();
+   ^~~~~~~~~~~~~~~
+   mockMock_Init
+../third_party/unity/test/expectdata/testsample_mock_run1.c: In function 'CMock_Verify':
+../third_party/unity/test/expectdata/testsample_mock_run1.c:61:3: warning: implicit declaration of function 'Mockstanky_Verify'; did you mean 'mockMock_Verify'? [-Wimplicit-function-declaration]
+   Mockstanky_Verify();
+   ^~~~~~~~~~~~~~~~~
+   mockMock_Verify
+../third_party/unity/test/expectdata/testsample_mock_run1.c: In function 'CMock_Destroy':
+../third_party/unity/test/expectdata/testsample_mock_run1.c:65:3: warning: implicit declaration of function 'Mockstanky_Destroy'; did you mean 'mockMock_Destroy'? [-Wimplicit-function-declaration]
+   Mockstanky_Destroy();
+   ^~~~~~~~~~~~~~~~~~
+   mockMock_Destroy
+Finished building: ../third_party/unity/test/expectdata/testsample_mock_run1.c
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_mock_run2.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_mock_run2.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_mock_run2.d" -MT"third_party/unity/test/expectdata/testsample_mock_run2.o" -o "third_party/unity/test/expectdata/testsample_mock_run2.o" "../third_party/unity/test/expectdata/testsample_mock_run2.c"
+../third_party/unity/test/expectdata/testsample_mock_run2.c:30:10: fatal error: funky.h: No such file or directory
+ #include "funky.h"
+          ^~~~~~~~~
+compilation terminated.
+third_party/unity/test/expectdata/subdir.mk:69: recipe for target 'third_party/unity/test/expectdata/testsample_mock_run2.o' failed
+make: *** [third_party/unity/test/expectdata/testsample_mock_run2.o] Error 1
+15:09:53 **** Auto Build of configuration Debug for project simple_led_tcp ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_mock_run2.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_mock_run2.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_mock_run2.d" -MT"third_party/unity/test/expectdata/testsample_mock_run2.o" -o "third_party/unity/test/expectdata/testsample_mock_run2.o" "../third_party/unity/test/expectdata/testsample_mock_run2.c"
+../third_party/unity/test/expectdata/testsample_mock_run2.c: In function 'CMock_Init':
+../third_party/unity/test/expectdata/testsample_mock_run2.c:44:3: warning: implicit declaration of function 'Mockstanky_Init'; did you mean 'mockMock_Init'? [-Wimplicit-function-declaration]
+   Mockstanky_Init();
+   ^~~~~~~~~~~~~~~
+   mockMock_Init
+../third_party/unity/test/expectdata/testsample_mock_run2.c: In function 'CMock_Verify':
+../third_party/unity/test/expectdata/testsample_mock_run2.c:48:3: warning: implicit declaration of function 'Mockstanky_Verify'; did you mean 'mockMock_Verify'? [-Wimplicit-function-declaration]
+   Mockstanky_Verify();
+   ^~~~~~~~~~~~~~~~~
+   mockMock_Verify
+../third_party/unity/test/expectdata/testsample_mock_run2.c: In function 'CMock_Destroy':
+../third_party/unity/test/expectdata/testsample_mock_run2.c:52:3: warning: implicit declaration of function 'Mockstanky_Destroy'; did you mean 'mockMock_Destroy'? [-Wimplicit-function-declaration]
+   Mockstanky_Destroy();
+   ^~~~~~~~~~~~~~~~~~
+   mockMock_Destroy
+../third_party/unity/test/expectdata/testsample_mock_run2.c: In function 'suite_setup':
+../third_party/unity/test/expectdata/testsample_mock_run2.c:58:1: warning: implicit declaration of function 'a_custom_setup'; did you mean 'suite_setup'? [-Wimplicit-function-declaration]
+ a_custom_setup();
+ ^~~~~~~~~~~~~~
+ suite_setup
+../third_party/unity/test/expectdata/testsample_mock_run2.c:59:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../third_party/unity/test/expectdata/testsample_mock_run2.c: In function 'suite_teardown':
+../third_party/unity/test/expectdata/testsample_mock_run2.c:64:1: warning: implicit declaration of function 'a_custom_teardown'; did you mean 'suite_teardown'? [-Wimplicit-function-declaration]
+ a_custom_teardown();
+ ^~~~~~~~~~~~~~~~~
+ suite_teardown
+../third_party/unity/test/expectdata/testsample_mock_run2.c:65:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../third_party/unity/test/expectdata/testsample_mock_run2.c
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_mock_yaml.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_mock_yaml.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_mock_yaml.d" -MT"third_party/unity/test/expectdata/testsample_mock_yaml.o" -o "third_party/unity/test/expectdata/testsample_mock_yaml.o" "../third_party/unity/test/expectdata/testsample_mock_yaml.c"
+../third_party/unity/test/expectdata/testsample_mock_yaml.c:34:10: fatal error: two.h: No such file or directory
+ #include "two.h"
+          ^~~~~~~
+compilation terminated.
+third_party/unity/test/expectdata/subdir.mk:69: recipe for target 'third_party/unity/test/expectdata/testsample_mock_yaml.o' failed
+make: *** [third_party/unity/test/expectdata/testsample_mock_yaml.o] Error 1
+15:10:21 **** Auto Build of configuration Debug for project simple_led_tcp ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_mock_yaml.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_mock_yaml.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_mock_yaml.d" -MT"third_party/unity/test/expectdata/testsample_mock_yaml.o" -o "third_party/unity/test/expectdata/testsample_mock_yaml.o" "../third_party/unity/test/expectdata/testsample_mock_yaml.c"
+../third_party/unity/test/expectdata/testsample_mock_yaml.c: In function 'CMock_Init':
+../third_party/unity/test/expectdata/testsample_mock_yaml.c:51:3: warning: implicit declaration of function 'Mockstanky_Init'; did you mean 'mockMock_Init'? [-Wimplicit-function-declaration]
+   Mockstanky_Init();
+   ^~~~~~~~~~~~~~~
+   mockMock_Init
+../third_party/unity/test/expectdata/testsample_mock_yaml.c: In function 'CMock_Verify':
+../third_party/unity/test/expectdata/testsample_mock_yaml.c:55:3: warning: implicit declaration of function 'Mockstanky_Verify'; did you mean 'mockMock_Verify'? [-Wimplicit-function-declaration]
+   Mockstanky_Verify();
+   ^~~~~~~~~~~~~~~~~
+   mockMock_Verify
+../third_party/unity/test/expectdata/testsample_mock_yaml.c: In function 'CMock_Destroy':
+../third_party/unity/test/expectdata/testsample_mock_yaml.c:59:3: warning: implicit declaration of function 'Mockstanky_Destroy'; did you mean 'mockMock_Destroy'? [-Wimplicit-function-declaration]
+   Mockstanky_Destroy();
+   ^~~~~~~~~~~~~~~~~~
+   mockMock_Destroy
+../third_party/unity/test/expectdata/testsample_mock_yaml.c: In function 'suite_setup':
+../third_party/unity/test/expectdata/testsample_mock_yaml.c:65:1: warning: implicit declaration of function 'a_yaml_setup'; did you mean 'suite_setup'? [-Wimplicit-function-declaration]
+ a_yaml_setup();
+ ^~~~~~~~~~~~
+ suite_setup
+../third_party/unity/test/expectdata/testsample_mock_yaml.c:66:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../third_party/unity/test/expectdata/testsample_mock_yaml.c
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_new1.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_new1.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_new1.d" -MT"third_party/unity/test/expectdata/testsample_new1.o" -o "third_party/unity/test/expectdata/testsample_new1.o" "../third_party/unity/test/expectdata/testsample_new1.c"
+../third_party/unity/test/expectdata/testsample_new1.c:29:10: fatal error: one.h: No such file or directory
+ #include "one.h"
+          ^~~~~~~
+compilation terminated.
+third_party/unity/test/expectdata/subdir.mk:69: recipe for target 'third_party/unity/test/expectdata/testsample_new1.o' failed
+make: *** [third_party/unity/test/expectdata/testsample_new1.o] Error 1
+15:10:47 **** Auto Build of configuration Debug for project simple_led_tcp ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_new1.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_new1.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_new1.d" -MT"third_party/unity/test/expectdata/testsample_new1.o" -o "third_party/unity/test/expectdata/testsample_new1.o" "../third_party/unity/test/expectdata/testsample_new1.c"
+Finished building: ../third_party/unity/test/expectdata/testsample_new1.c
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_new2.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_new2.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_new2.d" -MT"third_party/unity/test/expectdata/testsample_new2.o" -o "third_party/unity/test/expectdata/testsample_new2.o" "../third_party/unity/test/expectdata/testsample_new2.c"
+../third_party/unity/test/expectdata/testsample_new2.c:25:10: fatal error: funky.h: No such file or directory
+ #include "funky.h"
+          ^~~~~~~~~
+compilation terminated.
+make: *** [third_party/unity/test/expectdata/testsample_new2.o] Error 1
+third_party/unity/test/expectdata/subdir.mk:69: recipe for target 'third_party/unity/test/expectdata/testsample_new2.o' failed
+15:11:14 **** Auto Build of configuration Debug for project simple_led_tcp ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_new2.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_new2.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_new2.d" -MT"third_party/unity/test/expectdata/testsample_new2.o" -o "third_party/unity/test/expectdata/testsample_new2.o" "../third_party/unity/test/expectdata/testsample_new2.c"
+../third_party/unity/test/expectdata/testsample_new2.c: In function 'suite_setup':
+../third_party/unity/test/expectdata/testsample_new2.c:41:1: warning: implicit declaration of function 'a_custom_setup'; did you mean 'suite_setup'? [-Wimplicit-function-declaration]
+ a_custom_setup();
+ ^~~~~~~~~~~~~~
+ suite_setup
+../third_party/unity/test/expectdata/testsample_new2.c:42:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../third_party/unity/test/expectdata/testsample_new2.c: In function 'suite_teardown':
+../third_party/unity/test/expectdata/testsample_new2.c:47:1: warning: implicit declaration of function 'a_custom_teardown'; did you mean 'suite_teardown'? [-Wimplicit-function-declaration]
+ a_custom_teardown();
+ ^~~~~~~~~~~~~~~~~
+ suite_teardown
+../third_party/unity/test/expectdata/testsample_new2.c:48:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../third_party/unity/test/expectdata/testsample_new2.c
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_param.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_param.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_param.d" -MT"third_party/unity/test/expectdata/testsample_param.o" -o "third_party/unity/test/expectdata/testsample_param.o" "../third_party/unity/test/expectdata/testsample_param.c"
+../third_party/unity/test/expectdata/testsample_param.c:26:10: fatal error: funky.h: No such file or directory
+ #include "funky.h"
+          ^~~~~~~~~
+compilation terminated.
+third_party/unity/test/expectdata/subdir.mk:69: recipe for target 'third_party/unity/test/expectdata/testsample_param.o' failed
+make: *** [third_party/unity/test/expectdata/testsample_param.o] Error 1
+15:11:26 **** Auto Build of configuration Debug for project simple_led_tcp ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_param.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_param.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_param.d" -MT"third_party/unity/test/expectdata/testsample_param.o" -o "third_party/unity/test/expectdata/testsample_param.o" "../third_party/unity/test/expectdata/testsample_param.c"
+Finished building: ../third_party/unity/test/expectdata/testsample_param.c
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_run1.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_run1.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_run1.d" -MT"third_party/unity/test/expectdata/testsample_run1.o" -o "third_party/unity/test/expectdata/testsample_run1.o" "../third_party/unity/test/expectdata/testsample_run1.c"
+../third_party/unity/test/expectdata/testsample_run1.c:29:10: fatal error: one.h: No such file or directory
+ #include "one.h"
+          ^~~~~~~
+compilation terminated.
+third_party/unity/test/expectdata/subdir.mk:69: recipe for target 'third_party/unity/test/expectdata/testsample_run1.o' failed
+make: *** [third_party/unity/test/expectdata/testsample_run1.o] Error 1
+15:11:43 **** Auto Build of configuration Debug for project simple_led_tcp ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_run1.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_run1.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_run1.d" -MT"third_party/unity/test/expectdata/testsample_run1.o" -o "third_party/unity/test/expectdata/testsample_run1.o" "../third_party/unity/test/expectdata/testsample_run1.c"
+Finished building: ../third_party/unity/test/expectdata/testsample_run1.c
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_run2.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_run2.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_run2.d" -MT"third_party/unity/test/expectdata/testsample_run2.o" -o "third_party/unity/test/expectdata/testsample_run2.o" "../third_party/unity/test/expectdata/testsample_run2.c"
+../third_party/unity/test/expectdata/testsample_run2.c:25:10: fatal error: funky.h: No such file or directory
+third_party/unity/test/expectdata/subdir.mk:69: recipe for target 'third_party/unity/test/expectdata/testsample_run2.o' failed
+ #include "funky.h"
+          ^~~~~~~~~
+compilation terminated.
+make: *** [third_party/unity/test/expectdata/testsample_run2.o] Error 1
+15:11:55 **** Auto Build of configuration Debug for project simple_led_tcp ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_run2.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_run2.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_run2.d" -MT"third_party/unity/test/expectdata/testsample_run2.o" -o "third_party/unity/test/expectdata/testsample_run2.o" "../third_party/unity/test/expectdata/testsample_run2.c"
+../third_party/unity/test/expectdata/testsample_run2.c: In function 'suite_setup':
+../third_party/unity/test/expectdata/testsample_run2.c:41:1: warning: implicit declaration of function 'a_custom_setup'; did you mean 'suite_setup'? [-Wimplicit-function-declaration]
+ a_custom_setup();
+ ^~~~~~~~~~~~~~
+ suite_setup
+../third_party/unity/test/expectdata/testsample_run2.c:42:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../third_party/unity/test/expectdata/testsample_run2.c: In function 'suite_teardown':
+../third_party/unity/test/expectdata/testsample_run2.c:47:1: warning: implicit declaration of function 'a_custom_teardown'; did you mean 'suite_teardown'? [-Wimplicit-function-declaration]
+ a_custom_teardown();
+ ^~~~~~~~~~~~~~~~~
+ suite_teardown
+../third_party/unity/test/expectdata/testsample_run2.c:48:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../third_party/unity/test/expectdata/testsample_run2.c
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_yaml.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_yaml.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_yaml.d" -MT"third_party/unity/test/expectdata/testsample_yaml.o" -o "third_party/unity/test/expectdata/testsample_yaml.o" "../third_party/unity/test/expectdata/testsample_yaml.c"
+../third_party/unity/test/expectdata/testsample_yaml.c:29:10: fatal error: two.h: No such file or directory
+ #include "two.h"
+          ^~~~~~~
+compilation terminated.
+third_party/unity/test/expectdata/subdir.mk:69: recipe for target 'third_party/unity/test/expectdata/testsample_yaml.o' failed
+make: *** [third_party/unity/test/expectdata/testsample_yaml.o] Error 1
+15:12:11 **** Auto Build of configuration Debug for project simple_led_tcp ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../third_party/unity/test/expectdata/testsample_yaml.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_yaml.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_yaml.d" -MT"third_party/unity/test/expectdata/testsample_yaml.o" -o "third_party/unity/test/expectdata/testsample_yaml.o" "../third_party/unity/test/expectdata/testsample_yaml.c"
+../third_party/unity/test/expectdata/testsample_yaml.c: In function 'suite_setup':
+../third_party/unity/test/expectdata/testsample_yaml.c:48:1: warning: implicit declaration of function 'a_yaml_setup'; did you mean 'suite_setup'? [-Wimplicit-function-declaration]
+ a_yaml_setup();
+ ^~~~~~~~~~~~
+ suite_setup
+../third_party/unity/test/expectdata/testsample_yaml.c:49:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../third_party/unity/test/expectdata/testsample_yaml.c
+ 
+Building file: ../third_party/unity/src/unity.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/src/unity.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/src/unity.d" -MT"third_party/unity/src/unity.o" -o "third_party/unity/src/unity.o" "../third_party/unity/src/unity.c"
+Finished building: ../third_party/unity/src/unity.c
+ 
+Building file: ../third_party/unity/extras/fixture/test/main/AllTests.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/extras/fixture/test/main/AllTests.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/extras/fixture/test/main/AllTests.d" -MT"third_party/unity/extras/fixture/test/main/AllTests.o" -o "third_party/unity/extras/fixture/test/main/AllTests.o" "../third_party/unity/extras/fixture/test/main/AllTests.c"
+../third_party/unity/extras/fixture/test/main/AllTests.c:8:10: fatal error: unity_fixture.h: No such file or directory
+ #include "unity_fixture.h"
+          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [third_party/unity/extras/fixture/test/main/AllTests.o] Error 1
+third_party/unity/extras/fixture/test/main/subdir.mk:18: recipe for target 'third_party/unity/extras/fixture/test/main/AllTests.o' failed

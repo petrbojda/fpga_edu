@@ -1,0 +1,33 @@
+14:01:02 INFO  : Registering command handlers for SDK TCF services
+14:01:03 INFO  : Launching XSCT server: xsct -n -interactive /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/temp_xsdb_launch_script.tcl
+14:01:05 INFO  : XSCT server has started successfully.
+14:01:05 INFO  : Successfully done setting XSCT server connection channel  
+14:01:05 INFO  : Successfully done setting SDK workspace  
+14:02:20 INFO  : Project 'zedboard_hw_platform' created. You can now create BSPs and application projects targeting this hardware platform.
+14:07:17 INFO  : Invoking Bootgen: bootgen -image simple_led_net.bif -arch zynq -o /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/bootimage/BOOT.bin
+14:07:17 INFO  : Creating new bif file /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/bootimage/simple_led_net.bif
+14:07:18 INFO  : Bootgen command execution is done.
+14:13:08 INFO  : Invoking Bootgen: bootgen -image simple_led_net.bif -arch zynq -o /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/bootimage/BOOT.bin -w on
+14:13:09 INFO  : Bootgen command execution is done.
+14:20:12 INFO  : Invoking Bootgen: bootgen -image simple_led_net.bif -arch zynq -o /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/bootimage/BOOT.bin -w on
+14:20:13 INFO  : Bootgen command execution is done.
+14:25:48 INFO  : Invoking Bootgen: bootgen -image simple_led_net.bif -arch zynq -o /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/bootimage/BOOT.bin -w on
+14:25:49 INFO  : Bootgen command execution is done.
+14:30:57 INFO  : Invoking Bootgen: bootgen -image simple_led_net.bif -arch zynq -o /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/bootimage/BOOT.bin -w on
+14:30:58 INFO  : Bootgen command execution is done.
+14:39:07 INFO  : Invoking Bootgen: bootgen -image simple_led_net.bif -arch zynq -o /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/bootimage/BOOT.bin -w on
+14:39:08 INFO  : Bootgen command execution is done.
+14:44:28 INFO  : Invoking Bootgen: bootgen -image simple_led_net.bif -arch zynq -o /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/bootimage/BOOT.bin -w on
+14:44:29 INFO  : Bootgen command execution is done.
+14:51:54 INFO  : Invoking Bootgen: bootgen -image simple_led_net.bif -arch zynq -o /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/bootimage/BOOT.bin -w on
+14:51:55 INFO  : Bootgen command execution is done.
+15:15:03 INFO  : Invoking Bootgen: bootgen -image simple_led_net.bif -arch zynq -o /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/bootimage/BOOT.bin -w on
+15:15:04 INFO  : Bootgen command execution is done.
+15:33:13 INFO  : Invoking Bootgen: bootgen -image simple_led_net.bif -arch zynq -o /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/bootimage/BOOT.bin -w on
+15:33:15 INFO  : Bootgen command execution is done.
+15:40:16 INFO  : Invoking Bootgen: bootgen -image simple_led_net.bif -arch zynq -o /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/bootimage/BOOT.bin -w on
+15:40:17 INFO  : Bootgen command execution is done.
+15:46:28 INFO  : Invoking Bootgen: bootgen -image simple_led_net.bif -arch zynq -o /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/bootimage/BOOT.bin -w on
+15:46:29 INFO  : Bootgen command execution is done.
+15:54:06 INFO  : Invoking Bootgen: bootgen -image simple_led_net.bif -arch zynq -o /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/simple_led_net/bootimage/BOOT.bin -w on
+15:54:07 INFO  : Bootgen command execution is done.

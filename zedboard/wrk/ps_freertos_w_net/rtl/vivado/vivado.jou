@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Apr 13 12:29:24 2019
+# Process ID: 7805
+# Current directory: /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/rtl/vivado
+# Command line: vivado
+# Log file: /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/rtl/vivado/vivado.log
+# Journal file: /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/rtl/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/rtl/vivado/first_freertos.xpr
+update_compile_order -fileset sources_1
+open_bd_design {/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/rtl/src/ip/p_system/p_system.bd}
+validate_bd_design -force
+save_bd_design
+reset_target all [get_files  /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/rtl/src/ip/p_system/p_system.bd]
+export_ip_user_files -of_objects  [get_files  /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/rtl/src/ip/p_system/p_system.bd] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset sources_1] /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/rtl/src/ip/p_system/p_system.bd]
+generate_target all [get_files  /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/rtl/src/ip/p_system/p_system.bd]
+catch { config_ip_cache -export [get_ips -all p_system_processing_system7_0_0] }
+catch { config_ip_cache -export [get_ips -all p_system_axi_gpio_0_0] }
+catch { config_ip_cache -export [get_ips -all p_system_axi_gpio_1_0] }
+catch { config_ip_cache -export [get_ips -all p_system_xbar_0] }
+catch { config_ip_cache -export [get_ips -all p_system_rst_ps7_0_100M_0] }
+catch { config_ip_cache -export [get_ips -all p_system_auto_pc_0] }
+export_ip_user_files -of_objects [get_files /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/rtl/src/ip/p_system/p_system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/rtl/src/ip/p_system/p_system.bd]
+launch_runs -jobs 4 p_system_processing_system7_0_0_synth_1
+export_simulation -of_objects [get_files /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/rtl/src/ip/p_system/p_system.bd] -directory /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/rtl/vivado/first_freertos.ip_user_files/sim_scripts -ip_user_files_dir /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/rtl/vivado/first_freertos.ip_user_files -ipstatic_source_dir /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/rtl/vivado/first_freertos.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/rtl/vivado/first_freertos.cache/compile_simlib/modelsim} {questa=/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/rtl/vivado/first_freertos.cache/compile_simlib/questa} {ies=/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/rtl/vivado/first_freertos.cache/compile_simlib/ies} {xcelium=/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/rtl/vivado/first_freertos.cache/compile_simlib/xcelium} {vcs=/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/rtl/vivado/first_freertos.cache/compile_simlib/vcs} {riviera=/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/rtl/vivado/first_freertos.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+write_xdc -force /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/rtl/vivado/constrs_1.xdc
+file copy -force /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/rtl/vivado/first_freertos.runs/impl_1/top_module.sysdef /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/zedboard_hw_platform/top_module.hdf
+

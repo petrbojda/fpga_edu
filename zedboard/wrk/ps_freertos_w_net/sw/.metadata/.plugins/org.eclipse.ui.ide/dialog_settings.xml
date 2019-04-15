@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.internal.ide.dialogs.ProjectContentsLocationArea">
+		<item value="/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/zedboard_hw_platform" key="OUTSIDE_LOCATION"/>
+	</section>
+</section>

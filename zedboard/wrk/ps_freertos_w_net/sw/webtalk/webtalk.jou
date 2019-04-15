@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# 
+# Start of session at: Sat Apr 13 20:27:37 2019
+# Process ID: 27967
+# Current directory: /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/webtalk
+# Command line: wbtcv -mode batch -source sdk_webtalk.tcl
+# Log file: /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/webtalk/webtalk.log
+# Journal file: /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_w_net/sw/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

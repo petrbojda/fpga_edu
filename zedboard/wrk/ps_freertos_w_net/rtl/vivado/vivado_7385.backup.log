@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Apr  8 11:42:26 2019
+# Process ID: 7385
+# Current directory: /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_systems/rtl/vivado
+# Command line: vivado
+# Log file: /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_systems/rtl/vivado/vivado.log
+# Journal file: /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_systems/rtl/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_systems/rtl/vivado/first_freertos.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 6535.605 ; gain = 139.062 ; free physical = 1867 ; free virtual = 11881
+update_compile_order -fileset sources_1
+open_bd_design {/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_systems/rtl/src/ip/p_system/p_system.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_1
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Successfully read diagram <p_system> from BD file </home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_systems/rtl/src/ip/p_system/p_system.bd>
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Apr  8 13:37:34 2019...
