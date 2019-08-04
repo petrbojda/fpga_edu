@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# 
+# Start of session at: Thu Aug  1 17:23:53 2019
+# Process ID: 13132
+# Current directory: /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/sw/webtalk
+# Command line: wbtcv -mode batch -source sdk_webtalk.tcl
+# Log file: /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/sw/webtalk/webtalk.log
+# Journal file: /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/sw/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

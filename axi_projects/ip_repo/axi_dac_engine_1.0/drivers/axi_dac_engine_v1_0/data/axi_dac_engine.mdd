@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER axi_dac_engine
+	OPTION supported_peripherals = (axi_dac_engine);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = axi_dac_engine;
+END DRIVER

@@ -1,0 +1,77 @@
+11:01:49 **** Auto Build of configuration Debug for project simple_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_bsp/ps7_cortexa9_0/include -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././include -I.././include/private -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'vAssertCalled':
+../src/helloworld.c:81:36: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  printf( ("vAssertCalled %s, %ld\n", pcFile, (long)ulLine) );
+                                    ^
+../src/helloworld.c:81:44: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  printf( ("vAssertCalled %s, %ld\n", pcFile, (long)ulLine) );
+                                            ^
+../src/helloworld.c:81:10: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+  printf( ("vAssertCalled %s, %ld\n", pcFile, (long)ulLine) );
+          ^
+In file included from /opt/xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/stdio.h:29:0,
+                 from ../src/helloworld.c:48:
+/opt/xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/stdio.h:181:5: note: expected 'const char * restrict' but argument is of type 'long int'
+ int _EXFUN(printf, (const char *__restrict, ...)
+     ^
+../src/helloworld.c:74:20: warning: unused variable 'ulBlockVariable' [-Wunused-variable]
+  volatile uint32_t ulBlockVariable = 0UL;
+                    ^~~~~~~~~~~~~~~
+../src/helloworld.c:73:17: warning: unused variable 'ulLongSleep' [-Wunused-variable]
+  const uint32_t ulLongSleep = 1000UL;
+                 ^~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: simple_led.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_led_bsp/ps7_cortexa9_0/lib -o "simple_led.elf"  ./src/helloworld.o ./src/platform.o  ./FreeRTOS/portable/GCC/ARM_CA9/port.o ./FreeRTOS/portable/GCC/ARM_CA9/portASM.o  ./FreeRTOS/event_groups.o ./FreeRTOS/list.o ./FreeRTOS/queue.o ./FreeRTOS/stream_buffer.o ./FreeRTOS/tasks.o ./FreeRTOS/timers.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./FreeRTOS/portable/GCC/ARM_CA9/port.o: In function `xPortStartScheduler':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/portable/GCC/ARM_CA9/port.c:385: undefined reference to `vConfigureTickInterrupt'
+./FreeRTOS/portable/GCC/ARM_CA9/port.o: In function `FreeRTOS_Tick_Handler':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/portable/GCC/ARM_CA9/port.c:473: undefined reference to `vClearTickInterrupt'
+./FreeRTOS/event_groups.o: In function `xEventGroupCreate':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/event_groups.c:162: undefined reference to `pvPortMalloc'
+./FreeRTOS/event_groups.o: In function `vEventGroupDelete':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/event_groups.c:642: undefined reference to `vPortFree'
+./FreeRTOS/queue.o: In function `xQueueGenericCreate':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/queue.c:397: undefined reference to `pvPortMalloc'
+./FreeRTOS/queue.o: In function `vQueueDelete':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/queue.c:1996: undefined reference to `vPortFree'
+./FreeRTOS/stream_buffer.o: In function `xStreamBufferGenericCreate':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/stream_buffer.c:258: undefined reference to `pvPortMalloc'
+./FreeRTOS/stream_buffer.o: In function `vStreamBufferDelete':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/stream_buffer.c:373: undefined reference to `vPortFree'
+./FreeRTOS/tasks.o: In function `xTaskCreate':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/tasks.c:770: undefined reference to `pvPortMalloc'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/tasks.c:775: undefined reference to `pvPortMalloc'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/tasks.c:786: undefined reference to `vPortFree'
+./FreeRTOS/tasks.o: In function `vTaskStartScheduler':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/tasks.c:1980: undefined reference to `vApplicationGetIdleTaskMemory'
+./FreeRTOS/tasks.o: In function `vTaskSwitchContext':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/tasks.c:2987: undefined reference to `vApplicationStackOverflowHook'
+./FreeRTOS/tasks.o: In function `prvDeleteTCB':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/tasks.c:3856: undefined reference to `vPortFree'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/tasks.c:3857: undefined reference to `vPortFree'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/tasks.c:3863: undefined reference to `vPortFree'
+./FreeRTOS/tasks.o: In function `vTaskList':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/tasks.c:4349: undefined reference to `pvPortMalloc'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/tasks.c:4394: undefined reference to `vPortFree'
+./FreeRTOS/timers.o: In function `xTimerCreateTimerTask':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/timers.c:245: undefined reference to `vApplicationGetTimerTaskMemory'
+./FreeRTOS/timers.o: In function `xTimerCreate':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/timers.c:290: undefined reference to `pvPortMalloc'
+./FreeRTOS/timers.o: In function `prvTimerTask':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/timers.c:539: undefined reference to `vApplicationDaemonTaskStartupHook'
+./FreeRTOS/timers.o: In function `prvProcessReceivedCommands':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/timers.c:830: undefined reference to `vPortFree'
+collect2: error: ld returned 1 exit status
+make: *** [simple_led.elf] Error 1
+
+11:01:49 Build Finished (took 116ms)
+

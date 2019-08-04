@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Apr  7 16:08:56 2019
+# Process ID: 11022
+# Current directory: /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_systems/rtl/vivado/first_freertos.runs/p_system_rst_ps7_0_100M_0_synth_1
+# Command line: vivado -log p_system_rst_ps7_0_100M_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source p_system_rst_ps7_0_100M_0.tcl
+# Log file: /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_systems/rtl/vivado/first_freertos.runs/p_system_rst_ps7_0_100M_0_synth_1/p_system_rst_ps7_0_100M_0.vds
+# Journal file: /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_systems/rtl/vivado/first_freertos.runs/p_system_rst_ps7_0_100M_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source p_system_rst_ps7_0_100M_0.tcl -notrace

@@ -1,0 +1,164 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Aug  1 13:26:41 2019
+# Process ID: 18797
+# Current directory: /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/vivado
+# Command line: vivado
+# Log file: /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/vivado/vivado.log
+# Journal file: /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project communicator . -part xc7z020clg484-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/xilinx/Vivado/2019.1/data/ip'.
+set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
+set_property target_language VHDL [current_project]
+create_bd_design -dir {/home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/src/ip} "bd_processor"
+Wrote  : </home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/src/ip/bd_processor/bd_processor.bd> 
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.PCW_EN_CLK1_PORT {1} CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_GPIO_EMIO_GPIO_ENABLE {1}] [get_bd_cells processing_system7_0]
+endgroup
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1}] [get_bd_cells processing_system7_0]
+endgroup
+set_property location {0.5 47 -159} [get_bd_cells processing_system7_0]
+set_property location {1 0 -226} [get_bd_cells processing_system7_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xadc_wiz:3.3 xadc_wiz_0
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+create_bd_cell: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 7064.617 ; gain = 187.531 ; free physical = 290 ; free virtual = 11806
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+set_property location {3 701 -550} [get_bd_cells axi_gpio_0]
+set_property location {0.5 -10 -331} [get_bd_cells xadc_wiz_0]
+set_property location {1.5 314 -315} [get_bd_cells xadc_wiz_0]
+set_property location {0.5 -98 -113} [get_bd_cells processing_system7_0]
+set_property location {3 682 -146} [get_bd_cells xadc_wiz_0]
+set_property location {1 -52 -418} [get_bd_cells processing_system7_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/xadc_wiz_0/s_axi_lite} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins xadc_wiz_0/s_axi_lite]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Slave segment </xadc_wiz_0/s_axi_lite/Reg> is being mapped into address space </processing_system7_0/Data> at <0x43C0_0000 [ 64K ]>
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_gpio_0/S_AXI} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_gpio_0/S_AXI]
+Slave segment </axi_gpio_0/S_AXI/Reg> is being mapped into address space </processing_system7_0/Data> at <0x4120_0000 [ 64K ]>
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {btns_5bits ( Push buttons ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_0/GPIO]
+INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /axi_gpio_0]
+INFO: [board_rule 100-100] set_property CONFIG.GPIO_BOARD_INTERFACE btns_5bits [get_bd_cells /axi_gpio_0]
+INFO: [board_rule 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 btns_5bits
+INFO: [board_rule 100-100] connect_bd_intf_net /btns_5bits /axi_gpio_0/GPIO
+endgroup
+regenerate_bd_layout
+regenerate_bd_layout -routing
+startgroup
+set_property -dict [list CONFIG.C_GPIO2_WIDTH {8} CONFIG.C_IS_DUAL {1} CONFIG.GPIO2_BOARD_INTERFACE {leds_8bits} CONFIG.C_ALL_OUTPUTS_2 {1}] [get_bd_cells axi_gpio_0]
+endgroup
+delete_bd_objs [get_bd_intf_nets axi_gpio_0_GPIO] [get_bd_intf_ports btns_5bits]
+startgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {8} CONFIG.GPIO_BOARD_INTERFACE {sws_8bits}] [get_bd_cells axi_gpio_0]
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {sws_8bits ( DIP switches ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_0/GPIO]
+INFO: [board_rule 100-100] set_property CONFIG.GPIO_BOARD_INTERFACE sws_8bits [get_bd_cells /axi_gpio_0]
+INFO: [board_rule 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 sws_8bits
+INFO: [board_rule 100-100] connect_bd_intf_net /sws_8bits /axi_gpio_0/GPIO
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {leds_8bits ( LED ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_0/GPIO2]
+INFO: [board_rule 100-100] set_property CONFIG.GPIO2_BOARD_INTERFACE leds_8bits [get_bd_cells /axi_gpio_0]
+INFO: [board_rule 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 leds_8bits
+INFO: [board_rule 100-100] connect_bd_intf_net /leds_8bits /axi_gpio_0/GPIO2
+endgroup
+delete_bd_objs [get_bd_intf_nets axi_gpio_0_GPIO] [get_bd_intf_ports sws_8bits]
+startgroup
+set_property -dict [list CONFIG.GPIO_BOARD_INTERFACE {Custom} CONFIG.GPIO2_BOARD_INTERFACE {Custom}] [get_bd_cells axi_gpio_0]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {sws_8bits ( DIP switches ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_0/GPIO]
+INFO: [board_rule 100-100] set_property CONFIG.GPIO_BOARD_INTERFACE sws_8bits [get_bd_cells /axi_gpio_0]
+INFO: [board_rule 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 sws_8bits
+INFO: [board_rule 100-100] connect_bd_intf_net /sws_8bits /axi_gpio_0/GPIO
+validate_bd_design
+WARNING: [BD 41-927] Following properties on pin /xadc_wiz_0/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=bd_processor_processing_system7_0_0_FCLK_CLK0 
+regenerate_bd_layout -routing
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout -routing
+regenerate_bd_layout
+regenerate_bd_layout -routing
+validate_bd_design -force
+WARNING: [BD 41-927] Following properties on pin /xadc_wiz_0/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=bd_processor_processing_system7_0_0_FCLK_CLK0 
+save_bd_design
+Wrote  : </home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/src/ip/bd_processor/bd_processor.bd> 
+Wrote  : </home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/src/ip/bd_processor/ui/bd_67c6bad5.ui> 
+close_bd_design [get_bd_designs bd_processor]
+make_wrapper -files [get_files /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/src/ip/bd_processor/bd_processor.bd] -top
+INFO: [BD 41-1662] The design 'bd_processor.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/src/ip/bd_processor/synth/bd_processor.vhd
+VHDL Output written to : /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/src/ip/bd_processor/sim/bd_processor.vhd
+VHDL Output written to : /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/src/ip/bd_processor/hdl/bd_processor_wrapper.vhd
+add_files -norecurse /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/src/ip/bd_processor/hdl/bd_processor_wrapper.vhd
+add_files -norecurse {/home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/src/hdl/top_module/top_module.vhd /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/src/hdl/lib/system_pck.vhd}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property library work [get_files  /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/src/hdl/lib/system_pck.vhd]
+update_compile_order -fileset sources_1
+set_property library xil_defaultlib [get_files  /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/src/hdl/lib/system_pck.vhd]
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse {/home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/src/constr/top_pins.xdc /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/src/constr/timing.xdc}
+reset_target all [get_files  /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/src/ip/bd_processor/bd_processor.bd]
+export_ip_user_files -of_objects  [get_files  /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/src/ip/bd_processor/bd_processor.bd] -sync -no_script -force -quiet
+generate_target all [get_files  /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/src/ip/bd_processor/bd_processor.bd]
+INFO: [BD 41-1662] The design 'bd_processor.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/src/ip/bd_processor/synth/bd_processor.vhd
+VHDL Output written to : /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/src/ip/bd_processor/sim/bd_processor.vhd
+VHDL Output written to : /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/src/ip/bd_processor/hdl/bd_processor_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xadc_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/src/ip/bd_processor/ip/bd_processor_auto_pc_0/bd_processor_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+Exporting to file /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/src/ip/bd_processor/hw_handoff/bd_processor.hwh
+Generated Block Design Tcl file /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/src/ip/bd_processor/hw_handoff/bd_processor_bd.tcl
+Generated Hardware Definition File /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/src/ip/bd_processor/synth/bd_processor.hwdef
+generate_target: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 7529.770 ; gain = 31.953 ; free physical = 254 ; free virtual = 11496
+catch { config_ip_cache -export [get_ips -all bd_processor_processing_system7_0_0] }
+catch { config_ip_cache -export [get_ips -all bd_processor_xadc_wiz_0_0] }
+catch { config_ip_cache -export [get_ips -all bd_processor_axi_gpio_0_0] }
+catch { config_ip_cache -export [get_ips -all bd_processor_xbar_0] }
+catch { config_ip_cache -export [get_ips -all bd_processor_auto_pc_0] }
+catch { config_ip_cache -export [get_ips -all bd_processor_rst_ps7_0_100M_0] }
+export_ip_user_files -of_objects [get_files /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/src/ip/bd_processor/bd_processor.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/src/ip/bd_processor/bd_processor.bd]
+launch_runs -jobs 4 {bd_processor_processing_system7_0_0_synth_1 bd_processor_xadc_wiz_0_0_synth_1 bd_processor_axi_gpio_0_0_synth_1 bd_processor_xbar_0_synth_1 bd_processor_auto_pc_0_synth_1 bd_processor_rst_ps7_0_100M_0_synth_1}
+[Thu Aug  1 15:01:50 2019] Launched bd_processor_processing_system7_0_0_synth_1, bd_processor_xadc_wiz_0_0_synth_1, bd_processor_axi_gpio_0_0_synth_1, bd_processor_xbar_0_synth_1, bd_processor_auto_pc_0_synth_1, bd_processor_rst_ps7_0_100M_0_synth_1...
+Run output will be captured here:
+bd_processor_processing_system7_0_0_synth_1: /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/vivado/communicator.runs/bd_processor_processing_system7_0_0_synth_1/runme.log
+bd_processor_xadc_wiz_0_0_synth_1: /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/vivado/communicator.runs/bd_processor_xadc_wiz_0_0_synth_1/runme.log
+bd_processor_axi_gpio_0_0_synth_1: /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/vivado/communicator.runs/bd_processor_axi_gpio_0_0_synth_1/runme.log
+bd_processor_xbar_0_synth_1: /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/vivado/communicator.runs/bd_processor_xbar_0_synth_1/runme.log
+bd_processor_auto_pc_0_synth_1: /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/vivado/communicator.runs/bd_processor_auto_pc_0_synth_1/runme.log
+bd_processor_rst_ps7_0_100M_0_synth_1: /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/vivado/communicator.runs/bd_processor_rst_ps7_0_100M_0_synth_1/runme.log
+export_simulation -of_objects [get_files /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/src/ip/bd_processor/bd_processor.bd] -directory /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/vivado/communicator.ip_user_files/sim_scripts -ip_user_files_dir /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/vivado/communicator.ip_user_files -ipstatic_source_dir /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/vivado/communicator.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/vivado/communicator.cache/compile_simlib/modelsim} {questa=/home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/vivado/communicator.cache/compile_simlib/questa} {ies=/home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/vivado/communicator.cache/compile_simlib/ies} {xcelium=/home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/vivado/communicator.cache/compile_simlib/xcelium} {vcs=/home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/vivado/communicator.cache/compile_simlib/vcs} {riviera=/home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/vivado/communicator.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Aug  1 15:05:23 2019] Launched synth_1...
+Run output will be captured here: /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/vivado/communicator.runs/synth_1/runme.log
+[Thu Aug  1 15:05:23 2019] Launched impl_1...
+Run output will be captured here: /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/vivado/communicator.runs/impl_1/runme.log
+file mkdir /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/vivado/communicator.sdk
+file copy -force /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/vivado/communicator.runs/impl_1/top_module.sysdef /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/sw/vivado_output/top_module.hdf
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Aug  1 16:06:46 2019...

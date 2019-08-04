@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="bd_processor_processing_system7_0_0_synth_1" LaunchDir="/home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/vivado/communicator.runs/bd_processor_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_processor_xadc_wiz_0_0_synth_1" LaunchDir="/home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/vivado/communicator.runs/bd_processor_xadc_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_processor_axi_gpio_0_0_synth_1" LaunchDir="/home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/vivado/communicator.runs/bd_processor_axi_gpio_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_processor_xbar_0_synth_1" LaunchDir="/home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/vivado/communicator.runs/bd_processor_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_processor_auto_pc_0_synth_1" LaunchDir="/home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/vivado/communicator.runs/bd_processor_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_processor_rst_ps7_0_100M_0_synth_1" LaunchDir="/home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/vivado/communicator.runs/bd_processor_rst_ps7_0_100M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

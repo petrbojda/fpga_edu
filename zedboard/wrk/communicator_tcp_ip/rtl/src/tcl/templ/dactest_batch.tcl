@@ -1,0 +1,90 @@
+# dactest_batch.tcl
+# bft sample design 
+# A Vivado script that compiles DAC3482 test design (includes synthess and implementation)  
+#
+# NOTE:  typical usage would be "vivado -mode tcl -source dactest_batch.tcl" 
+#
+# STEP#0: define output directory area and set part
+#
+set outputDir ../vivado/_output_dac_test             
+file mkdir $outputDir
+set_part xc7z045ffg900-2
+#
+# STEP#1: setup design sources and constraints
+#
+read_vhdl -library work ../src/hdl/lib/dac_datatype_def_pck.vhd
+read_vhdl -vhdl2008 ../src/hdl/dac_ddr/dac_ddr_obuffer.vhd
+read_vhdl -vhdl2008 ../src/hdl/top_modules/top_iz27_hf_dac.vhd
+
+read_ip ../src/ip/clk_wiz_450m/clk_wiz_450m.xci
+read_ip ../src/ip/jtag_axi_0/jtag_axi_0.xci
+read_ip ../src/ip/dds_test_harmonic/dds_test_harmonic.xci
+read_ip ../src/ip/dac_ddr_obuf_control/dac_ddr_obuf_control.xci
+read_ip ../src/ip/dac_ddr_obuf_data/dac_ddr_obuf_data.xci
+
+read_xdc ../src/constr/clocks_pins.xdc
+read_xdc ../src/constr/dac3482_pins.xdc
+read_xdc ../src/constr/clocks_timing.xdc
+read_xdc ../src/constr/dac3482_timing.xdc
+
+
+#
+# STEP#2: run synthesis, report utilization and timing estimates, write checkpoint design
+#
+synth_design -top top_dactest_iz27
+write_debug_probes -force $outputDir/dactest.ltx
+write_checkpoint -force $outputDir/post_synth
+#report_timing_summary -file $outputDir/post_synth_timing_summary.rpt
+#report_power -file $outputDir/post_synth_power.rpt
+#report_clock_interaction -delay_type min_max -file $outputDir/post_synth_clock_interaction.rpt
+#report_high_fanout_nets -fanout_greater_than 200 -max_nets 50 -file $outputDir/post_synth_high_fanout_nets.rpt
+
+# STEP#3: run placement and logic optimzation, report utilization and timing estimates, write checkpoint design
+#
+opt_design
+place_design
+phys_opt_design
+write_checkpoint -force $outputDir/post_place
+report_timing_summary -file $outputDir/post_place_timing_summary.rpt
+#
+# STEP#4: run router, report actual utilization and timing, write checkpoint design, run drc, write verilog and xdc out
+#
+route_design
+write_checkpoint -force $outputDir/post_route
+report_timing_summary -file $outputDir/post_route_timing_summary.rpt
+report_timing -max_paths 100 -path_type summary -slack_lesser_than 0 -file $outputDir/post_route_setup_timing_violations.rpt
+report_clock_utilization -file $outputDir/clock_util.rpt
+report_utilization -file $outputDir/post_route_util.rpt
+report_power -file $outputDir/post_route_power.rpt
+report_drc -file $outputDir/post_imp_drc.rpt
+write_vhdl -force $outputDir/DAC_test.vhd
+write_xdc -no_fixed_only -force $outputDir/dactest_impl.xdc
+#
+# STEP#5: generate a bitstream
+# 
+write_bitstream -force $outputDir/dactest.bit
+#
+
+
+
+### # STEP#6: open hw server and upload the design
+### #
+### open_hw
+### connect_hw_server -url 192.168.1.150:3121
+### current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/AAo1BIUq0]
+### set_property PARAM.FREQUENCY 40000000 [get_hw_targets */xilinx_tcf/Xilinx/AAo1BIUq0]
+### open_hw_target
+### #
+### # To change JTAG frequency:
+### # set_property PARAM.FREQUENCY 10000000 [current_hw_target ]
+### #
+### # Associate bitstream
+### # set_property PROGRAM.FILE {./Design_Created_Data/_output/DACtest.bit} [lindex [get_hw_devices] 1]
+### set_property PROGRAM.FILE {./Design_Created_Data/_output/DACtest.bit} [get_hw_devices xc7z045_1]
+### current_hw_device [get_hw_devices xc7z045_1]
+### #refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z045_1] 0]
+### #
+### # Programming the HW Device - #1 is xc7z045
+### program_hw_devices [get_hw_devices xc7z045_1]
+### #program_hw_devices [lindex [get_hw_devices] 1]
+

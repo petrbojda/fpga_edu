@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Aug  1 14:24:58 2019
+# Process ID: 22993
+# Current directory: /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/rtl/vivado
+# Command line: vivado
+# Log file: /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/rtl/vivado/vivado.log
+# Journal file: /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/rtl/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/rtl/vivado/first_freertos.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/xilinx/Vivado/2019.1/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'p_system.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+p_system_ps7_0_axi_periph_0
+p_system_auto_pc_0
+p_system_xbar_0
+p_system_axi_gpio_0_0
+p_system_axi_gpio_1_0
+
+update_compile_order -fileset sources_1
+open_bd_design {/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/rtl/src/ip/p_system/p_system.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_1
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Successfully read diagram <p_system> from BD file </home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/rtl/src/ip/p_system/p_system.bd>
+close_bd_design [get_bd_designs p_system]
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Aug  1 15:58:05 2019...

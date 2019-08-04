@@ -1,6 +1,0 @@
-//arch = zynq; split = false; format = BIN
-the_ROM_image:
-{
-	/home/petr/Projects/fpga/zedboard/wrk/ps_freertos_systems/sdk/top_module_hw_platform_0/top_module.bit
-	/home/petr/Projects/fpga/zedboard/wrk/ps_freertos_systems/sdk/zedboard_first/Debug/zedboard_first.elf
-}

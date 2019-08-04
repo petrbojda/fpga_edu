@@ -1,0 +1,338 @@
+10:53:25 **** Clean-only build of configuration Debug for project simple_led ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./FreeRTOS/portable/GCC/ARM_CA9/port.o ./FreeRTOS/portable/GCC/ARM_CA9/portASM.o  ./FreeRTOS/event_groups.o ./FreeRTOS/list.o ./FreeRTOS/queue.o ./FreeRTOS/stream_buffer.o ./FreeRTOS/tasks.o ./FreeRTOS/timers.o  ./FreeRTOS/portable/GCC/ARM_CA9/portASM.d  ./src/helloworld.d ./src/platform.d  ./FreeRTOS/portable/GCC/ARM_CA9/port.d  ./FreeRTOS/event_groups.d ./FreeRTOS/list.d ./FreeRTOS/queue.d ./FreeRTOS/stream_buffer.d ./FreeRTOS/tasks.d ./FreeRTOS/timers.d  simple_led.elf.size  simple_led.elf
+ 
+10:53:25 **** Clean-only build of project simple_led_bsp ****
+make -k clean 
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s clean 
+make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s clean 
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s clean 
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s clean 
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s clean 
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s clean 
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s clean 
+rm -f ps7_cortexa9_0/lib/libxil.a
+10:53:25 **** Build of project simple_led_bsp ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_6/src
+make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_8/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_8/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_4/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_5/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_10/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_3/src
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling ddrps
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_6/src
+make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling sdps
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_8/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling standalone
+In file included from sleep.c:53:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:49:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from usleep.c:56:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_8/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling emacps
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_4/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_5/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_10/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling xadcps
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_3/src
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling gpio
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling usbps
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling coresightps_dcc
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scutimer
+Finished building libraries
+10:53:34 **** Build of configuration Debug for project simple_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_bsp/ps7_cortexa9_0/include -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././include -I.././include/private -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'vAssertCalled':
+../src/helloworld.c:81:36: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  printf( ("vAssertCalled %s, %ld\n", pcFile, (long)ulLine) );
+                                    ^
+../src/helloworld.c:81:44: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  printf( ("vAssertCalled %s, %ld\n", pcFile, (long)ulLine) );
+                                            ^
+../src/helloworld.c:81:10: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+  printf( ("vAssertCalled %s, %ld\n", pcFile, (long)ulLine) );
+          ^
+In file included from /opt/xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/stdio.h:29:0,
+                 from ../src/helloworld.c:48:
+/opt/xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/stdio.h:181:5: note: expected 'const char * restrict' but argument is of type 'long int'
+ int _EXFUN(printf, (const char *__restrict, ...)
+     ^
+../src/helloworld.c:86:2: warning: implicit declaration of function 'taskDISABLE_INTERRUPTS' [-Wimplicit-function-declaration]
+  taskDISABLE_INTERRUPTS();
+  ^~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:90:4: warning: implicit declaration of function 'vTaskDelay' [-Wimplicit-function-declaration]
+    vTaskDelay( pdMS_TO_TICKS( ulLongSleep ) );
+    ^~~~~~~~~~
+../src/helloworld.c:90:16: warning: implicit declaration of function 'pdMS_TO_TICKS' [-Wimplicit-function-declaration]
+    vTaskDelay( pdMS_TO_TICKS( ulLongSleep ) );
+                ^~~~~~~~~~~~~
+../src/helloworld.c:93:2: warning: implicit declaration of function 'taskENABLE_INTERRUPTS' [-Wimplicit-function-declaration]
+  taskENABLE_INTERRUPTS();
+  ^~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_bsp/ps7_cortexa9_0/include -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././include -I.././include/private -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building file: ../FreeRTOS/portable/GCC/ARM_CA9/port.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_bsp/ps7_cortexa9_0/include -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././include -I.././include/private -c -fmessage-length=0 -MT"FreeRTOS/portable/GCC/ARM_CA9/port.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"FreeRTOS/portable/GCC/ARM_CA9/port.d" -MT"FreeRTOS/portable/GCC/ARM_CA9/port.o" -o "FreeRTOS/portable/GCC/ARM_CA9/port.o" "../FreeRTOS/portable/GCC/ARM_CA9/port.c"
+Finished building: ../FreeRTOS/portable/GCC/ARM_CA9/port.c
+ 
+Building file: ../FreeRTOS/portable/GCC/ARM_CA9/portASM.S
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_bsp/ps7_cortexa9_0/include -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././include -I.././include/private -c -fmessage-length=0 -MT"FreeRTOS/portable/GCC/ARM_CA9/portASM.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"FreeRTOS/portable/GCC/ARM_CA9/portASM.d" -MT"FreeRTOS/portable/GCC/ARM_CA9/portASM.o" -o "FreeRTOS/portable/GCC/ARM_CA9/portASM.o" "../FreeRTOS/portable/GCC/ARM_CA9/portASM.S"
+Finished building: ../FreeRTOS/portable/GCC/ARM_CA9/portASM.S
+ 
+Building file: ../FreeRTOS/event_groups.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_bsp/ps7_cortexa9_0/include -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././include -I.././include/private -c -fmessage-length=0 -MT"FreeRTOS/event_groups.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"FreeRTOS/event_groups.d" -MT"FreeRTOS/event_groups.o" -o "FreeRTOS/event_groups.o" "../FreeRTOS/event_groups.c"
+Finished building: ../FreeRTOS/event_groups.c
+ 
+Building file: ../FreeRTOS/list.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_bsp/ps7_cortexa9_0/include -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././include -I.././include/private -c -fmessage-length=0 -MT"FreeRTOS/list.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"FreeRTOS/list.d" -MT"FreeRTOS/list.o" -o "FreeRTOS/list.o" "../FreeRTOS/list.c"
+Finished building: ../FreeRTOS/list.c
+ 
+Building file: ../FreeRTOS/queue.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_bsp/ps7_cortexa9_0/include -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././include -I.././include/private -c -fmessage-length=0 -MT"FreeRTOS/queue.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"FreeRTOS/queue.d" -MT"FreeRTOS/queue.o" -o "FreeRTOS/queue.o" "../FreeRTOS/queue.c"
+Finished building: ../FreeRTOS/queue.c
+ 
+Building file: ../FreeRTOS/stream_buffer.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_bsp/ps7_cortexa9_0/include -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././include -I.././include/private -c -fmessage-length=0 -MT"FreeRTOS/stream_buffer.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"FreeRTOS/stream_buffer.d" -MT"FreeRTOS/stream_buffer.o" -o "FreeRTOS/stream_buffer.o" "../FreeRTOS/stream_buffer.c"
+Finished building: ../FreeRTOS/stream_buffer.c
+ 
+Building file: ../FreeRTOS/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_bsp/ps7_cortexa9_0/include -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././include -I.././include/private -c -fmessage-length=0 -MT"FreeRTOS/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"FreeRTOS/tasks.d" -MT"FreeRTOS/tasks.o" -o "FreeRTOS/tasks.o" "../FreeRTOS/tasks.c"
+Finished building: ../FreeRTOS/tasks.c
+ 
+Building file: ../FreeRTOS/timers.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_bsp/ps7_cortexa9_0/include -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././include -I.././include/private -c -fmessage-length=0 -MT"FreeRTOS/timers.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"FreeRTOS/timers.d" -MT"FreeRTOS/timers.o" -o "FreeRTOS/timers.o" "../FreeRTOS/timers.c"
+Finished building: ../FreeRTOS/timers.c
+ 
+Building target: simple_led.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_led_bsp/ps7_cortexa9_0/lib -o "simple_led.elf"  ./src/helloworld.o ./src/platform.o  ./FreeRTOS/portable/GCC/ARM_CA9/port.o ./FreeRTOS/portable/GCC/ARM_CA9/portASM.o  ./FreeRTOS/event_groups.o ./FreeRTOS/list.o ./FreeRTOS/queue.o ./FreeRTOS/stream_buffer.o ./FreeRTOS/tasks.o ./FreeRTOS/timers.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `vAssertCalled':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../src/helloworld.c:86: undefined reference to `taskDISABLE_INTERRUPTS'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../src/helloworld.c:90: undefined reference to `pdMS_TO_TICKS'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../src/helloworld.c:93: undefined reference to `taskENABLE_INTERRUPTS'
+./FreeRTOS/portable/GCC/ARM_CA9/port.o: In function `xPortStartScheduler':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/portable/GCC/ARM_CA9/port.c:385: undefined reference to `vConfigureTickInterrupt'
+./FreeRTOS/portable/GCC/ARM_CA9/port.o: In function `FreeRTOS_Tick_Handler':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/portable/GCC/ARM_CA9/port.c:473: undefined reference to `vClearTickInterrupt'
+./FreeRTOS/event_groups.o: In function `xEventGroupCreate':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/event_groups.c:162: undefined reference to `pvPortMalloc'
+./FreeRTOS/event_groups.o: In function `vEventGroupDelete':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/event_groups.c:642: undefined reference to `vPortFree'
+./FreeRTOS/queue.o: In function `xQueueGenericCreate':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/queue.c:397: undefined reference to `pvPortMalloc'
+./FreeRTOS/queue.o: In function `vQueueDelete':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/queue.c:1996: undefined reference to `vPortFree'
+./FreeRTOS/stream_buffer.o: In function `xStreamBufferGenericCreate':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/stream_buffer.c:258: undefined reference to `pvPortMalloc'
+./FreeRTOS/stream_buffer.o: In function `vStreamBufferDelete':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/stream_buffer.c:373: undefined reference to `vPortFree'
+./FreeRTOS/tasks.o: In function `xTaskCreate':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/tasks.c:770: undefined reference to `pvPortMalloc'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/tasks.c:775: undefined reference to `pvPortMalloc'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/tasks.c:786: undefined reference to `vPortFree'
+./FreeRTOS/tasks.o: In function `vTaskStartScheduler':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/tasks.c:1980: undefined reference to `vApplicationGetIdleTaskMemory'
+./FreeRTOS/tasks.o: In function `vTaskSwitchContext':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/tasks.c:2987: undefined reference to `vApplicationStackOverflowHook'
+./FreeRTOS/tasks.o: In function `prvDeleteTCB':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/tasks.c:3856: undefined reference to `vPortFree'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/tasks.c:3857: undefined reference to `vPortFree'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/tasks.c:3863: undefined reference to `vPortFree'
+./FreeRTOS/tasks.o: In function `vTaskList':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/tasks.c:4349: undefined reference to `pvPortMalloc'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/tasks.c:4394: undefined reference to `vPortFree'
+./FreeRTOS/timers.o: In function `xTimerCreateTimerTask':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/timers.c:245: undefined reference to `vApplicationGetTimerTaskMemory'
+./FreeRTOS/timers.o: In function `xTimerCreate':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/timers.c:290: undefined reference to `pvPortMalloc'
+./FreeRTOS/timers.o: In function `prvTimerTask':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/timers.c:539: undefined reference to `vApplicationDaemonTaskStartupHook'
+./FreeRTOS/timers.o: In function `prvProcessReceivedCommands':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/timers.c:830: undefined reference to `vPortFree'
+collect2: error: ld returned 1 exit status
+make: *** [simple_led.elf] Error 1
+11:01:49 **** Auto Build of configuration Debug for project simple_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_bsp/ps7_cortexa9_0/include -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././include -I.././include/private -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'vAssertCalled':
+../src/helloworld.c:81:36: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  printf( ("vAssertCalled %s, %ld\n", pcFile, (long)ulLine) );
+                                    ^
+../src/helloworld.c:81:44: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  printf( ("vAssertCalled %s, %ld\n", pcFile, (long)ulLine) );
+                                            ^
+../src/helloworld.c:81:10: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+  printf( ("vAssertCalled %s, %ld\n", pcFile, (long)ulLine) );
+          ^
+In file included from /opt/xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/stdio.h:29:0,
+                 from ../src/helloworld.c:48:
+/opt/xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/stdio.h:181:5: note: expected 'const char * restrict' but argument is of type 'long int'
+ int _EXFUN(printf, (const char *__restrict, ...)
+     ^
+../src/helloworld.c:74:20: warning: unused variable 'ulBlockVariable' [-Wunused-variable]
+  volatile uint32_t ulBlockVariable = 0UL;
+                    ^~~~~~~~~~~~~~~
+../src/helloworld.c:73:17: warning: unused variable 'ulLongSleep' [-Wunused-variable]
+  const uint32_t ulLongSleep = 1000UL;
+                 ^~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: simple_led.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_led_bsp/ps7_cortexa9_0/lib -o "simple_led.elf"  ./src/helloworld.o ./src/platform.o  ./FreeRTOS/portable/GCC/ARM_CA9/port.o ./FreeRTOS/portable/GCC/ARM_CA9/portASM.o  ./FreeRTOS/event_groups.o ./FreeRTOS/list.o ./FreeRTOS/queue.o ./FreeRTOS/stream_buffer.o ./FreeRTOS/tasks.o ./FreeRTOS/timers.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./FreeRTOS/portable/GCC/ARM_CA9/port.o: In function `xPortStartScheduler':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/portable/GCC/ARM_CA9/port.c:385: undefined reference to `vConfigureTickInterrupt'
+./FreeRTOS/portable/GCC/ARM_CA9/port.o: In function `FreeRTOS_Tick_Handler':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/portable/GCC/ARM_CA9/port.c:473: undefined reference to `vClearTickInterrupt'
+./FreeRTOS/event_groups.o: In function `xEventGroupCreate':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/event_groups.c:162: undefined reference to `pvPortMalloc'
+./FreeRTOS/event_groups.o: In function `vEventGroupDelete':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/event_groups.c:642: undefined reference to `vPortFree'
+./FreeRTOS/queue.o: In function `xQueueGenericCreate':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/queue.c:397: undefined reference to `pvPortMalloc'
+./FreeRTOS/queue.o: In function `vQueueDelete':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/queue.c:1996: undefined reference to `vPortFree'
+./FreeRTOS/stream_buffer.o: In function `xStreamBufferGenericCreate':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/stream_buffer.c:258: undefined reference to `pvPortMalloc'
+./FreeRTOS/stream_buffer.o: In function `vStreamBufferDelete':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/stream_buffer.c:373: undefined reference to `vPortFree'
+./FreeRTOS/tasks.o: In function `xTaskCreate':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/tasks.c:770: undefined reference to `pvPortMalloc'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/tasks.c:775: undefined reference to `pvPortMalloc'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/tasks.c:786: undefined reference to `vPortFree'
+./FreeRTOS/tasks.o: In function `vTaskStartScheduler':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/tasks.c:1980: undefined reference to `vApplicationGetIdleTaskMemory'
+./FreeRTOS/tasks.o: In function `vTaskSwitchContext':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/tasks.c:2987: undefined reference to `vApplicationStackOverflowHook'
+./FreeRTOS/tasks.o: In function `prvDeleteTCB':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/tasks.c:3856: undefined reference to `vPortFree'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/tasks.c:3857: undefined reference to `vPortFree'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/tasks.c:3863: undefined reference to `vPortFree'
+./FreeRTOS/tasks.o: In function `vTaskList':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/tasks.c:4349: undefined reference to `pvPortMalloc'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/tasks.c:4394: undefined reference to `vPortFree'
+./FreeRTOS/timers.o: In function `xTimerCreateTimerTask':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/timers.c:245: undefined reference to `vApplicationGetTimerTaskMemory'
+./FreeRTOS/timers.o: In function `xTimerCreate':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/timers.c:290: undefined reference to `pvPortMalloc'
+./FreeRTOS/timers.o: In function `prvTimerTask':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/timers.c:539: undefined reference to `vApplicationDaemonTaskStartupHook'
+./FreeRTOS/timers.o: In function `prvProcessReceivedCommands':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/sw/simple_led/Debug/../FreeRTOS/timers.c:830: undefined reference to `vPortFree'
+collect2: error: ld returned 1 exit status
+make: *** [simple_led.elf] Error 1

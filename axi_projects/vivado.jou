@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri May 31 14:03:01 2019
+# Process ID: 15929
+# Current directory: /home/petr/Projects/fpga_edu/axi_projects
+# Command line: vivado
+# Log file: /home/petr/Projects/fpga_edu/axi_projects/vivado.log
+# Journal file: /home/petr/Projects/fpga_edu/axi_projects/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project project_axi_00 /home/petr/Projects/fpga_edu/axi_projects/project_axi_00 -part xc7vx485tffg1157-1
+set_property target_language VHDL [current_project]
+create_peripheral user.org user axi_dac_engine 1.0 -dir /home/petr/Projects/fpga_edu/axi_projects/ip_repo
+add_peripheral_interface S_AXI -interface_mode slave -axi_type lite [ipx::find_open_core user.org:user:axi_dac_engine:1.0]
+generate_peripheral -driver -bfm_example_design -debug_hw_example_design [ipx::find_open_core user.org:user:axi_dac_engine:1.0]
+write_peripheral [ipx::find_open_core user.org:user:axi_dac_engine:1.0]
+set_property  ip_repo_paths  /home/petr/Projects/fpga_edu/axi_projects/ip_repo/axi_dac_engine_1.0 [current_project]
+update_ip_catalog -rebuild

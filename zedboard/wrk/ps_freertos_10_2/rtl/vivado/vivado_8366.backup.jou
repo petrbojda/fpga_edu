@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Aug  1 10:43:44 2019
+# Process ID: 8366
+# Current directory: /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/rtl/vivado
+# Command line: vivado
+# Log file: /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/rtl/vivado/vivado.log
+# Journal file: /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/rtl/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/rtl/vivado/first_freertos.xpr
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+open_bd_design {/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_10_2/rtl/src/ip/p_system/p_system.bd}

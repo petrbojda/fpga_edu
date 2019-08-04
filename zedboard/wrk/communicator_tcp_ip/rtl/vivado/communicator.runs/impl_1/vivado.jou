@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Aug  1 15:06:05 2019
+# Process ID: 32592
+# Current directory: /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/vivado/communicator.runs/impl_1
+# Command line: vivado -log top_module.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_module.tcl -notrace
+# Log file: /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/vivado/communicator.runs/impl_1/top_module.vdi
+# Journal file: /home/petr/Projects/fpga_edu/zedboard/wrk/communicator_tcp_ip/rtl/vivado/communicator.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source top_module.tcl -notrace

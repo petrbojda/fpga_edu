@@ -1,34 +1,292 @@
-15:12:11 **** Auto Build of configuration Debug for project simple_led_tcp ****
+18:43:47 **** Auto Build of configuration Debug for project simple_led_tcp ****
 make pre-build main-build 
 a9-linaro-pre-build-step
- 
-Building file: ../third_party/unity/test/expectdata/testsample_yaml.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/test/expectdata/testsample_yaml.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/test/expectdata/testsample_yaml.d" -MT"third_party/unity/test/expectdata/testsample_yaml.o" -o "third_party/unity/test/expectdata/testsample_yaml.o" "../third_party/unity/test/expectdata/testsample_yaml.c"
-../third_party/unity/test/expectdata/testsample_yaml.c: In function 'suite_setup':
-../third_party/unity/test/expectdata/testsample_yaml.c:48:1: warning: implicit declaration of function 'a_yaml_setup'; did you mean 'suite_setup'? [-Wimplicit-function-declaration]
- a_yaml_setup();
- ^~~~~~~~~~~~
- suite_setup
-../third_party/unity/test/expectdata/testsample_yaml.c:49:1: warning: no return statement in function returning non-void [-Wreturn-type]
- }
- ^
-Finished building: ../third_party/unity/test/expectdata/testsample_yaml.c
  
 Building file: ../third_party/unity/src/unity.c
 Invoking: ARM v7 gcc compiler
 arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/src/unity.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/src/unity.d" -MT"third_party/unity/src/unity.o" -o "third_party/unity/src/unity.o" "../third_party/unity/src/unity.c"
 Finished building: ../third_party/unity/src/unity.c
  
-Building file: ../third_party/unity/extras/fixture/test/main/AllTests.c
+Building file: ../src/xilinx_code/FreeRTOS_asm_vectors.S
 Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"third_party/unity/extras/fixture/test/main/AllTests.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"third_party/unity/extras/fixture/test/main/AllTests.d" -MT"third_party/unity/extras/fixture/test/main/AllTests.o" -o "third_party/unity/extras/fixture/test/main/AllTests.o" "../third_party/unity/extras/fixture/test/main/AllTests.c"
-../third_party/unity/extras/fixture/test/main/AllTests.c:8:10: fatal error: unity_fixture.h: No such file or directory
- #include "unity_fixture.h"
-          ^~~~~~~~~~~~~~~~~
-compilation terminated.
-make: *** [third_party/unity/extras/fixture/test/main/AllTests.o] Error 1
-third_party/unity/extras/fixture/test/main/subdir.mk:18: recipe for target 'third_party/unity/extras/fixture/test/main/AllTests.o' failed
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"src/xilinx_code/FreeRTOS_asm_vectors.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/xilinx_code/FreeRTOS_asm_vectors.d" -MT"src/xilinx_code/FreeRTOS_asm_vectors.o" -o "src/xilinx_code/FreeRTOS_asm_vectors.o" "../src/xilinx_code/FreeRTOS_asm_vectors.S"
+Finished building: ../src/xilinx_code/FreeRTOS_asm_vectors.S
+ 
+Building file: ../src/xilinx_code/FreeRTOS_tick_config.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"src/xilinx_code/FreeRTOS_tick_config.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/xilinx_code/FreeRTOS_tick_config.d" -MT"src/xilinx_code/FreeRTOS_tick_config.o" -o "src/xilinx_code/FreeRTOS_tick_config.o" "../src/xilinx_code/FreeRTOS_tick_config.c"
+Finished building: ../src/xilinx_code/FreeRTOS_tick_config.c
+ 
+Building file: ../src/xilinx_code/hr_gettime.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"src/xilinx_code/hr_gettime.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/xilinx_code/hr_gettime.d" -MT"src/xilinx_code/hr_gettime.o" -o "src/xilinx_code/hr_gettime.o" "../src/xilinx_code/hr_gettime.c"
+In file included from ../src/xilinx_code/hr_gettime.c:6:0:
+../../simple_led_tcp_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Finished building: ../src/xilinx_code/hr_gettime.c
+ 
+Building file: ../src/xilinx_code/memcpy.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"src/xilinx_code/memcpy.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/xilinx_code/memcpy.d" -MT"src/xilinx_code/memcpy.o" -o "src/xilinx_code/memcpy.o" "../src/xilinx_code/memcpy.c"
+Finished building: ../src/xilinx_code/memcpy.c
+ 
+Building file: ../src/xilinx_code/uncached_memory.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"src/xilinx_code/uncached_memory.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/xilinx_code/uncached_memory.d" -MT"src/xilinx_code/uncached_memory.o" -o "src/xilinx_code/uncached_memory.o" "../src/xilinx_code/uncached_memory.c"
+Finished building: ../src/xilinx_code/uncached_memory.c
+ 
+Building file: ../src/aws_code/framework/aws_test_framework.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"src/aws_code/framework/aws_test_framework.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/aws_code/framework/aws_test_framework.d" -MT"src/aws_code/framework/aws_test_framework.o" -o "src/aws_code/framework/aws_test_framework.o" "../src/aws_code/framework/aws_test_framework.c"
+Finished building: ../src/aws_code/framework/aws_test_framework.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building file: ../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/NetworkInterface.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/NetworkInterface.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/NetworkInterface.d" -MT"FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/NetworkInterface.o" -o "FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/NetworkInterface.o" "../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/NetworkInterface.c"
+Finished building: ../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/NetworkInterface.c
+ 
+Building file: ../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_dma.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_dma.d" -MT"FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_dma.o" -o "FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_dma.o" "../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_dma.c"
+Finished building: ../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_dma.c
+ 
+Building file: ../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_hw.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_hw.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_hw.d" -MT"FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_hw.o" -o "FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_hw.o" "../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_hw.c"
+Finished building: ../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_hw.c
+ 
+Building file: ../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_physpeed.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_physpeed.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_physpeed.d" -MT"FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_physpeed.o" -o "FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_physpeed.o" "../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_physpeed.c"
+Finished building: ../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_physpeed.c
+ 
+Building file: ../FreeRTOSPlus/FreeRTOS_TCP/source/portable/BufferManagement/BufferAllocation_2.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"FreeRTOSPlus/FreeRTOS_TCP/source/portable/BufferManagement/BufferAllocation_2.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"FreeRTOSPlus/FreeRTOS_TCP/source/portable/BufferManagement/BufferAllocation_2.d" -MT"FreeRTOSPlus/FreeRTOS_TCP/source/portable/BufferManagement/BufferAllocation_2.o" -o "FreeRTOSPlus/FreeRTOS_TCP/source/portable/BufferManagement/BufferAllocation_2.o" "../FreeRTOSPlus/FreeRTOS_TCP/source/portable/BufferManagement/BufferAllocation_2.c"
+Finished building: ../FreeRTOSPlus/FreeRTOS_TCP/source/portable/BufferManagement/BufferAllocation_2.c
+ 
+Building file: ../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_ARP.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_ARP.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_ARP.d" -MT"FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_ARP.o" -o "FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_ARP.o" "../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_ARP.c"
+Finished building: ../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_ARP.c
+ 
+Building file: ../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DHCP.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DHCP.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DHCP.d" -MT"FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DHCP.o" -o "FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DHCP.o" "../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DHCP.c"
+Finished building: ../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DHCP.c
+ 
+Building file: ../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DNS.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DNS.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DNS.d" -MT"FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DNS.o" -o "FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DNS.o" "../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DNS.c"
+Finished building: ../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DNS.c
+ 
+Building file: ../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_IP.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_IP.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_IP.d" -MT"FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_IP.o" -o "FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_IP.o" "../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_IP.c"
+Finished building: ../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_IP.c
+ 
+Building file: ../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Sockets.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Sockets.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Sockets.d" -MT"FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Sockets.o" -o "FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Sockets.o" "../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Sockets.c"
+Finished building: ../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Sockets.c
+ 
+Building file: ../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Stream_Buffer.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Stream_Buffer.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Stream_Buffer.d" -MT"FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Stream_Buffer.o" -o "FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Stream_Buffer.o" "../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Stream_Buffer.c"
+Finished building: ../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Stream_Buffer.c
+ 
+Building file: ../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_TCP_IP.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_TCP_IP.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_TCP_IP.d" -MT"FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_TCP_IP.o" -o "FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_TCP_IP.o" "../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_TCP_IP.c"
+Finished building: ../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_TCP_IP.c
+ 
+Building file: ../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_TCP_WIN.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_TCP_WIN.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_TCP_WIN.d" -MT"FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_TCP_WIN.o" -o "FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_TCP_WIN.o" "../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_TCP_WIN.c"
+Finished building: ../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_TCP_WIN.c
+ 
+Building file: ../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_UDP_IP.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_UDP_IP.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_UDP_IP.d" -MT"FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_UDP_IP.o" -o "FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_UDP_IP.o" "../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_UDP_IP.c"
+Finished building: ../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_UDP_IP.c
+ 
+Building file: ../FreeRTOS/portable/GCC/ARM_CA9/port.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"FreeRTOS/portable/GCC/ARM_CA9/port.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"FreeRTOS/portable/GCC/ARM_CA9/port.d" -MT"FreeRTOS/portable/GCC/ARM_CA9/port.o" -o "FreeRTOS/portable/GCC/ARM_CA9/port.o" "../FreeRTOS/portable/GCC/ARM_CA9/port.c"
+Finished building: ../FreeRTOS/portable/GCC/ARM_CA9/port.c
+ 
+Building file: ../FreeRTOS/portable/GCC/ARM_CA9/portASM.S
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"FreeRTOS/portable/GCC/ARM_CA9/portASM.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"FreeRTOS/portable/GCC/ARM_CA9/portASM.d" -MT"FreeRTOS/portable/GCC/ARM_CA9/portASM.o" -o "FreeRTOS/portable/GCC/ARM_CA9/portASM.o" "../FreeRTOS/portable/GCC/ARM_CA9/portASM.S"
+Finished building: ../FreeRTOS/portable/GCC/ARM_CA9/portASM.S
+ 
+Building file: ../FreeRTOS/event_groups.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"FreeRTOS/event_groups.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"FreeRTOS/event_groups.d" -MT"FreeRTOS/event_groups.o" -o "FreeRTOS/event_groups.o" "../FreeRTOS/event_groups.c"
+Finished building: ../FreeRTOS/event_groups.c
+ 
+Building file: ../FreeRTOS/list.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"FreeRTOS/list.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"FreeRTOS/list.d" -MT"FreeRTOS/list.o" -o "FreeRTOS/list.o" "../FreeRTOS/list.c"
+Finished building: ../FreeRTOS/list.c
+ 
+Building file: ../FreeRTOS/queue.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"FreeRTOS/queue.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"FreeRTOS/queue.d" -MT"FreeRTOS/queue.o" -o "FreeRTOS/queue.o" "../FreeRTOS/queue.c"
+Finished building: ../FreeRTOS/queue.c
+ 
+Building file: ../FreeRTOS/stream_buffer.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"FreeRTOS/stream_buffer.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"FreeRTOS/stream_buffer.d" -MT"FreeRTOS/stream_buffer.o" -o "FreeRTOS/stream_buffer.o" "../FreeRTOS/stream_buffer.c"
+Finished building: ../FreeRTOS/stream_buffer.c
+ 
+Building file: ../FreeRTOS/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"FreeRTOS/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"FreeRTOS/tasks.d" -MT"FreeRTOS/tasks.o" -o "FreeRTOS/tasks.o" "../FreeRTOS/tasks.c"
+Finished building: ../FreeRTOS/tasks.c
+ 
+Building file: ../FreeRTOS/timers.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../simple_led_tcp_bsp/ps7_cortexa9_0/include -I.././include -I.././include/private -I.././FreeRTOS/portable/GCC/ARM_CA9 -I.././FreeRTOSPlus/FreeRTOS_TCP/include -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/Compiler/GCC -I../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface -I.././src/xilinx_code -I.././src/aws_code/include -I.././third_party/unity/src -I../third_party/unity/test/testdata -c -fmessage-length=0 -MT"FreeRTOS/timers.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"FreeRTOS/timers.d" -MT"FreeRTOS/timers.o" -o "FreeRTOS/timers.o" "../FreeRTOS/timers.c"
+Finished building: ../FreeRTOS/timers.c
+ 
+Building target: simple_led_tcp.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_led_tcp_bsp/ps7_cortexa9_0/lib -o "simple_led_tcp.elf"  ./third_party/unity/src/unity.o  ./src/xilinx_code/FreeRTOS_asm_vectors.o ./src/xilinx_code/FreeRTOS_tick_config.o ./src/xilinx_code/hr_gettime.o ./src/xilinx_code/memcpy.o ./src/xilinx_code/uncached_memory.o  ./src/aws_code/framework/aws_test_framework.o  ./src/helloworld.o ./src/platform.o  ./FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/NetworkInterface.o ./FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_dma.o ./FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_hw.o ./FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_physpeed.o  ./FreeRTOSPlus/FreeRTOS_TCP/source/portable/BufferManagement/BufferAllocation_2.o  ./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_ARP.o ./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DHCP.o ./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DNS.o ./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_IP.o ./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Sockets.o ./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Stream_Buffer.o ./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_TCP_IP.o ./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_TCP_WIN.o ./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_UDP_IP.o  ./FreeRTOS/portable/GCC/ARM_CA9/port.o ./FreeRTOS/portable/GCC/ARM_CA9/portASM.o  ./FreeRTOS/event_groups.o ./FreeRTOS/list.o ./FreeRTOS/queue.o ./FreeRTOS/stream_buffer.o ./FreeRTOS/tasks.o ./FreeRTOS/timers.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/xilinx_code/uncached_memory.o: In function `vInitialiseUncachedMemory':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../src/xilinx_code/uncached_memory.c:172: undefined reference to `vLoggingPrintf'
+./src/aws_code/framework/aws_test_framework.o: In function `TEST_SubmitResult':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../src/aws_code/framework/aws_test_framework.c:97: undefined reference to `vLoggingPrint'
+./src/helloworld.o: In function `vAssertCalled':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../src/helloworld.c:93: undefined reference to `vLoggingPrintf'
+./FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/NetworkInterface.o: In function `xNetworkInterfaceInitialise':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/NetworkInterface.c:154: undefined reference to `vLoggingPrintf'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/NetworkInterface.c:158: undefined reference to `ucMACAddress'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/NetworkInterface.c:158: undefined reference to `ucMACAddress'
+./FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/NetworkInterface.o: In function `prvEMACHandlerTask':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/NetworkInterface.c:325: undefined reference to `vLoggingPrintf'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/NetworkInterface.c:383: undefined reference to `vLoggingPrintf'
+./FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_dma.o: In function `emacps_send_message':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_dma.c:234: undefined reference to `vLoggingPrintf'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_dma.c:250: undefined reference to `vLoggingPrintf'
+./FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_dma.o: In function `passEthMessages':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_dma.c:340: undefined reference to `vLoggingPrintf'
+./FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_dma.o:/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/portable/NetworkInterface/Zynq/x_emacpsif_dma.c:372: more undefined references to `vLoggingPrintf' follow
+./FreeRTOSPlus/FreeRTOS_TCP/source/portable/BufferManagement/BufferAllocation_2.o: In function `pucGetNetworkBuffer':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/portable/BufferManagement/BufferAllocation_2.c:180: undefined reference to `pvPortMalloc'
+./FreeRTOSPlus/FreeRTOS_TCP/source/portable/BufferManagement/BufferAllocation_2.o: In function `vReleaseNetworkBuffer':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/portable/BufferManagement/BufferAllocation_2.c:203: undefined reference to `vPortFree'
+./FreeRTOSPlus/FreeRTOS_TCP/source/portable/BufferManagement/BufferAllocation_2.o: In function `pxGetNetworkBufferWithDescriptor':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/portable/BufferManagement/BufferAllocation_2.c:253: undefined reference to `pvPortMalloc'
+./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_ARP.o: In function `FreeRTOS_PrintARPCache':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_ARP.c:636: undefined reference to `vLoggingPrintf'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_ARP.c:650: undefined reference to `vLoggingPrintf'
+./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DHCP.o: In function `vDHCPProcess':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DHCP.c:362: undefined reference to `uxRand'
+./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DHCP.o: In function `prvInitialiseDHCP':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DHCP.c:597: undefined reference to `uxRand'
+./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DHCP.o: In function `prvProcessDHCPReplies':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DHCP.c:813: undefined reference to `vLoggingPrintf'
+./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DHCP.o: In function `prvCreatePartDHCPMessage':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DHCP.c:833: undefined reference to `pcApplicationHostnameHook'
+./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DNS.o: In function `vDNSCheckCallBack':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DNS.c:316: undefined reference to `vPortFree'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DNS.c:322: undefined reference to `vPortFree'
+./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DNS.o: In function `vDNSSetCallBack':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DNS.c:348: undefined reference to `pvPortMalloc'
+./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DNS.o: In function `vDNSDoCallback':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DNS.c:394: undefined reference to `vPortFree'
+./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DNS.o: In function `FreeRTOS_gethostbyname_a':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DNS.c:449: undefined reference to `uxRand'
+./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DNS.o: In function `prvParseDNSReply':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DNS.c:1049: undefined reference to `xApplicationDNSQueryHook'
+./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DNS.o: In function `prvTreatNBNS':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_DNS.c:1195: undefined reference to `xApplicationDNSQueryHook'
+./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_IP.o: In function `prvProcessNetworkDownEvent':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_IP.c:1285: undefined reference to `vApplicationIPNetworkEventHook'
+./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_IP.o: In function `vIPNetworkUpCalls':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_IP.c:1332: undefined reference to `vApplicationIPNetworkEventHook'
+./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_IP.o: In function `prvProcessICMPEchoReply':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_IP.c:1708: undefined reference to `vApplicationPingReplyHook'
+./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Sockets.o: In function `FreeRTOS_socket':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Sockets.c:282: undefined reference to `pvPortMalloc'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Sockets.c:291: undefined reference to `vPortFree'
+./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Sockets.o: In function `FreeRTOS_CreateSocketSet':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Sockets.c:369: undefined reference to `pvPortMalloc'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Sockets.c:378: undefined reference to `vPortFree'
+./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Sockets.o: In function `FreeRTOS_DeleteSocketSet':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Sockets.c:396: undefined reference to `vPortFree'
+./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Sockets.o: In function `vSocketClose':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Sockets.c:1160: undefined reference to `vPortFree'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Sockets.c:1165: undefined reference to `vPortFree'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Sockets.c:1229: undefined reference to `vPortFree'
+./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Sockets.o: In function `prvGetPrivatePortNumber':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Sockets.c:1649: undefined reference to `uxRand'
+./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Sockets.o: In function `prvTCPCreateStream':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Sockets.c:2919: undefined reference to `pvPortMalloc'
+./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Sockets.o: In function `vTCPNetStat':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Sockets.c:3347: undefined reference to `vLoggingPrintf'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Sockets.c:3351: undefined reference to `vLoggingPrintf'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Sockets.c:3377: undefined reference to `vLoggingPrintf'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Sockets.c:3397: undefined reference to `vLoggingPrintf'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_Sockets.c:3402: undefined reference to `vLoggingPrintf'
+./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_TCP_IP.o: In function `prvTCPPrepareConnect':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_TCP_IP.c:1028: undefined reference to `ulApplicationGetNextSequenceNumber'
+./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_TCP_IP.o: In function `prvHandleListen':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_TCP_IP.c:3086: undefined reference to `ulApplicationGetNextSequenceNumber'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_TCP_IP.c:3111: undefined reference to `vLoggingPrintf'
+./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_TCP_WIN.o: In function `prvCreateSectors':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_TCP_WIN.c:310: undefined reference to `pvPortMalloc'
+./FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_TCP_WIN.o: In function `vTCPSegmentCleanup':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOSPlus/FreeRTOS_TCP/source/FreeRTOS_TCP_WIN.c:685: undefined reference to `vPortFree'
+./FreeRTOS/event_groups.o: In function `xEventGroupCreate':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOS/event_groups.c:162: undefined reference to `pvPortMalloc'
+./FreeRTOS/event_groups.o: In function `vEventGroupDelete':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOS/event_groups.c:642: undefined reference to `vPortFree'
+./FreeRTOS/queue.o: In function `xQueueGenericCreate':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOS/queue.c:397: undefined reference to `pvPortMalloc'
+./FreeRTOS/queue.o: In function `vQueueDelete':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOS/queue.c:1996: undefined reference to `vPortFree'
+./FreeRTOS/stream_buffer.o: In function `xStreamBufferGenericCreate':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOS/stream_buffer.c:258: undefined reference to `pvPortMalloc'
+./FreeRTOS/stream_buffer.o: In function `vStreamBufferDelete':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOS/stream_buffer.c:373: undefined reference to `vPortFree'
+./FreeRTOS/tasks.o: In function `xTaskCreate':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOS/tasks.c:770: undefined reference to `pvPortMalloc'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOS/tasks.c:775: undefined reference to `pvPortMalloc'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOS/tasks.c:786: undefined reference to `vPortFree'
+./FreeRTOS/tasks.o: In function `vTaskStartScheduler':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOS/tasks.c:1980: undefined reference to `vApplicationGetIdleTaskMemory'
+./FreeRTOS/tasks.o: In function `vTaskSwitchContext':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOS/tasks.c:2987: undefined reference to `vApplicationStackOverflowHook'
+./FreeRTOS/tasks.o: In function `prvDeleteTCB':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOS/tasks.c:3856: undefined reference to `vPortFree'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOS/tasks.c:3857: undefined reference to `vPortFree'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOS/tasks.c:3863: undefined reference to `vPortFree'
+./FreeRTOS/tasks.o: In function `vTaskList':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOS/tasks.c:4349: undefined reference to `pvPortMalloc'
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOS/tasks.c:4394: undefined reference to `vPortFree'
+./FreeRTOS/timers.o: In function `xTimerCreateTimerTask':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOS/timers.c:245: undefined reference to `vApplicationGetTimerTaskMemory'
+./FreeRTOS/timers.o: In function `xTimerCreate':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOS/timers.c:290: undefined reference to `pvPortMalloc'
+./FreeRTOS/timers.o: In function `prvTimerTask':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOS/timers.c:539: undefined reference to `vApplicationDaemonTaskStartupHook'
+./FreeRTOS/timers.o: In function `prvProcessReceivedCommands':
+/home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/simple_led_tcp/Debug/../FreeRTOS/timers.c:830: undefined reference to `vPortFree'
+collect2: error: ld returned 1 exit status
+make: *** [simple_led_tcp.elf] Error 1
 
-15:12:12 Build Finished (took 362ms)
+18:43:50 Build Finished (took 2s.999ms)
 

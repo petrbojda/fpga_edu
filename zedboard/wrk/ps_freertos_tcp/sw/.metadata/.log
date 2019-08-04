@@ -3324,3 +3324,83 @@ java.lang.NullPointerException
 	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2019-04-15 18:38:11.399 -----------------------------------------------
+eclipse.buildId=2018.3
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.ui 2 0 2019-04-15 18:38:30.036
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-04-15 18:38:30.036
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2019-04-15 18:38:32.044
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-04-15 18:38:32.044
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-15 18:38:46.353
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-15 18:38:46.353
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-8
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-15 18:38:46.360
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-15 18:38:46.364
+!MESSAGE XSCT Command: [setws /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw], Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-15 18:38:56.419
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-8
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-15 18:38:56.420
+!MESSAGE XSCT command with result: [setws /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw], Result: [null, ]. Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-15 18:38:56.444
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/zedboard_hw_platform/system.hdf], Thread: Worker-7
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-15 18:39:09.476
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/zedboard_hw_platform/system.hdf], Result: [null, ]. Thread: Worker-7
+!SESSION 2019-04-16 08:26:06.372 -----------------------------------------------
+eclipse.buildId=2018.3
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.ui 2 0 2019-04-16 08:26:16.636
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-04-16 08:26:16.637
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2019-04-16 08:26:18.728
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-04-16 08:26:18.728
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-16 08:26:32.069
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-16 08:26:32.069
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-16 08:26:41.410
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-16 08:26:41.411
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-16 08:26:41.411
+!MESSAGE XSCT Command: [setws /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-16 08:26:41.412
+!MESSAGE XSCT command with result: [setws /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw], Result: [null, ]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-16 08:26:41.454
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/zedboard_hw_platform/system.hdf], Thread: Worker-20
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-04-16 08:26:53.271
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/petr/Projects/fpga_edu/zedboard/wrk/ps_freertos_tcp/sw/zedboard_hw_platform/system.hdf], Result: [null, ]. Thread: Worker-20
